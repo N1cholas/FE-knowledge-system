@@ -4,3 +4,6 @@ Summarize the `react` flow according to post [build-your-own-react](https://pomb
 
 ### JSX transfer to DOM flow
 ![JSX_transfer_to_dom](./nodeMind/JSX_transfer_to_DOM.png)
+
+### createElement(type, props, ...children)
+![JSX_transfer_to_dom](./nodeMind/createElement.png)
