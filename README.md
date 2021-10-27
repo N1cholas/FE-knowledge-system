@@ -7,3 +7,6 @@ Summarize the `react` flow according to post [build-your-own-react](https://pomb
 
 ### createElement(type, props, ...children)
 ![JSX_transfer_to_dom](./nodeMind/createElement.png)
+
+### render(fiber, elements)
+![JSX_transfer_to_dom](./nodeMind/render.png)
