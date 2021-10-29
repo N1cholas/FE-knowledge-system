@@ -10,3 +10,6 @@ Summarize the `react` flow according to post [build-your-own-react](https://pomb
 
 ### render(fiber, elements)
 ![JSX_transfer_to_dom](./nodeMind/render.png)
+
+### commit(fiber)
+![JSX_transfer_to_dom](./nodeMind/commit.png)
