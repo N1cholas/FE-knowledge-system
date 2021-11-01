@@ -1,6 +1,6 @@
 
 class Queue {
-  private items: { [key: number]: any }
+  private readonly items: { [key: number]: any }
   private length: number
 
   constructor() {
