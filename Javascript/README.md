@@ -125,11 +125,60 @@ a == b // false
 
 ##### 栈
 
-##### 堆
+先进后出，后进先出
+
+问：封装一个十进制转二进制的方法
+
+```js
+const converter = (n, bs) => {
+  const r = []
+  let s = ''
+
+  while (n > 0) {
+    r.push(n % bs)
+
+    n = Math.floor(n / bs)
+  }
+
+  while (r.length) {
+    s += r.pop()
+  }
+
+  return s
+}
+
+```
+
+问：给定一个只包括 小括号 '(' ')' ，中括号 '[' ']' 大括号 '{' '}' 的字符串，判断字符串是否有效
+
+```js
+const isValid = s => {
+  const r = []
+
+  for (let i = 0; i < s.length; i++) {
+    const currentString = r[r.length - 1]
+
+    if (currentString === '(' && s[i] === ')' ||
+      currentString === '{' && s[i] === '}' ||
+      currentString === '[' && s[i] === ']'
+    ) {
+      r.pop()
+    } else {
+      r.push(s[i])
+    }
+  }
+
+  return r.length === 0
+}
+```
 
 ##### 队列
 
+先进先出
+
 ##### 链表
+
+##### 堆
 
 #### 内存空间管理
 
