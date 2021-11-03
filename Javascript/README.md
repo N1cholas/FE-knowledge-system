@@ -1,12 +1,12 @@
-## Javascript Knowledge System
+# Javascript Knowledge System
 
-### 内存与数据结构
+## 内存与数据结构
 
 把一个页面当成一个完整的应用，那么就会有个体的参与
 
 ![ram](./ram.svg)
 
-#### 个体
+### 个体
 
 > 讨论个体，主要思考应用运行中，哪些个体会参与进来的问题
 
@@ -18,11 +18,11 @@ const b = () => {} // 函数
 const c = {} // 对象
 ```
 
-#### 数据类型
+### 数据类型
 
 > 讨论数据类型，主要思考个体是以什么形式存在
 
-##### 基础类型
+#### 基础类型
 
 `ES6`定义了8种数据类型
 
@@ -74,7 +74,7 @@ _s.chatAt(0) // 包装对象实例访问方法
 _s = null // 使用完销毁包装对象
 ```
 
-##### 引用类型
+#### 引用类型
 
 **引用类型是按引用(内存地址)访问，并且值是可以改变的**
 
@@ -106,7 +106,7 @@ const b = {}
 a == b // false
 ```
 
-#### 内存
+### 内存
 
 > 讨论内存，主要思考应用运行时，个体存放在哪里
 
@@ -136,11 +136,11 @@ a = null // 参与完毕，释放内存
 
 > 在全局中，垃圾回收机制无法判断全局声明的内存合适释放
 
-#### 数据结构
+### 数据结构
 
 > 讨论数据结构，主要思考个体在内存是如何存放的
 
-##### 栈
+#### 栈
 
 先进后出，后进先出
 
@@ -189,17 +189,17 @@ const isValid = s => {
 }
 ```
 
-##### 队列
+#### 队列
 
 先进先出
 
-##### 链表
+#### 链表
 
-##### 堆
+#### 堆
 
-### 函数
+## 函数
 
-#### V8引擎
+### V8引擎
 
 `V8`引擎是`JS`引擎的一种，它也是应用程序，它是`JS`执行环境，也是浏览器组成部分，负责**解析**和**编译**`JS`
 
@@ -207,7 +207,7 @@ const isValid = s => {
 
 虚线右边`Blink`是渲染引擎，虚线左边是`JS`引擎的`pipeline`
 
-##### Scanner
+#### Scanner
 
 `Scanner`模块会扫描`JS`文件里的字符，并转换成`token`
 
@@ -240,7 +240,7 @@ const a = 1
 ]
 ```
 
-##### Parser
+#### Parser
 
 `Parser`模块会把`tokens`解析成`AST` (Abstract Syntax Tree)，主要作用是
 
@@ -312,4 +312,144 @@ b() // 再次解析该函数，并且是全量的
 **减少不必要的嵌套函数，能提高代码执行效率**
 
 > `v8`引擎会缓存3天解析的结果，所以分隔业务代码和第三方库代码，有助于提高代码执行效率
+
+#### Ignition
+
+这个是解释器，会把`AST`转化为字节码，并且收集编译的信息
+
+> 也可以理解为预编译，基于性能考虑，有时候预编译和编译的界限没有那么清晰，有的代码在预编译下就能执行
+
+#### Turibofan
+
+这是是编译器，也是代码执行阶段，利用`Igniton`收集到的信息，将字节码编译成汇编，在满足条件下，会直接优化成机器码，提高效率
+
+有一个建议能提高代码执行效率，就是不要总是**改变对象类型**
+
+```js
+const a = (o) => o.name
+```
+
+当传入不同类型的对象（对编译器而言）
+
+```js
+o1 = { name: 'a' }
+o1 = { name: 'b', age: 18 }
+o1 = { name: 'c', age: 18, gender: 1 }
+```
+
+编译器无法针对上述情况做优化，会降低执行效率，**所以这也是`typescript`作用之一**
+
+#### Orinoco
+
+这是垃圾回收对象，用来管理内存
+
+- 标记阶段，标记活动对象和非活动对象
+- 清除阶段，清除非活动对象
+- 整理阶段，合并和整理内存
+
+### 作用域和作用域链
+
+规定变量和函数可访问范围的机制，在词法分析（预解析）确定下来
+
+####全局作用域
+
+- `window`对象的属性和方法
+- 最外层的声明
+- 非严格模式下，函数中未定义并且赋值的变量和函数
+
+####函数作用域
+
+- 函数的花括号
+
+####`ES6`后的块级作用域
+
+对`var`的声明无效，只能束缚`let`和`const`
+
+> 最外层`var`声明的变量和函数会挂载到`window`对象上，最外层`let`和`const`声明的变量和函数会挂载到`script`对象
+
+#### 变量提升
+
+`var`定义的变量会`变量提升`并且赋值为`undefined`，并且可以对其进行访问和赋值
+
+```js
+console.log(a) // undefined
+a = 2
+console.log(a) // 2
+var a = 1
+console.log(a) // 1
+```
+
+`let`和`const`定义的变量也会`变量提升`，但不会被赋值，并且不能对其进行访问和赋值，这也称为`暂时性死区`
+
+```js
+console.log(b); // ReferenceError: b is not defined
+b = 2; // Cannot access 'b' before initialization
+let b = 1;
+console.log(b); // 1
+```
+
+> `const`对于基础数据类型，其赋值不能被修改，对于引用数据类型，其赋值的引用（内存地址）不能被修改
+
+#### 作用域链
+
+大概是说一个函数能访问的范围，具体实现表现在`[[scope]]`这个数组上
+
+```js
+const a = 20
+
+const test = () => {
+  const b = a + 10
+
+  const innerTest = () => {
+    const c = 10
+
+
+    return b + c
+  }
+
+  console.dir(innerTest)
+  console.dir(test)
+  return innerTest()
+}
+
+test()
+```
+
+![image.png](http://tva1.sinaimg.cn/large/006ZmkSvgy1gw2d7wai6bj312o0ja0yq.jpg)
+
+```js
+const a = 20
+
+const test = () => {
+  const b = a + 10
+
+  const innerTest = () => {
+    const innerInnerTest = () => {
+      return b
+    }
+    console.dir(innerInnerTest)
+  }
+  console.dir(innerTest)
+  return innerTest()
+}
+
+test()
+```
+
+![image.png](http://tva1.sinaimg.cn/large/006ZmkSvgy1gw2dfa2lp1j312c0k87av.jpg)
+
+在函数作用域中，寻找的变量首先会在该函数当前执行上下文中寻找，然后再通过作用域链`[[scope]]`去寻找
+
+`[[scope]]`组成对象
+
+- `global`对象
+- `script`对象
+- `closure`对象
+- `local`对象
+
+其中`local`对象并不会在预解析阶段就被确定，而是在函数执行中才会生成，随着函数执行而变化，记录函数执行上下文的变量和函数，也确定`this`指向
+
+
+
+
 
