@@ -203,9 +203,7 @@ const isValid = s => {
 
 #### 堆
 
-## 函数
-
-### V8引擎
+## V8引擎
 
 `V8`引擎是`JS`引擎的一种，它也是应用程序，它是`JS`执行环境，也是浏览器组成部分，负责**解析**和**编译**`JS`
 
@@ -213,7 +211,7 @@ const isValid = s => {
 
 虚线右边`Blink`是渲染引擎，虚线左边是`JS`引擎的`pipeline`
 
-#### Scanner
+### Scanner
 
 `Scanner`模块会扫描`JS`文件里的字符，并转换成`token`
 
@@ -246,7 +244,7 @@ const a = 1
 ]
 ```
 
-#### Parser
+### Parser
 
 `Parser`模块会把`tokens`解析成`AST` (Abstract Syntax Tree)，主要作用是
 
@@ -319,13 +317,13 @@ b() // 再次解析该函数，并且是全量的
 
 > `v8`引擎会缓存3天解析的结果，所以分隔业务代码和第三方库代码，有助于提高代码执行效率
 
-#### Ignition
+### Ignition
 
 这个是解释器，会把`AST`转化为字节码，并且收集编译的信息
 
 > 也可以理解为预编译，基于性能考虑，有时候预编译和编译的界限没有那么清晰，有的代码在预编译下就能执行
 
-#### Turibofan
+### Turibofan
 
 这是是编译器，也是代码执行阶段，利用`Igniton`收集到的信息，将字节码编译成汇编，在满足条件下，会直接优化成机器码，提高效率
 
@@ -345,7 +343,7 @@ o1 = { name: 'c', age: 18, gender: 1 }
 
 编译器无法针对上述情况做优化，会降低执行效率，**所以这也是`typescript`作用之一**
 
-#### Orinoco
+### Orinoco
 
 这是垃圾回收对象，用来管理内存
 
@@ -353,7 +351,11 @@ o1 = { name: 'c', age: 18, gender: 1 }
 - 清除阶段，清除非活动对象
 - 整理阶段，合并和整理内存
 
-### 作用域和作用域链
+> 不会清理全局对象内存
+
+## 函数
+
+### 作用域
 
 规定变量和函数可访问范围的机制，在词法分析（预解析）确定下来
 
@@ -396,7 +398,7 @@ console.log(b); // 1
 
 > `const`对于基础数据类型，其赋值不能被修改，对于引用数据类型，其赋值的引用（内存地址）不能被修改
 
-#### 作用域链
+### 作用域链
 
 大概是说一个函数能访问的范围，具体实现表现在`[[scope]]`这个数组上
 
@@ -455,7 +457,7 @@ test()
 
 其中`local`对象并不会在预解析阶段就被确定，而是在函数执行中才会生成，随着函数执行而变化，记录函数执行上下文的变量和函数，也确定`this`指向
 
-#### 函数调用栈
+### 函数调用栈
 
 `JS`使用函数调用栈来管理所有函数的执行
 
@@ -468,7 +470,7 @@ function b() {} // 函数声明
 
 > 函数体也是个对象，对象存储在堆内存中
 
-##### 执行上下文
+#### 执行上下文
 
 声明函数需要创建函数体，函数体占据一定内存，而执行函数会创建`执行上下文`，`执行上下文`也会占据新内存，`执行上下文`会根据函数体的代码逻辑，实时记录函数的状态和数据
 
@@ -520,7 +522,7 @@ result(); // 999
 
 > 可以使用`console.trace()`打印函数调用栈
 
-##### 汇编入门
+#### 汇编入门
 
 冯诺伊曼体系结构：**将不可改变的硬件变为可编程的软件**
 
@@ -564,11 +566,299 @@ result(); // 999
 | eip         | 指令指针寄存器，用于存放下次将要执行的指令在代码段中的偏移量 |
 | EFlags      | 标志寄存器，有多种标志，例如进位标志，溢出标志等             |
 
+#### 栈的空间情况
 
+![image.png](https://images.xiaozhuanlan.com/photo/2020/66ae372dec45d95fb9c3764c0194623b.png)
 
+### 闭包
 
+闭包是一个特殊的对象，当一个函数A嵌套了函数B，并函数B访问函数A的变量，那么在预解析时闭包就产生了，并存在于函数B的`[[scope]]`
 
+```js
+const a = () => {
+  let num = 1
+  
+  const b = () => {
+    console.log(++num)
+  }
+  console.dir(b)              
+  return b
+}
+  
+a()() // 2
+a()() // 2
+a()() // 2
+```
 
+![image.png](http://tva1.sinaimg.cn/large/006ZmkSvgy1gw5hgmkyagj311a0a0diq.jpg)
+
+创建了3次闭包
+
+**如果我们保留了函数B的引用**
+
+```js
+const a = () => {
+  let num = 1
+  
+  const b = () => {
+    console.log(++num)
+  }
+  console.dir(b)              
+  return b
+}
+  
+const c = a()
+
+c() // 2
+c() // 3
+c() // 4
+```
+
+这里只会创建一个闭包
+
+**再多运行一次函数A**
+
+```js
+const a = () => {
+  let num = 1
+  
+  const b = () => {
+    console.log(++num)
+  }
+  console.dir(b)              
+  return b
+}
+  
+const c = a()
+
+c() // 2
+c() // 3
+c() // 4
+
+const d = a()
+
+d() // 2
+d() // 3
+d() // 4
+```
+
+每次运行函数B都会创建上下文，两个不同的引用对应两个不同的闭包
+
+#### `for`循环
+
+需要让下面这个`for`循环输出1, 2, 3, 4, 5
+
+```js
+for (var i = 1; i <= 5; i++) {
+  setTimeout(function timer() {
+    console.log(i);
+  }, i * 1000);
+}
+```
+
+方案一
+
+```js
+for (let i = 1; i <= 5; i++) {
+  setTimeout(function timer() {
+    console.log(i);
+  }, i * 1000);
+}
+```
+
+方案二
+
+```js
+for (var i = 1; i <= 5; i++) {
+  (function (i) {
+    setTimeout(function timer() {
+    	console.log(i)
+  	}, i * 1000)
+  })(i)
+}
+```
+
+#### 单例
+
+```js
+const createInstance = (() => {
+  let instance = null;
+  
+  return obj => {
+    return instance ? instance : instance = obj
+  }
+})()
+```
+
+#### 模块化
+
+```js
+var module_status = (function () {
+  var status = {
+    number: 0,
+    color: null
+  }
+
+  var get = function (prop) {
+    return status[prop];
+  }
+
+  var set = function (prop, value) {
+    status[prop] = value;
+  }
+
+  return {
+    get: get,
+    set: set
+  }
+})();
+
+var module_color = (function () {
+  // 假装用这种方式执行第二步引入模块 类似于 import state from 'module_status';
+  var state = module_status;
+  var colors = ['orange', '#ccc', 'pink'];
+
+  function render() {
+    var color = colors[state.get('number') % 3];
+    document.body.style.backgroundColor = color;
+  }
+
+  return {
+    render: render
+  }
+
+})();
+
+var module_context = (function () {
+  var state = module_status;
+
+  function render() {
+    document.body.innerHTML = 'this Number is ' + state.get('number');
+  }
+
+  return {
+    render: render
+  }
+})();
+
+var module_main = (function () {
+  var state = module_status;
+  var color = module_color;
+  var context = module_context;
+
+  setInterval(function () {
+    var newNumber = state.get('number') + 1;
+    state.set('number', newNumber);
+
+    color.render();
+    context.render();
+  }, 1000);
+})();
+```
+
+### this
+
+函数声明的`this`指向调用者`caller`
+
+箭头函数的`this`指向声明函数时的上下文中
+
+>  在函数创建其执行上下文中决定`this`的指向
+>
+>  严格模式下，全局下的函数声明的`this`不是`window`而是`undefined`
+
+```js
+// demo01
+var a = 20;
+
+var obj = {
+  a: 40
+}
+function fn() {
+  console.log('fn this: ', this);
+
+  function foo() {
+    console.log(this.a);
+  }
+  foo();
+}
+
+fn.call(obj); // 20
+fn(); // 20
+```
+
+```js
+// demo02
+'use strict';
+
+var a = 20;
+function foo() {
+  var a = 1;
+  var obj = {
+    a: 10,
+    c: this.a + 20
+  }
+  return obj.c;
+
+}
+
+console.log(window.foo()); // 40
+console.log(foo()); // Uncaught TypeError: Cannot read properties of undefined (reading 'a')
+```
+
+```js
+// demo03
+var a = 20;
+var foo = {
+  a: 10,
+  getA: function () {
+    return this.a;
+  }
+}
+console.log(foo.getA()); // 10
+
+var test = foo.getA;
+console.log(test()); // 20
+```
+
+```js
+function foo() {
+  console.log(this.a)
+}
+
+function active(fn) {
+  fn();
+}
+
+var a = 20;
+var obj = {
+  a: 10,
+  getA: foo,
+  active: active
+}
+
+active(obj.getA); // 20
+obj.active(obj.getA); // 20
+```
+
+```js
+var n = 'window';
+var object = {
+  n: 'object',
+  getN: function () {
+    return function () {
+      return this.n;
+    }
+  }
+}
+
+console.log(object.getN()()); // window
+```
+
+#### apply
+
+#### call
+
+####bind
 
 
 
