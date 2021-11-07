@@ -860,6 +860,212 @@ console.log(object.getN()()); // window
 
 ####bind
 
+## 函数式编程
+
+函数式编程是一种编程范式，核心思想就是封装，调用方不需要关心函数内部细节，只需要关注传入的参数和输出的结果
+
+### 纯函数
+
+纯函数核心就是相同的输入得到相同的输出
+
+- 天然并发
+- 利于缓存
+- 利于移植
+
+> 不依赖函数外的任何依赖，不产生副作用
+
+### 高阶函数
+
+高阶函数核心就是让当前函数拥有额外的能力
+
+> 高阶组件也是这个思想
+
+#### 手动实现一个`new`关键字
+
+```js
+const New = (func, ...arguments) => {
+  const res = {}
+
+  res.__proto__ = func.prototype
+
+  const ret = func.apply(res, arguments)
+
+  if ((typeof ret === 'object' || typeof ret === 'function') && ret !== null) {
+    return ret
+  }
+
+  return res
+}
+```
+
+```js
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+Person.prototype.getName = function() {
+  return this.name;
+}
+
+// 使用上例中封装的New方法来创建实例
+var p1 = New(Person, 'Jake', 18);
+var p2 = New(Person, 'Tom', 20);
+p1.getName(); // Jake
+p2.getName(); // Tom
+```
+
+#### 手动封装`map`
+
+```js
+Array.prototype._map = function(fn, context) {
+  const res = []
+  
+  for(let i = 0; i < this.length; i++) {
+    res.push(fn.call(context, this[i], i, this))
+  }
+  
+  return res
+}
+```
+
+```js
+[1, 2, 3, 4]._map(item => item + 1) // [2, 3, 4, 5]
+```
+
+#### 封装登陆逻辑
+
+```js
+// 高阶函数withLogin，用来判断当前的用户状态
+(function() {
+  // 用随机数的方式来模拟一个获取用户信息的方法
+  const getLogin = function() {
+    var a = parseInt(Math.random() * 10).toFixed(0));
+    if (a % 2 == 0) {
+      return { login: false }
+    }
+
+    return {
+      login: true,
+      userinfo: {
+        nickname: 'jake',
+        vip: 11,
+        userid: '666666'
+      }
+    }
+  }
+
+  const withLogin = function(basicFn) {
+    const loginInfo = getLogin();
+
+    // 将loginInfo以参数的形式传入基础函数中
+    return basicFn.bind(null, loginInfo);
+  }
+
+  window.withLogin = withLogin;
+})();
+```
+
+```js
+(function() {
+  const withLogin = window.withLogin;
+
+  const renderHomePage = function(loginInfo) {
+    // 这里处理renderHomePage页面的逻辑
+
+    if (loginInfo.login) {
+      // 处理已经登录之后的逻辑
+    } else {
+      // 这里处理未登录的逻辑
+    }
+  }
+
+  // 对外暴露接口时，使用高阶函数包一层，来执行当前页面的登录状态的判断
+  window.renderHomePage = withLogin(renderHomePage);
+})();
+```
+
+### 柯里化
+
+柯里化指一个函数接收一个函数A，执行完生成新的函数继续执行函数A剩下的参数的函数
+
+> 柯里化也是高阶函数的一种
+
+下面这种实现方式是错误的，柯里化后的函数都共享同一个闭包数据`func, arity和args`，其中`arity`会被第一个函数修改
+
+```js
+// arity 剩余参数的长度
+// args 收集传入的参数
+const curry = (func, arity = func.length, args = []) => {
+  return () => {
+    if (arguments.length < arity) {
+      // 副作用
+      arity -= arguments.length
+
+      return curry(func, arity, args.push([].slice.call(arguments)))
+    }
+
+    return func.apply(func, args)
+  }
+}
+
+function check(reg, targetString) {
+  return reg.test(targetString);
+}
+
+check(/^1[34578]\d{9}$/, '14900000088');
+check(/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/, 'test@163.com');
+
+const checkPhone = curry(check)(/^1[34578]\d{9}$/)
+const checkEMail = curry(check)(/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/)
+
+checkPhone('183888888') // true
+checkEmail('xxxxx@test.com') // 报错
+```
+
+> 定位问题花了好久，最后是打断点发现闭包里面的数据被修改才定位到的
+
+真正的实现
+
+```js
+const createCurry = func => {
+  return function curry(...args) {
+    if (args.length >= func.length) {
+      return func.apply(func, args)
+    }
+    
+    return (...nextArgs) => curry.apply(func, args.concat(nextArgs))
+  }
+}
+```
+
+柯里化的扩展
+
+```js
+// 实现一个add方法，使计算结果能够满足如下预期：
+add(1)(2)(3) // 6;
+add(1, 2, 3)(4) // 10;
+add(1)(2)(3)(4)(5) // 15;
+```
+
+```js
+const add = (...args) => {
+  const _args = []
+  
+  const _adder = (...nextArgs) => {
+    _args.push(...nextArgs)
+    return _adder
+  }
+  
+  _adder.valueOf = () => _args.reduce((p, c) => p + c)
+  
+  return _adder(...args)
+}
+```
+
+### 函数组合
+
+
+
 
 
 
