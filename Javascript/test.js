@@ -1,3 +1,4 @@
+'use strict';
 // const a = 20
 //
 // const test = () => {
@@ -131,16 +132,73 @@
 // console.log(checkPhone('14900000088'))
 // console.log(checkEMail('test@163.com'))
 
-const add = (...args) => {
+// const add = (...args) => {
+//
+//   const _args = []
+//
+//   const _adder = (...nextArgs) => {
+//     _args.push(...nextArgs)
+//     return _adder
+//   }
+//
+//   _adder.valueOf = () => _args.reduce((p, c) => p + c)
+//
+//   return _adder(...args)
+// }
 
-  const _args = []
+(function () {
+  const getLogin = () => ({
+    login: true,
+    userInfo: {
+      name: 'Long',
+      age: 18
+    }
+  })
 
-  const _adder = (...nextArgs) => {
-    _args.push(...nextArgs)
-    return _adder
+  window.withLogin = fn => fn.bind(null, getLogin())
+})();
+
+(function () {
+  const env = {
+    isPC: 'onclick' in document,
+    isMobile: 'ontouchstart' in document,
+    isAndroid: navigator.userAgent.match(/android/),
+    isIOS: navigator.userAgent.match(/iphone/),
   }
 
-  _adder.valueOf = () => _args.reduce((p, c) => p + c)
+  window.withEnv = fn => fn.bind(null, env)
+})();
 
-  return _adder(...args)
-}
+(function () {
+
+  // function compose(...args) {
+  //   return args.reduceRight((pre, cur, i) => {
+  //     return cur(pre)
+  //   })
+  // }
+
+  const compose = (...args) => args.reduceRight((pre, cur, i) => {
+    return cur(pre)
+  })
+
+  const withLogin = window.withLogin
+  const withEnv = window.withEnv
+
+  const withRenderHomePage = (envInfo, loginInfo) => {
+    const div = document.createElement('div')
+    const env = Object.keys(envInfo).filter(env => envInfo[env])[0]
+
+    if (loginInfo.login) {
+      div.innerText = `${loginInfo.userInfo.name} login in ${env.substring(2)}`
+    } else {
+      div.innerText = `${loginInfo.userInfo.name} not login ${env.substring(2)}`
+    }
+
+
+    document.body.appendChild(div)
+  }
+
+  window.withRenderHomePage = compose(withLogin, withEnv, withRenderHomePage)
+})();
+
+

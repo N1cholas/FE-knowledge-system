@@ -988,7 +988,7 @@ Array.prototype._map = function(fn, context) {
 
 柯里化指一个函数接收一个函数A，执行完生成新的函数继续执行函数A剩下的参数的函数
 
-> 柯里化也是高阶函数的一种
+> 柯里化是高阶函数的一种运用
 
 下面这种实现方式是错误的，柯里化后的函数都共享同一个闭包数据`func, arity和args`，其中`arity`会被第一个函数修改
 
@@ -1064,7 +1064,70 @@ const add = (...args) => {
 
 ### 函数组合
 
+函数组合指一个函数接收若干个函数，从左往右或从右往左依次执行，上一个函数执行结果作为下一个函数的参数
 
+>  函数组合也是高阶函数的运用
+
+之前封装的有一个登陆模块，现在有一个新需求就是判断用户当前的环境，根据不同环境做不同处理
+
+```js
+(function () {
+  const getLogin = () => ({
+    login: true,
+    userInfo: {
+      name: 'Long',
+      age: 18
+    }
+  })
+
+  window.withLogin = fn => fn.bind(null, getLogin())
+})();
+
+(function () {
+  const env = {
+    isPC: 'onclick' in document,
+    isMobile: 'ontouchstart' in document,
+    isAndroid: navigator.userAgent.match(/android/),
+    isIOS: navigator.userAgent.match(/iphone/),
+  }
+
+  window.withEnv = fn => fn.bind(null, env)
+})();
+
+(function () {
+  const withLogin = window.withLogin
+  const withEnv = window.withEnv
+
+  const withRenderHomePage = (envInfo, loginInfo) => {
+    const div = document.createElement('div')
+    const env = Object.keys(envInfo).filter(env => envInfo[env])[0]
+
+    if (loginInfo.login) {
+      div.innerText = `${loginInfo.userInfo.name} login in ${env.substring(2)}`
+    } else {
+      div.innerText = `no one login ${env.substring(2)}`
+    }
+
+
+    document.body.appendChild(div)
+  }
+
+  // withEnv和withLogin赋予了withRenderHomePage登陆信息和环境信息
+  window.withRenderHomePage = withLogin(withEnv(withRenderHomePage))
+})();
+```
+
+如果我们使用函数组合`compose`
+
+```js
+window.withRenderHomePage = compose(withLogin, withEnv, withRenderHomePage)
+```
+
+快速实现一版`compose`
+
+```js
+const compose = (...args) => args.reduceRight((pre, cur) => cur(pre))
+```
 
 
 
