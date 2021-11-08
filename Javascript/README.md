@@ -1188,7 +1188,14 @@ Student.prototype = create(Person.prototype, {
 
 #### 拖拽对象
 
+Tasks
 
+- [ ] 封装获取元素的样式`style`
+- [ ] 封装获取元素的`transform`或者`left top`函数，考虑兼容性
+- [ ] 封装设置元素`transform`或者`left top`函数的函数
+- [ ] 添加监听事件`mousedown`，记录鼠标初始位置
+- [ ] 添加监听事件`mousemove`，计算鼠标移动距离
+- [ ] 添加监听事件`mouseup`， 设置元素位置为初始位置+移动的距离
 
 
 
