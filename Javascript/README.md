@@ -862,7 +862,7 @@ console.log(object.getN()()); // window
 
 ## 函数式编程
 
-函数式编程是一种编程范式，核心思想就是封装，调用方不需要关心函数内部细节，只需要关注传入的参数和输出的结果
+[函数式编程](https://zh.wikipedia.org/zh-hans/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B)是一种编程范式，核心思想是基于函数的封装，调用方不需要关心函数内部细节，只需要关注传入的参数和输出的结果
 
 ### 纯函数
 
@@ -1128,6 +1128,71 @@ window.withRenderHomePage = compose(withLogin, withEnv, withRenderHomePage)
 ```js
 const compose = (...args) => args.reduceRight((pre, cur) => cur(pre))
 ```
+
+> 采用函数模块化中，使用的全局变量是winodw
+
+## 面向对象
+
+[面向对象](https://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1)也是编程范式的一种，核心思想是基于对象的封装
+
+面向对象在`JS`中的具体实现依赖自身的原型链`prototype`，原型也是个对象
+
+### 原型链
+
+- `构造函数`对象上有`prototype`指向构造函数的`原型对象`
+- 实例和`原型对象`上有`__proto__`指向对应的`原型对象`
+- `原型对象`上有`constructor`指向`构造函数`
+
+![image.png](https://images.xiaozhuanlan.com/photo/2020/b6d52d44b163036c9ebfe7d811a06186.png)
+
+### 继承
+
+`JS`的继承分两个部分，构造函数和原型链继承
+
+#### 构造函数继承
+
+```js
+function Person(name, age) {
+  this.name = name
+  this.age = age
+}
+
+function Student(name, age, grade) {
+  Person.call(Student, name, age)
+  this.grade = grade
+}
+```
+
+#### 原型链继承
+
+```js
+function create(proto, options) {
+  const tem = {}
+  
+  tem.__proto__ = proto
+  
+	Object.defineProperties(tmp, options)
+  
+  return tem
+}
+
+Student.prototype = create(Person.prototype, { 
+  constructor: { value: Student },
+  getGrade () {
+    return this.grade
+  }
+})
+```
+
+### 封装实战
+
+#### 拖拽对象
+
+
+
+
+
+
 
 
 

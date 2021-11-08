@@ -170,19 +170,12 @@
 })();
 
 (function () {
-
-  // function compose(...args) {
-  //   return args.reduceRight((pre, cur, i) => {
-  //     return cur(pre)
-  //   })
-  // }
+  const withLogin = window.withLogin
+  const withEnv = window.withEnv
 
   const compose = (...args) => args.reduceRight((pre, cur, i) => {
     return cur(pre)
   })
-
-  const withLogin = window.withLogin
-  const withEnv = window.withEnv
 
   const withRenderHomePage = (envInfo, loginInfo) => {
     const div = document.createElement('div')
@@ -193,7 +186,6 @@
     } else {
       div.innerText = `${loginInfo.userInfo.name} not login ${env.substring(2)}`
     }
-
 
     document.body.appendChild(div)
   }
