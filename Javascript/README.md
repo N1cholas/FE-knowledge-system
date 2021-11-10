@@ -1190,12 +1190,19 @@ Student.prototype = create(Person.prototype, {
 
 Tasks
 
-- [x] 封装获取元素的样式`style`
-- [x] 封装获取元素的`transform`或者`left top`函数，考虑兼容性
-- [x] 封装设置元素`transform`或者`left top`函数的函数
-- [x] 添加监听事件`mousedown`，记录鼠标初始位置
-- [x] 添加监听事件`mousemove`，计算鼠标移动距离
-- [x] 添加监听事件`mouseup`， 设置元素位置为初始位置+移动的距离
+- [x] 获取元素的位置
+  - [x] 确定移动的方案
+    - [x] 定义坐标类型
+    - [x] `transform`还是`left top`
+  - [x] 获取元素样式
+    - [x] 兼容性考虑
+  - [x] 获取`transform`的值
+    - [x] 兼容性考虑
+- [x] 计算移动的距离
+  - [x] `mousedown`确定开始位置
+  - [x] `mousemove`计算移动的距离
+  - [x] `mouseup`清除监听事件`mousemove`和`mouseup`
+- [x] 设置元素的位置
 - [x] 面向对象封装
 
 
