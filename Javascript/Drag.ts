@@ -1,74 +1,89 @@
+(function () {
 
-type Transform = 'transform' | 'webkitTransform' | 'MozTransform' | 'OTransform'
+  type Position = {
+    x: number,
+    y: number
+  }
 
-type ElementPosition = {
-  x: number,
-  y: number
-}
+  function Drag(target: HTMLDivElement) {
+    this.transformX = 0
+    this.transformY = 0
 
-const div = document.getElementById('target')
+    this.startDragX = 0
+    this.startDragY = 0
 
-const getStyle = (ele: HTMLElement): CSSStyleDeclaration => window.getComputedStyle(ele)
+    this.target = target
 
-const getTransform = (): Transform | null => {
-  const divStyle: CSSStyleDeclaration = document.createElement('div').style
+    this.init()
+  }
 
-  const transformType: Transform[] = ['transform', 'webkitTransform', 'MozTransform', 'OTransform']
+  function getTransform(): string | null {
+    const transformList = ['transform', 'webkitTransform', 'MozTransform', 'OTransform']
 
-  const result = transformType.filter(transform => transform in divStyle)
+    const divStyle = document.createElement('div').style
 
-  return result?.[0] || null
-}
+    return transformList.filter(transform => transform in divStyle)?.[0] || null
+  }
 
-const getPosition = (style: CSSStyleDeclaration, transform: Transform): ElementPosition => {
-  const transformValue = style[transform]
+  const transform = getTransform()
 
-  if (transformValue === 'none') {
-    return { x: 0, y: 0 }
-  } else {
-    const getNumberValue: number[] = transformValue.match(/-?\d+/g)
+  Drag.prototype.getStyle = function (property): string {
+    const style = window.getComputedStyle(this.target)
 
-    return {
-      x: Number(getNumberValue[4]),
-      y: Number(getNumberValue[5])
+    return style[property]
+  }
+
+  Drag.prototype.getPosition = function (): Position {
+    const transformValue = this.getStyle(transform)
+
+    if (transformValue === 'none') {
+      return {
+        x: 0,
+        y: 0
+      }
+    } else {
+      const valueList = transformValue.match(/-?\d+/g)
+
+      return {
+        x: Number(valueList[4]),
+        y: Number(valueList[5])
+      }
     }
   }
-}
 
-const setPosition = (ele: HTMLElement, position: ElementPosition): void => {
-  console.log(position)
-  ele.style[getTransform()] = `translate(${position.x}px, ${position.y}px)`
-}
+  Drag.prototype.setPosition = function (position: Position): void {
+    const targetStyle = this.target.style
 
-let startX = 0
-let startY = 0
-let targetX = 0
-let targetY = 0
+    targetStyle[transform] = `translate(${position.x}px, ${position.y}px)`
+  }
 
-// div.addEventListener('mousedown', mouseDown, false)
+  Drag.prototype.init = function (): void {
+    const self = this
 
-function mouseDown(e: MouseEvent) {
-  startX = e.pageX
-  startY = e.pageY
+    function dragStart (e: MouseEvent) {
+      self.transformX = self.getPosition().x
+      self.transformY = self.getPosition().y
+      self.startDragX = e.pageX
+      self.startDragY = e.pageY
+      document.addEventListener('mousemove', dragMove, false);
+      document.addEventListener('mouseup', dragEnd, false);
+    }
 
-  const transform = getPosition(getStyle(div), getTransform())
+    function dragMove (e: MouseEvent) {
+      self.setPosition({
+        x: e.pageX - self.startDragX + self.transformX,
+        y: e.pageY - self.startDragY + self.transformY
+      })
+    }
 
-  targetX = transform.x
-  targetY = transform.y
+    function dragEnd() {
+      document.removeEventListener('mousemove',  dragMove)
+      document.removeEventListener('mouseup', dragEnd)
+    }
 
-  div.addEventListener('mousemove', mouseMove, false)
-  div.addEventListener('mouseup', mouseUp, false)
-}
+    this.target.addEventListener('mousedown', dragStart, false)
+  }
 
-function mouseMove(e: MouseEvent) {
-  setPosition(div,{
-    x: targetX + e.pageX - startX,
-    y: targetY + e.pageY - startY,
-  })
-}
-
-function mouseUp() {
-  div.removeEventListener('mousemove', mouseMove)
-  div.removeEventListener('mouseup', mouseUp)
-}
-
+  // @ts-ignore
+  window.Drag = Drag
+})()

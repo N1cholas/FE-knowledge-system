@@ -1,49 +1,65 @@
-var div = document.getElementById('target');
-var getStyle = function (ele) { return window.getComputedStyle(ele); };
-var getTransform = function () {
-    var divStyle = document.createElement('div').style;
-    var transformType = ['transform', 'webkitTransform', 'MozTransform', 'OTransform'];
-    var result = transformType.filter(function (transform) { return transform in divStyle; });
-    return (result === null || result === void 0 ? void 0 : result[0]) || null;
-};
-var getPosition = function (style, transform) {
-    var transformValue = style[transform];
-    if (transformValue === 'none') {
-        return { x: 0, y: 0 };
+(function () {
+    function Drag(target) {
+        this.transformX = 0;
+        this.transformY = 0;
+        this.startDragX = 0;
+        this.startDragY = 0;
+        this.target = target;
+        this.init();
     }
-    else {
-        var getNumberValue = transformValue.match(/-?\d+/g);
-        return {
-            x: Number(getNumberValue[4]),
-            y: Number(getNumberValue[5])
-        };
+    function getTransform() {
+        var _a;
+        var transformList = ['transform', 'webkitTransform', 'MozTransform', 'OTransform'];
+        var divStyle = document.createElement('div').style;
+        return ((_a = transformList.filter(function (transform) { return transform in divStyle; })) === null || _a === void 0 ? void 0 : _a[0]) || null;
     }
-};
-var setPosition = function (ele, position) {
-    console.log(position);
-    ele.style[getTransform()] = "translate(" + position.x + "px, " + position.y + "px)";
-};
-var startX = 0;
-var startY = 0;
-var targetX = 0;
-var targetY = 0;
-div.addEventListener('mousedown', mouseDown, false);
-function mouseDown(e) {
-    startX = e.pageX;
-    startY = e.pageY;
-    var transform = getPosition(getStyle(div), getTransform());
-    targetX = transform.x;
-    targetY = transform.y;
-    div.addEventListener('mousemove', mouseMove, false);
-    div.addEventListener('mouseup', mouseUp, false);
-}
-function mouseMove(e) {
-    setPosition(div, {
-        x: targetX + e.pageX - startX,
-        y: targetY + e.pageY - startY
-    });
-}
-function mouseUp() {
-    div.removeEventListener('mousemove', mouseMove);
-    div.removeEventListener('mouseup', mouseUp);
-}
+    var transform = getTransform();
+    Drag.prototype.getStyle = function (property) {
+        var style = window.getComputedStyle(this.target);
+        return style[property];
+    };
+    Drag.prototype.getPosition = function () {
+        var transformValue = this.getStyle(transform);
+        if (transformValue === 'none') {
+            return {
+                x: 0,
+                y: 0
+            };
+        }
+        else {
+            var valueList = transformValue.match(/-?\d+/g);
+            return {
+                x: Number(valueList[4]),
+                y: Number(valueList[5])
+            };
+        }
+    };
+    Drag.prototype.setPosition = function (position) {
+        var targetStyle = this.target.style;
+        targetStyle[transform] = "translate(" + position.x + "px, " + position.y + "px)";
+    };
+    Drag.prototype.init = function () {
+        var self = this;
+        function dragStart(e) {
+            self.transformX = self.getPosition().x;
+            self.transformY = self.getPosition().y;
+            self.startDragX = e.pageX;
+            self.startDragY = e.pageY;
+            document.addEventListener('mousemove', dragMove, false);
+            document.addEventListener('mouseup', dragEnd, false);
+        }
+        function dragMove(e) {
+            self.setPosition({
+                x: e.pageX - self.startDragX + self.transformX,
+                y: e.pageY - self.startDragY + self.transformY
+            });
+        }
+        function dragEnd() {
+            document.removeEventListener('mousemove', dragMove);
+            document.removeEventListener('mouseup', dragEnd);
+        }
+        this.target.addEventListener('mousedown', dragStart, false);
+    };
+    // @ts-ignore
+    window.Drag = Drag;
+})();
