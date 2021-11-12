@@ -1190,20 +1190,21 @@ Student.prototype = create(Person.prototype, {
 
 Tasks
 
-- [x] 获取元素的位置
-  - [x] 确定移动的方案
-    - [x] 定义坐标类型
-    - [x] `transform`还是`left top`
-  - [x] 获取元素样式
-    - [x] 兼容性考虑
-  - [x] 获取`transform`的值
-    - [x] 兼容性考虑
-- [x] 计算移动的距离
-  - [x] `mousedown`确定开始位置
-  - [x] `mousemove`计算移动的距离
-  - [x] `mouseup`清除监听事件`mousemove`和`mouseup`
-- [x] 设置元素的位置
-- [x] 面向对象封装
+- [x] 使用面向对象进行封装
+  - [x] `prototype`
+  - [x] `class`
+- [x] 确定拖拽的方案：`transform`
+- [x] 确定坐标的数据类型
+- [x] 确定构造函数
+- [x] 实现拖拽
+  - [x] 获取元素位置
+    - [x] 获取元素`computedStyle`
+    - [x] 获取浏览器支持的`transform`
+    - [x] 解析`transform`的值
+  - [x] 计算元素拖拽距离
+    - [x] 使用`event`中的`pageX`和`pageY`计算拖拽距离
+  - [x] 设置元素位置
+    - [x] 修改元素样式的`transform`值
 
 
 
