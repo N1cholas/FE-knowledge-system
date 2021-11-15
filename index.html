@@ -10,15 +10,41 @@
             position: absolute;
             transform: translate(50px, 50px);
         }
+
+        #tab-wrapper {
+            margin-top: 100px;
+        }
+
+        .tab-item-wrapper > li {
+            display: none;
+        }
+
+        li.active {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div id="target">123</div>
     <div id="target2">456</div>
+    <section id="tab-wrapper">
+        <header class="tab-header-wrapper">
+            <div>tab1</div>
+            <div>tab2</div>
+            <div>tab3</div>
+        </header>
+        <ul class="tab-item-wrapper">
+            <li>tab item1</li>
+            <li>tab item2</li>
+            <li>tab item3</li>
+        </ul>
+    </section>
     <script src="Javascript/Drag/DragEs6.js"></script>
+    <script src="Javascript/Tab/index.js"></script>
     <script>
         new Drag('target')
         new Drag('target2')
+        new Tab('tab-wrapper')
     </script>
 </body>
 </html>
