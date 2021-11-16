@@ -22,6 +22,38 @@
         li.active {
             display: block;
         }
+        #seamless-scrolling {
+            width: 350px;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .item-wrapper {
+            width: 2100px;
+            white-space: nowrap;
+            display: flex;
+        }
+
+        .item-wrapper > div {
+            width: 350px;
+            height: 150px;
+            background: #FFCDD2;
+            font-size: 16px;
+            line-height: 150px;
+            text-align: center;
+        }
+        .item-wrapper > div:nth-of-type(2) {
+            background: #E1BEE7;
+        }
+        .item-wrapper > div:nth-of-type(3) {
+            background: #BBDEFB;
+        }
+        .item-wrapper > div:nth-of-type(4) {
+            background: #F0F4C3;
+        }
+        .item-wrapper > div:nth-of-type(5) {
+            background: #D7CCC8;
+        }
     </style>
 </head>
 <body>
@@ -39,12 +71,23 @@
             <li>tab item3</li>
         </ul>
     </section>
+    <section id="seamless-scrolling">
+        <div class="item-wrapper">
+            <div>scroll item 1</div>
+            <div>scroll item 2</div>
+            <div>scroll item 3</div>
+            <div>scroll item 4</div>
+            <div>scroll item 5</div>
+        </div>
+    </section>
     <script src="Javascript/Drag/DragEs6.js"></script>
     <script src="Javascript/Tab/index.js"></script>
+    <script src="Javascript/SeamlessScrolling/index.js"></script>
     <script>
         new Drag('target')
         new Drag('target2')
         new Tab('tab-wrapper')
+        new SeamlessScrolling('seamless-scrolling')
     </script>
 </body>
 </html>
