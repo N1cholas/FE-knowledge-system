@@ -83,11 +83,23 @@
     <script src="Javascript/Drag/DragEs6.js"></script>
     <script src="Javascript/Tab/index.js"></script>
     <script src="Javascript/SeamlessScrolling/index.js"></script>
+    <script src="Javascript/Promise/index.js"></script>
     <script>
-        new Drag('target')
-        new Drag('target2')
-        new Tab('tab-wrapper')
-        new SeamlessScrolling('seamless-scrolling')
+        // new Drag('target')
+        // new Drag('target2')
+        // new Tab('tab-wrapper')
+        // new SeamlessScrolling('seamless-scrolling')
+        const a = new MyPromise((resolve, reject) => {
+          // resolve(1)
+          setTimeout(() => {
+            resolve(1)
+          }, 0)
+        }).then(value => {
+          return new Promise(resolve => {
+            resolve(value + 1)
+          })
+        })
+        console.log(a)
     </script>
 </body>
 </html>
