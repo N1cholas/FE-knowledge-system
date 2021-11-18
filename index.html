@@ -95,7 +95,7 @@
             resolve(1)
           }, 0)
         }).then(value => {
-          return new Promise(resolve => {
+          return new MyPromise(resolve => {
             resolve(value + 1)
           })
         })

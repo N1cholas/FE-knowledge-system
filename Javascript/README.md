@@ -1235,11 +1235,7 @@ Tasks
 
 ### 手写Promise
 
-> 符合Promise A+规范
-
-
-
-
+> [符合Promise A+规范](../specification/PromiseAPlus.md)
 
 
 
