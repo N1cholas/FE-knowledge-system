@@ -984,6 +984,10 @@ Array.prototype._map = function(fn, context) {
 })();
 ```
 
+#### 手写Promise
+
+> [符合Promise A+规范](../specification/PromiseAPlus.md)
+
 ### 柯里化
 
 柯里化指一个函数接收一个函数A，执行完生成新的函数继续执行函数A剩下的参数的函数
@@ -1233,9 +1237,135 @@ Tasks
 
 ## 事件循环
 
-### 手写Promise
+`Event loop`是`JS`执行环境的机制，`Javascript`是一个单线程语言，但是其执行环境，是多个线程协同的结果，而`Event loop`作用就是管理这个机制
 
-> [符合Promise A+规范](../specification/PromiseAPlus.md)
+![img](https://images.xiaozhuanlan.com/photo/2020/85fe57b2572999d0ef7030d671b35c68.image)
+
+### GUI渲染线程
+
+![img](https://images.xiaozhuanlan.com/photo/2020/c4ff4832908fc1e6513827c34ff23a7c.image)
+
+### Javascript引擎线程
+
+浏览器不能直接运行`JS`程序，需要对应的引擎。浏览器会为每一个页面起一个`JS`引擎线程
+
+### 定时器线程
+
+### I/O事件线程
+
+鼠标的点击，键盘的输入等
+
+### http线程
+
+### requestAnimationFrame线程
+
+### requestIdleCallback线程
+
+![img](https://images.xiaozhuanlan.com/photo/2020/84f37637441e9d5b4c9efc1cfed6c60e.image)
+
+### Promise
+
+`Promise`是特殊的，并不是由单独的线程管理，而是由`JS`引擎线程管理，当代码执行完毕之后，才开始执行`job`
+
+> `job`由`promise`的`then`方法声明
+
+![img](https://images.xiaozhuanlan.com/photo/2020/92cf067e3279605c8222d26cf45b4b8a.image)
+
+```js
+const p1 = new Promise((resolve) => {
+  resolve()
+}).then(function f1() {
+  console.log(1)
+  const p2 = new Promise(resolve => {
+    resolve()
+  }).then(function f3() {
+    console.log(2)
+  }).then(function f4() {
+    console.log(4)
+  })
+}).then(function f2() {
+  console.log(3)
+})
+
+console.log(0)
+
+// 执行结果为 0 1 2 3 4 
+```
+
+`p1`在创建时，状态就被固定了，所以会把`f1`加进`job`执行队列，而`f2`的链式调用需要知道`f1`的结果，所以`f2`会被加入到`job`临时队列
+
+```js
+PromiseFulfillReaction = [f2]
+PromiseJobs = [f1]
+```
+
+`p1`声明之后还有代码执行，所以第一个打印的是
+
+```js
+console.log(0)
+```
+
+接着执行`PromiseJobs`里的`f1`
+
+```js
+console.log(1) // f1
+```
+
+接着发现又声明一个`promise`，这个`p2`的状态也是固定的，所以会把`f3`加进`job`执行队列，而`f4`依赖`f3`结果，所以`f4`加进`job`临时队列
+
+```js
+PromiseFulfillReaction = [f2, f4]
+PromiseJobs = [f3]
+```
+
+当`f1`执行完毕，`f2`会被加进`job`执行队列，因为`f2`已经拿到`f1`结果
+
+```js
+PromiseFulfillReaction = [f4]
+PromiseJobs = [f3, f2]
+```
+
+执行完`f1`，发现`job`队列还有任务，继续执行，执行`f3`，打印的是
+
+```js
+console.log(2) // f3
+```
+
+当`f3`执行完毕，`f4`会加进`job`执行队列，因为`f4`已经拿到`f3`结果
+
+```js
+PromiseFulfillReaction = []
+PromiseJobs = [f2, f4]
+```
+
+最后顺序执行`f2`和`f4`，并且它们都不会产生新的`job`，所以打印的是 
+
+```js
+console.log(3) // f2
+console.log(4) // f4
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
