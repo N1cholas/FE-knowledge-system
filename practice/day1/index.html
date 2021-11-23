@@ -6,6 +6,10 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>day1</title>
     <style>
+        body {
+            margin: 0;
+        }
+
         i {
             font-style: normal;
         }
@@ -23,13 +27,34 @@
         img {
             width: 100%;
         }
+
+        #content {
+            background: #fff;
+            color: #000;
+            height: 100vh;
+            padding: 8px;
+            transition: all 1s;
+        }
+
+        #content.night {
+            background: #000;
+            color: #fff;
+        }
+
+        #mode::after {
+            content: '🌞';
+        }
+
+        #content.night #mode::after {
+            content: '🌜';
+        }
     </style>
 </head>
 <body>
-<div class="content">
+<div id="content">
     <header>
         <span>深夜食堂</span>
-        <span id="mode">🌞</span>
+        <span id="mode"></span>
     </header>
     <main>
         <div class="pic">
@@ -50,16 +75,13 @@
 </div>
 <script>
   const modeElement = document.getElementById('mode')
+  const contentElement = document.getElementById('content')
 
   modeElement.addEventListener('click', () => {
-    if (modeElement.innerHTML === '🌞') {
-      document.body.style.backgroundColor = '#000'
-      document.body.style.color = '#fff'
-      modeElement.innerHTML = '🌜'
+    if (contentElement.classList.contains('night')) {
+      contentElement.classList.remove('night')
     } else {
-      document.body.style.backgroundColor = '#fff'
-      document.body.style.color = '#000'
-      modeElement.innerHTML = '🌞'
+      contentElement.classList.add('night')
     }
   }, false)
 </script>
