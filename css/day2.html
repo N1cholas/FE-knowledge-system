@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day2</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <style>
+        ul, li {
+            list-style: none;
+        }
+
+        li::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            display: inline-block;
+            border-color: transparent transparent transparent #D7CCC8;
+            border-width: 6px 10.4px;
+            transform: translate(6px);
+        }
+
+        li > ul {
+            display: none;
+        }
+
+        li.expand > ul {
+            display: block;
+        }
+
+        li.expand::before {
+            transform: rotate(90deg) translateX(6px);
+        }
+    </style>
+    <style>
+        .icon {
+            display: inline-block;
+            width: 0;
+            font-size: 0;
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .star {
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #FFCDD2;
+        }
+
+        .star::after {
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid #FFCDD2;
+            position: absolute;
+            content: "";
+            top: 30px;
+            left: -50px;
+        }
+
+        .arrow {
+            width: 40px;
+            height: 40px;
+            margin: 0 40px;
+            background-color: #BBDEFB;
+        }
+
+        .arrow::before {
+            position: absolute;
+            left: -40px;
+            border: solid 20px #BBDEFB;
+            border-left-color: transparent;
+            content: "";
+        }
+
+        .arrow::after {
+            position: absolute;
+            right: -40px;
+            border: solid 20px transparent;
+            border-left-color: #BBDEFB;
+            content: "";
+        }
+
+        .pacman {
+            width: 0px;
+            height: 0px;
+            border-right: 40px solid transparent;
+            border-top: 40px solid #E1BEE7;
+            border-left: 40px solid #E1BEE7;
+            border-bottom: 40px solid #E1BEE7;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+    </style>
+    <style>
+        hr {
+            margin: 30px 0;
+        }
+
+        .pie, .pie::before {
+            display: inline-block;
+        }
+
+        .pie {
+            position: relative;
+            width: 0;
+            border-radius: 50%;
+            border-width: 75px;
+            border-color: #3c7 #3c7 #37c #37c;
+            transform: rotate(45deg);
+            border-style: solid;
+        }
+
+        .pie::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            border-radius: 50%;
+            border-width: 75px;
+            border-color: #37c #37c transparent transparent;
+            border-style: solid;
+            transform: translate(-50%, -50%);
+        }
+
+        .pie.convex::before {
+            border-color: transparent transparent #3c7 #3c7;
+        }
+
+        .pie.one::before {
+            transform: translate(-50%, -50%) rotate(0.1turn);
+        }
+
+        .pie.two::before {
+            transform: translate(-50%, -50%) rotate(0.3turn);
+        }
+
+        .pie.three::before {
+            transform: translate(-50%, -50%) rotate(0.6turn);
+        }
+
+        .pie.four::before {
+            transform: translate(-50%, -50%) rotate(0.8turn);
+        }
+
+        .pie.animation::before {
+            animation: spine 10s linear infinite,
+            convex 10s step-end infinite;
+            animation-play-state: paused;
+            animation-delay: inherit;
+        }
+
+        @keyframes spine {
+            to {
+                transform: translate(-50%, -50%) rotate(1turn);
+            }
+        }
+
+        @keyframes convex {
+            50% {
+                border-color: transparent transparent #3c7 #3c7;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul class="tree">
+    <li>项目1</li>
+    <li>项目2</li>
+    <li class="expand">项目3
+        <ul>
+            <li>子项3.1</li>
+            <li>子项3.2</li>
+            <li>子项3.3</li>
+        </ul>
+    </li>
+    <li>项目4
+        <ul>
+            <li>子项4.1</li>
+            <li>子项4.2</li>
+        </ul>
+    </li>
+    <li>项目5</li>
+</ul>
+<hr>
+<div class="icon star"></div>
+<div class="icon arrow"></div>
+<div class="icon pacman"></div>
+<hr>
+<div class="pie one"></div>
+<div class="pie two"></div>
+<div class="pie convex three"></div>
+<div class="pie convex four"></div>
+<!--10%-->
+<div class="pie animation" style="animation-delay: -1s"></div>
+<!--30%-->
+<div class="pie animation" style="animation-delay: -3s"></div>
+<!--60%-->
+<div class="pie animation" style="animation-delay: -6s"></div>
+<!--80%-->
+<div class="pie animation" style="animation-delay: -8s"></div>
+<script>
+  const treeElement = document.querySelector('.tree')
+
+  treeElement.addEventListener('click', e => {
+    const element = e.target
+    if (element.tagName === 'LI') {
+      if (element.classList.contains('expand')) {
+        element.classList.remove('expand')
+      } else {
+        element.classList.add('expand')
+      }
+    }
+  }, false)
+</script>
+</body>
+</html>
