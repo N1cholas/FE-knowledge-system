@@ -4,7 +4,7 @@
 
 把一个页面当成一个完整的应用，那么就会有个体的参与
 
-![ram](./ram.svg)
+![ram.png](http://tva1.sinaimg.cn/large/006ZmkSvly1gww1zmp5pbj31fo0b1jvj.jpg)
 
 ### 个体
 
@@ -47,7 +47,7 @@ console.log(a) // 1
 console.log(b) // 2
 ```
 
-![ram](./draw2.svg)
+![Untitled-2021-10-25-1822.png](http://tva1.sinaimg.cn/large/006ZmkSvgy1gww244pdbbj31960figo5.jpg)
 
 ```js
 const s = 'js knowledge system'
@@ -67,7 +67,7 @@ a === b // 1 === 2
 基础类型是可以访问方法，原因是`JS`为每一种基础类型都提供了**包装对象**
 
 ```js
-const _s = new String('js') // 使用包装对象构建对象
+const _s = String('js') // 使用包装对象构建对象
 
 _s.chatAt(0) // 包装对象实例访问方法
 
@@ -94,7 +94,7 @@ console.log(person2.age) // 21
 
 变量`person`和值对象并不是直接连接的，而是通过值对象的内存地址进行对象访问，并且将内存地址复制给`person2`（浅拷贝）
 
-![draw](./draw3.svg)
+![img](https://images.xiaozhuanlan.com/photo/2020/57dc4944a62a178282158e28f5e1bd38.png)
 
 引用类型在比较时也是比较内存地址
 
@@ -986,7 +986,7 @@ Array.prototype._map = function(fn, context) {
 
 #### 手写Promise
 
-> [符合Promise A+规范](../specification/PromiseAPlus.md)
+> [符合Promise A+规范](../Specification/PromiseAPlus.md)
 
 ### 柯里化
 
