@@ -1,0 +1,40 @@
+img {
+    width: 100%;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+label {
+    font-size: 30px;
+}
+
+label::before {
+    content: '🌞';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input:checked + #app {
+    color: #fff;
+    background: #000;
+}
+
+input:checked + #app label::before {
+    content: '🌜';
+}
+
+#app {
+    height: 100vh;
+    padding: 8px;
+    transition: all .3s;
+}
+
+body {
+    margin: 0;
+}
