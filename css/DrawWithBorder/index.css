@@ -1,0 +1,58 @@
+.icon {
+    font-size: 0;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.star {
+    color: #BBDEFB;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid currentColor;
+}
+
+.star::after {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid currentColor;
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: -50px;
+}
+
+.arrow {
+    color: #E1BEE7;
+    width: 40px;
+    height: 40px;
+    margin: 0 40px;
+    background-color: currentColor;
+}
+
+.arrow::before {
+    position: absolute;
+    left: -40px;
+    border: solid 20px currentColor;
+    border-left-color: transparent;
+    content: "";
+}
+
+.arrow::after {
+    position: absolute;
+    right: -40px;
+    border: solid 20px transparent;
+    border-left-color: currentColor;
+    content: "";
+}
+
+.pacman {
+    color: #F0F4C3;
+    width: 0;
+    height: 0;
+    border-right: 40px solid transparent;
+    border-top: 40px solid currentColor;
+    border-left: 40px solid currentColor;
+    border-bottom: 40px solid currentColor;
+    border-radius: 50%;
+}
