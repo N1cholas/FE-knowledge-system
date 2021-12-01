@@ -23,3 +23,7 @@ var minArray2 = function (numbers) {
 
   return numbers[low]
 };
+
+var minArray3 = function (numbers) {
+  return numbers.reduce((p, c) => p === c ? c : Math.min(p, c))
+}
