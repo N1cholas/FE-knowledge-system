@@ -1,36 +1,41 @@
 /**
  * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
  * }
  */
 /**
- * @param {ListNode} list1
- * @param {ListNode} list2
+ * @param {ListNode} l1
+ * @param {ListNode} l2
  * @return {ListNode}
  */
-var mergeTwoLists = function(list1, list2) {
-  const head = { next: null }
+var mergeTwoLists = function(l1, l2) {
 
-  let res = head
+  const head = {
+    next: null
+  }
 
-  while (list1 || list2) {
-    if (!list1) {
-      res.next = list2
-      list2 = list2.next
-    } else if (!list2) {
-      res.next = list1
-      list1 = list1.next
-    } else if (list1.val <= list2.val) {
-      res.next = list1
-      list1 = list1.next
-    } else if (list1.val > list2.val) {
-      res.next = list2
-      list2 = list2.next
+  let node = head
+
+  while (l1 || l2) {
+
+    if (!l1) {
+      node.next = l2
+      l2 = l2.next
+    } else if (!l2) {
+      node.next = l1
+      l1 = l1.next
+    } else if (l1.val <= l2.val) {
+      node.next = l1
+      l1 = l1.next
+    } else if (l1.val > l2.val) {
+      node.next = l2
+      l2 = l2.next
     }
 
-    res = res.next
+    node = node.next
+
   }
 
   return head.next
