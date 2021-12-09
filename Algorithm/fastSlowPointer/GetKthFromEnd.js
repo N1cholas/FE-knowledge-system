@@ -8,15 +8,14 @@
 /**
  * @param {ListNode} head
  * @param {number} k
- * @return {ListNode}
+ * @return {number}
  */
-var getKthFromEnd = function(head, k) {
+var kthToLast = function(head, k) {
     let slow = head
     let fast = head
     
-    while (fast && k) {
+    while (k--) {
         fast = fast.next
-        k--
     }
     
     while (fast) {
@@ -24,5 +23,5 @@ var getKthFromEnd = function(head, k) {
         slow = slow.next
     }
     
-    return slow
+    return slow.val
 };
