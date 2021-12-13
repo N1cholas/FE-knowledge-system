@@ -12,7 +12,7 @@ var plusOne = function(digits) {
         }
     }
     
-    if (isNot9Index === -1) {
+    if (isNot9Index === - 1) {
         const res = new Array(digits.length + 1).fill(0)
         res[0] = 1
         return res
@@ -20,8 +20,8 @@ var plusOne = function(digits) {
     
     digits[isNot9Index]++
     
-    for (let i = isNot9Index + 1; i < digits.length; i++) {
-        digits[i] = 0
+    for (let j = isNot9Index + 1; j < digits.length; j++) {
+        digits[j] = 0
     }
     
     return digits

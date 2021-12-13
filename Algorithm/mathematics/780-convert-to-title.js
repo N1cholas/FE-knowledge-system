@@ -7,9 +7,9 @@ var convertToTitle = function(columnNumber) {
     
     while (columnNumber) {
         columnNumber--
-        const curStr = String.fromCharCode(columnNumber % 26 + 'A'.charCodeAt())
-        res.push(curStr)
+        const code = String.fromCharCode(columnNumber % 26 + 'A'.charCodeAt())
         columnNumber = ~~(columnNumber / 26)
+        res.push(code)
     }
     
     return res.reverse().join('')

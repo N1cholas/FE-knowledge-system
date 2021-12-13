@@ -11,10 +11,10 @@
  * @return {TreeNode}
  */
 var sortedArrayToBST = function(nums) {
-    function toBST(array, l, r) {
+    function toBST(nums, l, r) {
         if (l > r) return null
         
-        const mid = Math.floor((r - l) / 2) + l
+        const mid = ~~((r - l) / 2) + l
         
         const node = new TreeNode(nums[mid])
         
@@ -23,6 +23,6 @@ var sortedArrayToBST = function(nums) {
         
         return node
     }
-
+    
     return toBST(nums, 0, nums.length - 1)
 };

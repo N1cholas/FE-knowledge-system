@@ -7,11 +7,8 @@ var lengthOfLastWord = function(s) {
     
     for (let i = s.length - 1; i >= 0; i--) {
         if (s.charAt(i) === ' ' && len !== 0) break
-        
-        if (s.charAt(i) !== ' ') len++
+        else if (s.charAt(i) !== ' ') len++
     }
     
     return len
 };
-
-console.log(lengthOfLastWord('   fly me   to   the moon  '))

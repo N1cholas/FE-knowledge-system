@@ -12,17 +12,18 @@
  */
 var diameterOfBinaryTree = function(root) {
     let ans = 0
-    function depth(node) {
-        if (!node) return 0
+    
+    function dfs(root) {
+        if (!root) return 0
+    
+        const leftDepth = root.left ? dfs(root.left) + 1 : 0
+        const rightDepth = root.right ? dfs(root.right) + 1 : 0
         
-        const leftDepth = depth(node.left)
-        const rightDepth = depth(node.right)
-        
-        ans = Math.max(ans, leftDepth + rightDepth + 1)
-        return Math.max(leftDepth, rightDepth) + 1
+        ans = Math.max(ans, leftDepth + rightDepth)
+        return Math.max(leftDepth, rightDepth)
     }
     
-    depth(root)
+    dfs(root)
     
-    return ans - 1
+    return ans
 };

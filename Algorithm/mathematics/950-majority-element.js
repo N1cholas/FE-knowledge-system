@@ -3,15 +3,15 @@
  * @return {number}
  */
 var majorityElement = function(nums) {
-    let currentElement = null
+    let candidate = -1
     let count = 0
     
     for (let i = 0; i < nums.length; i++) {
         if (count === 0) {
-            currentElement = nums[i]
+            candidate = nums[i]
         }
         
-        if (currentElement === nums[i]) {
+        if (nums[i] === candidate) {
             count++
         } else {
             count--
@@ -21,8 +21,8 @@ var majorityElement = function(nums) {
     count = 0
     
     for (let j = 0; j < nums.length; j++) {
-        if (currentElement === nums[j]) count++
+        if (candidate === nums[j]) count++
     }
     
-    return count * 2 > nums.length ? currentElement : -1
+    return count * 2 > nums.length ? candidate : -1
 };

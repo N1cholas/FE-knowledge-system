@@ -14,10 +14,9 @@ var sumOfLeftLeaves = function(root) {
     function sum(node, isLeft) {
         if (!node) return 0
         
-        const leftSum = sum(node.left, true)
-        const rightSum = sum(node.right, false)
-        
-        return isLeft && !node.left && !node.right ? node.val + leftSum + rightSum : leftSum + rightSum
+        const sumOfLeaves = sum(node.left, true) + sum(node.right, false)
+    
+        return isLeft && !node.left && !node.right ? node.val + sumOfLeaves : sumOfLeaves
     }
     
     return sum(root, false)
