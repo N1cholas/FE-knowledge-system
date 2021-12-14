@@ -8,3 +8,8 @@
 
 [Algorithm](Algorithm/README.md)
 
+Plan
+
+- [ ] 150 easy
+- [ ] 50 middle
+

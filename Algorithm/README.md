@@ -1,16 +1,25 @@
-# 算法
+# Algorithm
 > 记录算法的最优解
 
-## [map存取](map)
+目前整理了13道题
 
-## [二分查找](binarySearch)
-
-## [数学相关](./mathematics)
-
-## [数据结构相关](./dataStructure)
-
-## [动态规划](./dynamicProgramming)
-
-## [双指针](./doublePointer)
-
-## [快慢指针](./fastSlowPointer)
+- 数字相关
+  - [001-two-sum](./1-50/001-two-sum.js)
+  - [003-int-reverse](./1-50/003-int-reverse.js)
+  - [008-contains-duplicate](./1-50/008-contains-duplicate.js)
+  - [012-find-repeat-number](./1-50/012-find-repeat-number.js)
+  - [015-roman-2-int](./1-50/015-roman-2-int.js)
+- 查找相关
+  - [002-binary-search](./1-50/002-binary-search.js)
+- 数据结构相关
+  - [004-queue](./1-50/004-queue.js)
+  - [007-valid-brackets](./1-50/007-valid-brackets.js)
+  - [009-reverse-list](./1-50/009-reverse-list.js)
+- 字符串相关
+  - [005-longest-common-prefix](./1-50/005-longest-common-prefix.js)
+- 动态规划
+  - [010-climb-stairs](./1-50/010-climb-stairs.js)
+- 数组相关
+  - [013-merge-2-sorted-array](./1-50/013-merge-2-sorted-array.js)
+- 其他
+  - [011-max-profit](./1-50/011-max-profit.js)
