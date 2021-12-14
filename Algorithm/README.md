@@ -11,6 +11,7 @@
   - [024-is-palindrome-number](./1-50/024-is-palindrome-number.js)
 - 查找相关
   - [002-binary-search](./1-50/002-binary-search.js)
+  - [026-is-bad-version](./1-50/026-is-bad-version.js)
 - 栈相关
   - [007-valid-brackets](./1-50/007-valid-brackets.js)
 - 链表相关
