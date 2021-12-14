@@ -7,6 +7,7 @@
   - [008-contains-duplicate](./1-50/008-contains-duplicate.js)
   - [012-find-repeat-number](./1-50/012-find-repeat-number.js)
   - [015-roman-2-int](./1-50/015-roman-2-int.js)
+  - [022-single-number](./1-50/022-single-number.js)
 - 查找相关
   - [002-binary-search](./1-50/002-binary-search.js)
 - 栈相关
