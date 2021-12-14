@@ -19,6 +19,7 @@
   - [016-merge-2-sorted-list](./1-50/016-merge-2-sorted-list.js)
 - 字符串相关
   - [005-longest-common-prefix](./1-50/005-longest-common-prefix.js)
+  - [017-sum-2-string](./1-50/017-sum-2-string.js)
 - 动态规划
   - [010-climb-stairs](./1-50/010-climb-stairs.js)
 - 数组相关
