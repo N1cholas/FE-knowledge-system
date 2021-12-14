@@ -1,7 +1,7 @@
 # Algorithm
 > 记录算法的最优解
 
-目前整理了13道题
+目前整理的算法题
 
 - 数字相关
   - [001-two-sum](./1-50/001-two-sum.js)
@@ -11,10 +11,12 @@
   - [015-roman-2-int](./1-50/015-roman-2-int.js)
 - 查找相关
   - [002-binary-search](./1-50/002-binary-search.js)
-- 数据结构相关
-  - [004-queue](./1-50/004-queue.js)
+- 栈相关
   - [007-valid-brackets](./1-50/007-valid-brackets.js)
+- 链表相关
+  - [004-queue](./1-50/004-queue.js)
   - [009-reverse-list](./1-50/009-reverse-list.js)
+  - [016-merge-2-sorted-list](./1-50/016-merge-2-sorted-list.js)
 - 字符串相关
   - [005-longest-common-prefix](./1-50/005-longest-common-prefix.js)
 - 动态规划
