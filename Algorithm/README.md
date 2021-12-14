@@ -23,5 +23,6 @@
 - 数组相关
   - [013-merge-2-sorted-array](./1-50/013-merge-2-sorted-array.js)
   - [018-min-number-in-rotate-array](./1-50/018-min-number-in-rotate-array.js)
+  - [019-max-continuous-sub-array](./1-50/019-max-continuous-sub-array.js)
 - 其他
   - [011-max-profit](./1-50/011-max-profit.js)
