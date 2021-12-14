@@ -1,8 +1,6 @@
 # Algorithm
 > 记录算法的最优解
 
-目前整理的算法题
-
 - 数字相关
   - [001-two-sum](./1-50/001-two-sum.js)
   - [003-int-reverse](./1-50/003-int-reverse.js)
@@ -24,5 +22,6 @@
   - [010-climb-stairs](./1-50/010-climb-stairs.js)
 - 数组相关
   - [013-merge-2-sorted-array](./1-50/013-merge-2-sorted-array.js)
+  - [018-min-number-in-rotate-array](./1-50/018-min-number-in-rotate-array.js)
 - 其他
   - [011-max-profit](./1-50/011-max-profit.js)
