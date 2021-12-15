@@ -19,6 +19,8 @@
   - [009-reverse-list](./1-50/009-reverse-list.js)
   - [016-merge-2-sorted-list](./1-50/016-merge-2-sorted-list.js)
   - [020-get-kth-from-end-in-list](./1-50/020-get-kth-from-end-in-list.js)
+- 树相关
+  - [030-invert-tree](./1-50/030-invert-tree.js)
 - 字符串相关
   - [005-longest-common-prefix](./1-50/005-longest-common-prefix.js)
   - [017-sum-2-string](./1-50/017-sum-2-string.js)
