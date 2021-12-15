@@ -25,6 +25,7 @@
   - [021-is-unique](./1-50/021-is-unique.js)
 - 动态规划
   - [010-climb-stairs](./1-50/010-climb-stairs.js)
+  - [029-fib](./1-50/029-fib.js)
 - 数组相关
   - [013-merge-2-sorted-array](./1-50/013-merge-2-sorted-array.js)
   - [018-min-number-in-rotate-array](./1-50/018-min-number-in-rotate-array.js)
