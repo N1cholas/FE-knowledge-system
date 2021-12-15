@@ -33,6 +33,7 @@
   - [018-min-number-in-rotate-array](./1-50/018-min-number-in-rotate-array.js)
   - [019-max-continuous-sub-array](./1-50/019-max-continuous-sub-array.js)
   - [023-move-zeros](./1-50/023-move-zeros.js)
+  - [031-remove-duplicate](./1-50/031-remove-duplicate.js)
 - 其他
   - [011-max-profit](./1-50/011-max-profit.js)
   - [027-spiral-order](./1-50/027-spiral-order.js)
