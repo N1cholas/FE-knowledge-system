@@ -10,6 +10,7 @@
   - [022-single-number](./1-50/022-single-number.js)
   - [024-is-palindrome-number](./1-50/024-is-palindrome-number.js)
   - [032-sqrt](./1-50/032-sqrt.js)
+  - [033-last-remaining](./1-50/033-last-remaining.js)
 - 查找相关
   - [002-binary-search](./1-50/002-binary-search.js)
   - [026-is-bad-version](./1-50/026-is-bad-version.js)
