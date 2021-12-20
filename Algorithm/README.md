@@ -45,6 +45,7 @@
   - [042-match-sub-string](./1-50/042-match-sub-string.js)
   - [046-reverse-words](./1-50/046-reverse-words.js)
   - [057-count-words](./51-100/057-count-words.js)
+  - [061-first-unique](./51-100/061-first-unique.js)
 - 动态规划
   - [010-climb-stairs](./1-50/010-climb-stairs.js)
   - [029-fib](./1-50/029-fib.js)
