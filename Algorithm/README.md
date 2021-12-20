@@ -28,6 +28,7 @@
 - 树相关
   - [030-invert-tree](./1-50/030-invert-tree.js)
   - [037-max-depth](./1-50/037-max-depth.js)
+  - [045-post-order-traversal](./1-50/045-post-order-traversal.js)
 - 堆相关
   - [038-get-least-numbers](./1-50/038-get-least-numbers.js)
 - 字符串相关
