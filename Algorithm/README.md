@@ -34,6 +34,7 @@
   - [045-post-order-traversal](./1-50/045-post-order-traversal.js)
   - [050-is-symmetric-tree](./1-50/050-is-symmetric-tree.js)
   - [058-diameter-of-binary-tree](./51-100/058-diameter-of-binary-tree.js)
+  - [060-has-path-sum](./51-100/060-has-path-sum.js)
 - 堆相关
   - [038-get-least-numbers](./1-50/038-get-least-numbers.js)
 - 字符串相关
