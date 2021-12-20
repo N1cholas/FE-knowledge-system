@@ -18,6 +18,7 @@
   - [039-search-insert](./1-50/039-search-insert.js)
 - 栈相关
   - [007-valid-brackets](./1-50/007-valid-brackets.js)
+  - [047-min-stack](./1-50/047-min-stack.js)
 - 链表相关
   - [004-queue](./1-50/004-queue.js)
   - [009-reverse-list](./1-50/009-reverse-list.js)
