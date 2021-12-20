@@ -12,6 +12,7 @@
   - [032-sqrt](./1-50/032-sqrt.js)
   - [033-last-remaining](./1-50/033-last-remaining.js)
   - [036-yang-hui-triangle](./1-50/036-yang-hui-triangle.js)
+  - [038-get-least-numbers](./1-50/038-get-least-numbers.js)
 - 查找相关
   - [002-binary-search](./1-50/002-binary-search.js)
   - [026-is-bad-version](./1-50/026-is-bad-version.js)
