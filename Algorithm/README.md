@@ -12,10 +12,10 @@
   - [032-sqrt](./1-50/032-sqrt.js)
   - [033-last-remaining](./1-50/033-last-remaining.js)
   - [036-yang-hui-triangle](./1-50/036-yang-hui-triangle.js)
-  - [038-get-least-numbers](./1-50/038-get-least-numbers.js)
 - 查找相关
   - [002-binary-search](./1-50/002-binary-search.js)
   - [026-is-bad-version](./1-50/026-is-bad-version.js)
+  - [039-search-insert](./1-50/039-search-insert.js)
 - 栈相关
   - [007-valid-brackets](./1-50/007-valid-brackets.js)
 - 链表相关
@@ -26,6 +26,8 @@
 - 树相关
   - [030-invert-tree](./1-50/030-invert-tree.js)
   - [037-max-depth](./1-50/037-max-depth.js)
+- 堆相关
+  - [038-get-least-numbers](./1-50/038-get-least-numbers.js)
 - 字符串相关
   - [005-longest-common-prefix](./1-50/005-longest-common-prefix.js)
   - [017-sum-2-string](./1-50/017-sum-2-string.js)
