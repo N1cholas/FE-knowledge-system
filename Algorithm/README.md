@@ -11,6 +11,7 @@
   - [024-is-palindrome-number](./1-50/024-is-palindrome-number.js)
   - [032-sqrt](./1-50/032-sqrt.js)
   - [033-last-remaining](./1-50/033-last-remaining.js)
+  - [036-yang-hui-triangle](./1-50/036-yang-hui-triangle.js)
 - 查找相关
   - [002-binary-search](./1-50/002-binary-search.js)
   - [026-is-bad-version](./1-50/026-is-bad-version.js)
@@ -23,10 +24,12 @@
   - [020-get-kth-from-end-in-list](./1-50/020-get-kth-from-end-in-list.js)
 - 树相关
   - [030-invert-tree](./1-50/030-invert-tree.js)
+  - [037-max-depth](./1-50/037-max-depth.js)
 - 字符串相关
   - [005-longest-common-prefix](./1-50/005-longest-common-prefix.js)
   - [017-sum-2-string](./1-50/017-sum-2-string.js)
   - [021-is-unique](./1-50/021-is-unique.js)
+  - [035-replace-space](./1-50/035-replace-space.js)
 - 动态规划
   - [010-climb-stairs](./1-50/010-climb-stairs.js)
   - [029-fib](./1-50/029-fib.js)
