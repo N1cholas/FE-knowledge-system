@@ -62,7 +62,8 @@
   - [031-remove-duplicate](./1-50/031-remove-duplicate.js)
   - [041-intersection](./1-50/041-intersection.js)
   - [055-intersection-2](./51-100/055-intersection-2.js)
-  - [063-sorted-squares](./51-100/063-sorted-squares.js)
+  - [064-sorted-squares](./51-100/064-sorted-squares.js)
+  - [071-reverse-string-array](./51-100/071-reverse-string-array.js)
 - 其他
   - [011-max-profit](./1-50/011-max-profit.js)
   - [027-spiral-order](./1-50/027-spiral-order.js)
