@@ -49,6 +49,7 @@
   - [057-count-words](./51-100/057-count-words.js)
   - [061-first-unique](./51-100/061-first-unique.js)
   - [062-compress-string](./51-100/062-compress-string.js)
+  - [068-is-palindrome-string](./51-100/068-is-palindrome-string.js)
 - 动态规划
   - [010-climb-stairs](./1-50/010-climb-stairs.js)
   - [029-fib](./1-50/029-fib.js)
