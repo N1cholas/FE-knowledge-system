@@ -63,3 +63,4 @@
 - 其他
   - [011-max-profit](./1-50/011-max-profit.js)
   - [027-spiral-order](./1-50/027-spiral-order.js)
+  - [066-distribute-candies](./51-100/066-distribute-candies.js)
