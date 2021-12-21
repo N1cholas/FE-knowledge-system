@@ -51,6 +51,7 @@
   - [082-lowest-common-ancestor](./51-100/082-lowest-common-ancestor.js)
 - 堆相关
   - [038-get-least-numbers](./1-50/038-get-least-numbers.js)
+  - [091-third-max](./51-100/091-third-max.js)
 - 字符串相关
   - [005-longest-common-prefix](./1-50/005-longest-common-prefix.js)
   - [017-sum-2-string](./1-50/017-sum-2-string.js)
