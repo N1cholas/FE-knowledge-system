@@ -15,6 +15,7 @@
   - [051-majority-element](./51-100/051-majority-element.js)
   - [072-add-binary](./51-100/072-add-binary.js)
   - [074-print-numbers](./51-100/074-print-numbers.js)
+  - [075-happy-number](./51-100/075-happy-number.js)
 - 查找相关
   - [002-binary-search](./1-50/002-binary-search.js)
   - [026-is-bad-version](./1-50/026-is-bad-version.js)
