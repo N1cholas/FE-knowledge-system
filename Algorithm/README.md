@@ -18,7 +18,7 @@
   - [074-print-numbers](./51-100/074-print-numbers.js)
   - [075-happy-number](./51-100/075-happy-number.js)
   - [084-find-max-continue-ones](./51-100/084-find-max-continue-ones.js)
-  - [087-min-moves](./51-100/087-min-moves.js)
+  - [088-plus-one](./51-100/088-plus-one.js)
 - 二分查找相关
   - [002-binary-search](./1-50/002-binary-search.js)
   - [026-is-bad-version](./1-50/026-is-bad-version.js)
@@ -80,3 +80,4 @@
   - [011-max-profit](./1-50/011-max-profit.js)
   - [027-spiral-order](./1-50/027-spiral-order.js)
   - [066-distribute-candies](./51-100/066-distribute-candies.js)
+  - [087-min-moves](./51-100/087-min-moves.js)
