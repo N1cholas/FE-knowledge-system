@@ -16,11 +16,13 @@
   - [072-add-binary](./51-100/072-add-binary.js)
   - [074-print-numbers](./51-100/074-print-numbers.js)
   - [075-happy-number](./51-100/075-happy-number.js)
+  - [084-find-max-continue-ones](./51-100/084-find-max-continue-ones.js)
 - 查找相关
   - [002-binary-search](./1-50/002-binary-search.js)
   - [026-is-bad-version](./1-50/026-is-bad-version.js)
   - [039-search-insert](./1-50/039-search-insert.js)
   - [053-two-sum-2](./51-100/053-two-sum-2.js)
+  - [085-missing-number](./51-100/085-missing-number.js)
 - 广度搜索和深度搜索相关
   - [076-flood-fill](./51-100/076-flood-fill.js)
 - 栈相关
@@ -72,7 +74,6 @@
   - [055-intersection-2](./51-100/055-intersection-2.js)
   - [064-sorted-squares](./51-100/064-sorted-squares.js)
   - [071-reverse-string-array](./51-100/071-reverse-string-array.js)
-  - [084-find-max-continue-ones](./51-100/084-find-max-continue-ones.js)
 - 其他
   - [011-max-profit](./1-50/011-max-profit.js)
   - [027-spiral-order](./1-50/027-spiral-order.js)
