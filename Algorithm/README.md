@@ -87,3 +87,4 @@
   - [066-distribute-candies](./51-100/066-distribute-candies.js)
   - [087-min-moves](./51-100/087-min-moves.js)
   - [089-convert-to-title](./51-100/089-convert-to-title.js)
+  - [097-hash-set](./51-100/097-hash-set.js)
