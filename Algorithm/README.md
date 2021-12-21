@@ -13,6 +13,7 @@
   - [033-last-remaining](./1-50/033-last-remaining.js)
   - [036-yang-hui-triangle](./1-50/036-yang-hui-triangle.js)
   - [051-majority-element](./51-100/051-majority-element.js)
+  - [072-add-binary](./51-100/072-add-binary.js)
 - 查找相关
   - [002-binary-search](./1-50/002-binary-search.js)
   - [026-is-bad-version](./1-50/026-is-bad-version.js)
