@@ -33,6 +33,7 @@
   - [020-get-kth-from-end-in-list](./1-50/020-get-kth-from-end-in-list.js)
   - [040-is-palindrome-list](./1-50/040-is-palindrome-list.js)
   - [044-cycle-list](./1-50/044-cycle-list.js)
+  - [081-intersection-node](./51-100/081-intersection-node.js)
 - 树相关
   - [030-invert-tree](./1-50/030-invert-tree.js)
   - [037-max-depth](./1-50/037-max-depth.js)
