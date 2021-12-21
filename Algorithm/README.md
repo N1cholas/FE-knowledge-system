@@ -49,6 +49,7 @@
   - [067-in-order-traversal](./51-100/067-in-order-traversal.js)
   - [069-merge-two-trees](./51-100/069-merge-two-trees.js)
   - [082-lowest-common-ancestor](./51-100/082-lowest-common-ancestor.js)
+  - [093-sub-tree](./51-100/093-sub-tree.js)
 - 堆相关
   - [038-get-least-numbers](./1-50/038-get-least-numbers.js)
   - [091-third-max](./51-100/091-third-max.js)
