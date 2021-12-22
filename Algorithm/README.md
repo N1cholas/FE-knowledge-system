@@ -19,6 +19,7 @@
   - [075-happy-number](51-100-easy/075-happy-number.js)
   - [084-find-max-continue-ones](51-100-easy/084-find-max-continue-ones.js)
   - [088-plus-one](51-100-easy/088-plus-one.js)
+  - [101-find-poisoned-duration](101-150-easy/101-find-poisoned-duration.js)
 - 二分查找相关
   - [002-binary-search](1-50-easy/002-binary-search.js)
   - [026-is-bad-version](1-50-easy/026-is-bad-version.js)
