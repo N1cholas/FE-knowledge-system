@@ -53,6 +53,7 @@
   - [093-sub-tree](./51-100/093-sub-tree.js)
   - [095-lowest-common-ancestor-2](./51-100/095-lowest-common-ancestor-2.js)
   - [099-sorted-array-to-BST](./51-100/099-sorted-array-to-BST.js)
+  - [100-is-balance-tree](./51-100/100-is-balance-tree.js)
 - 堆相关
   - [038-get-least-numbers](./1-50/038-get-least-numbers.js)
   - [091-third-max](./51-100/091-third-max.js)
