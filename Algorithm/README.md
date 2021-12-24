@@ -19,7 +19,9 @@
   - [075-happy-number](51-100-easy/075-happy-number.js)
   - [084-find-max-continue-ones](51-100-easy/084-find-max-continue-ones.js)
   - [088-plus-one](51-100-easy/088-plus-one.js)
+  - [089-convert-to-title](51-100-easy/089-convert-to-title.js)
   - [101-find-poisoned-duration](101-150-easy/101-find-poisoned-duration.js)
+  - [108-to-hex](101-150-easy/108-to-hex.js)
 - 二分查找相关
   - [002-binary-search](1-50-easy/002-binary-search.js)
   - [026-is-bad-version](1-50-easy/026-is-bad-version.js)
@@ -94,5 +96,4 @@
   - [027-spiral-order](1-50-easy/027-spiral-order.js)
   - [066-distribute-candies](51-100-easy/066-distribute-candies.js)
   - [087-min-moves](51-100-easy/087-min-moves.js)
-  - [089-convert-to-title](51-100-easy/089-convert-to-title.js)
   - [097-hash-set](51-100-easy/097-hash-set.js)
