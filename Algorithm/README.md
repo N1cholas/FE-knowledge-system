@@ -87,6 +87,7 @@
   - [064-sorted-squares](51-100-easy/064-sorted-squares.js)
   - [071-reverse-string-array](51-100-easy/071-reverse-string-array.js)
   - [098-find-continues-sequence](51-100-easy/098-find-continues-sequence.js)
+  - [105-exchange](101-150-easy/105-exchange.js)
 - 其他
   - [011-max-profit](1-50-easy/011-max-profit.js)
   - [027-spiral-order](1-50-easy/027-spiral-order.js)
