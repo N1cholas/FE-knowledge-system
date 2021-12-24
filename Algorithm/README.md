@@ -60,6 +60,7 @@
 - 堆相关
   - [038-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-third-max](51-100-easy/091-third-max.js)
+  - [106-next-greater-element](101-150-easy/106-next-greater-element.js)
 - 字符串相关
   - [005-longest-common-prefix](1-50-easy/005-longest-common-prefix.js)
   - [017-sum-2-string](1-50-easy/017-sum-2-string.js)
