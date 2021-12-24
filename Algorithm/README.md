@@ -82,6 +82,8 @@
 - 动态规划
   - [010-climb-stairs](1-50-easy/010-climb-stairs.js)
   - [029-fib](1-50-easy/029-fib.js)
+- 贪心
+  - [115-place-flowers](101-150-easy/115-place-flowers.js)
 - 数组相关
   - [013-merge-2-sorted-array](1-50-easy/013-merge-2-sorted-array.js)
   - [018-min-number-in-rotate-array](1-50-easy/018-min-number-in-rotate-array.js)
