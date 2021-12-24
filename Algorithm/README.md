@@ -28,6 +28,7 @@
   - [039-search-insert](1-50-easy/039-search-insert.js)
   - [085-missing-number](51-100-easy/085-missing-number.js)
   - [086-count-number](51-100-easy/086-count-number.js)
+  - [109-arrange-coins](101-150-easy/109-arrange-coins.js)
 - 广度搜索和深度搜索相关
   - [076-flood-fill](51-100-easy/076-flood-fill.js)
 - 栈相关
