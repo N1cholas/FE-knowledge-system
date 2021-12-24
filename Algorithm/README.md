@@ -34,6 +34,7 @@
   - [007-valid-brackets](1-50-easy/007-valid-brackets.js)
   - [047-min-stack](1-50-easy/047-min-stack.js)
   - [118-remove-duplicate](101-150-easy/118-remove-duplicate.js)
+  - [119-queue](101-150-easy/119-queue.js)
 - 链表相关
   - [004-queue](1-50-easy/004-queue.js)
   - [009-reverse-list](1-50-easy/009-reverse-list.js)
