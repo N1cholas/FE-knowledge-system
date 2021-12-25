@@ -114,3 +114,4 @@
   - [089-convert-to-title](51-100-easy/089-convert-to-title.js)
   - [110-title-to-number](101-150-easy/110-title-to-number.js)
   - [123-fizz-buzz](101-150-easy/123-fizz-buzz.js)
+  - [126-matrix-reshape](101-150-easy/126-matrix-reshape.js)
