@@ -25,6 +25,7 @@
   - [125-add-digits](101-150-easy/125-add-digits.js)
   - [129-is-power-of-three](101-150-easy/129-is-power-of-three.js)
   - [130-contains-duplicate-2](101-150-easy/130-contains-duplicate-2.js)
+  - [131-missing-number-2](101-150-easy/131-missing-number-2.js)
 - 二分查找相关
   - [002-binary-search](1-50-easy/002-binary-search.js)
   - [026-is-bad-version](1-50-easy/026-is-bad-version.js)
