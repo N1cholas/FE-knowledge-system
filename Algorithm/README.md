@@ -22,6 +22,7 @@
   - [101-find-poisoned-duration](101-150-easy/101-find-poisoned-duration.js)
   - [108-to-hex](101-150-easy/108-to-hex.js)
   - [124-get-max](101-150-easy/124-get-max.js)
+  - [125-add-digits](101-150-easy/125-add-digits.js)
 - 二分查找相关
   - [002-binary-search](1-50-easy/002-binary-search.js)
   - [026-is-bad-version](1-50-easy/026-is-bad-version.js)
