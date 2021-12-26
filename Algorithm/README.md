@@ -71,6 +71,7 @@
   - [104-binary-tree-paths](101-150-easy/104-binary-tree-paths.js)
   - [114-same-tree](101-150-easy/114-same-tree.js)
   - [116-find-second-min-element](101-150-easy/116-find-second-min-element.js)
+  - [133-find-node-BST](101-150-easy/133-find-node-BST.js)
 - 堆相关
   - [038-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-third-max](51-100-easy/091-third-max.js)
