@@ -71,7 +71,7 @@
   - [104-binary-tree-paths](101-150-easy/104-binary-tree-paths.js)
   - [114-same-tree](101-150-easy/114-same-tree.js)
   - [116-find-second-min-element](101-150-easy/116-find-second-min-element.js)
-  - [133-find-node-BST](101-150-easy/133-find-node-BST.js)
+  - [133-find-node-BST](101-150-easy/133-find-node-in-BST.js)
 - 堆相关
   - [038-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-third-max](51-100-easy/091-third-max.js)
@@ -91,6 +91,7 @@
   - [090-reverse-vowels](51-100-easy/090-reverse-vowels.js)
   - [112-reverse-string](101-150-easy/112-reverse-string.js)
   - [120-is-isomorphic](101-150-easy/120-is-isomorphic.js)
+  - [134-sub-string](101-150-easy/134-sub-string.js)
 - 动态规划
   - [010-climb-stairs](1-50-easy/010-climb-stairs.js)
   - [029-fib](1-50-easy/029-fib.js)
