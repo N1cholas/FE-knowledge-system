@@ -54,6 +54,7 @@
   - [102-kth-to-last](101-150-easy/102-kth-to-last.js)
   - [113-delete-node](101-150-easy/113-delete-node.js)
   - [121-middle-node](101-150-easy/121-middle-node.js)
+  - [139-delete-node](101-150-easy/139-delete-node.js)
 - 树相关
   - [030-invert-tree](1-50-easy/030-invert-tree.js)
   - [037-max-depth](1-50-easy/037-max-depth.js)
