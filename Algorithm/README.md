@@ -92,6 +92,7 @@
   - [112-reverse-string](101-150-easy/112-reverse-string.js)
   - [120-is-isomorphic](101-150-easy/120-is-isomorphic.js)
   - [134-sub-string](101-150-easy/134-sub-string.js)
+  - [135-buddy-string](101-150-easy/135-buddy-string.js)
 - 动态规划
   - [010-climb-stairs](1-50-easy/010-climb-stairs.js)
   - [029-fib](1-50-easy/029-fib.js)
