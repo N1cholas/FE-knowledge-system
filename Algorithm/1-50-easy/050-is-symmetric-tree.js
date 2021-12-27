@@ -1,9 +1,8 @@
 /**
  * Definition for a binary tree node.
- * function TreeNode(val, left, right) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.left = (left===undefined ? null : left)
- *     this.right = (right===undefined ? null : right)
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
  * }
  */
 /**
@@ -11,16 +10,18 @@
  * @return {boolean}
  */
 var isSymmetric = function(root) {
-    function symmetricTree(left, right) {
-        if (!left && !right) return true
-        if (!left && right) return false
-        if (left && !right) return false
-        
-        const leftSymmetricTree = symmetricTree(left.left, right.right)
-        const rightSymmetricTree = symmetricTree(left.right, right.left)
-        
-        return leftSymmetricTree && rightSymmetricTree && left.val === right.val
-    }
+    if (!root) return true
     
-    return symmetricTree(root.left, root.right)
+    return symmetric(root.left, root.right)
 };
+
+function symmetric(left, right) {
+    if (!left && !right) return true
+    if (left && !right) return false
+    if (!left && right) return false
+    
+    const leftSymmetric = symmetric(left.left, right.right)
+    const rightSymmetric = symmetric(left.right, right.left)
+    
+    return left.val === right.val && leftSymmetric && rightSymmetric
+}
