@@ -78,6 +78,7 @@
   - [136-min-depth](101-150-easy/136-min-depth.js)
   - [138-mirror-tree](101-150-easy/138-mirror-tree.js)
   - [144-find-tilt](101-150-easy/144-find-tilt.js)
+  - [147-level-order](101-150-easy/147-level-order.js)
 - 堆相关
   - [038-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-third-max](51-100-easy/091-third-max.js)
