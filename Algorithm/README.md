@@ -38,6 +38,8 @@
 - 广度搜索和深度搜索相关
   - [076-flood-fill](51-100-easy/076-flood-fill.js)
   - [122-island-perimeter](101-150-easy/122-island-perimeter.js)
+- 哈希表相关
+  - [148-common-chars](101-150-easy/148-common-chars.js)
 - 栈相关
   - [007-valid-brackets](1-50-easy/007-valid-brackets.js)
   - [047-min-stack](1-50-easy/047-min-stack.js)
