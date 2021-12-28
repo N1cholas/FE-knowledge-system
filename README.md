@@ -10,6 +10,6 @@
 
 Plan
 
-- [ ] 150 easy
+- [x] 150 easy
 - [ ] 50 middle
 
