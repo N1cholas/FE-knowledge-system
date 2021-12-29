@@ -106,6 +106,7 @@
   - [120-easy-is-isomorphic](101-150-easy/120-is-isomorphic.js)
   - [134-easy-sub-string](101-150-easy/134-sub-string.js)
   - [135-easy-buddy-string](101-150-easy/135-buddy-string.js)
+  - [003-middle-longest-substring](1-50-middle/003-longest-substring.js)
 - 动态规划
   - [010-easy-climb-stairs](1-50-easy/010-climb-stairs.js)
   - [029-easy-fib](1-50-easy/029-fib.js)
