@@ -10,8 +10,8 @@ var combine = function(n, k) {
         }
         
         // 回溯剪枝
-        // for (let i = start; i <= n; i++) {
-        for (let i = start; i <= n - (k - p.length) + 1; i++) {
+        // for (let i = start; i <= n - (k - p.length) + 1; i++) {
+        for (let i = start; i <= n; i++) {
             p.push(i)
             generateCombinations(n, k, i + 1, p, res)
             p.pop()
