@@ -93,6 +93,7 @@
   - [086-middle-combinations-sum-2](51-100-middle/086-combinations-sum-2.js)
   - [126-middle-combinations-sum-3](101-200-middle/126-combinations-sum-3.js)
   - [087-middle-sub-set](51-100-middle/087-sub-set.js)
+  - [012-middle-restore-IP-address](1-50-middle/012-restore-IP-address.js)
 - 堆相关
   - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-easy-third-max](51-100-easy/091-third-max.js)
