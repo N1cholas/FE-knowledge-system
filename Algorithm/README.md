@@ -96,6 +96,7 @@
   - [012-middle-restore-IP-address](1-50-middle/012-restore-IP-address.js)
   - [011-middle-numbers-of-island](1-50-middle/011-numbers-of-island.js)
   - [249-middle-surrounded-regions](101-250-middle/249-surrounded-regions.js)
+  - [013-hard-n-queens](1-50-hard/013-n-queens.js)
 - 堆相关
   - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-easy-third-max](51-100-easy/091-third-max.js)
