@@ -97,6 +97,9 @@
   - [011-middle-numbers-of-island](1-50-middle/011-numbers-of-island.js)
   - [249-middle-surrounded-regions](101-250-middle/249-surrounded-regions.js)
   - [013-hard-n-queens](1-50-hard/013-n-queens.js)
+- 动态规划
+  - [010-easy-climb-stairs](1-50-easy/010-climb-stairs.js)
+  - [029-easy-fib](1-50-easy/029-fib.js)
 - 堆相关
   - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-easy-third-max](51-100-easy/091-third-max.js)
@@ -119,9 +122,6 @@
   - [134-easy-sub-string](101-150-easy/134-sub-string.js)
   - [135-easy-buddy-string](101-150-easy/135-buddy-string.js)
   - [003-middle-longest-substring](1-50-middle/003-longest-substring.js)
-- 动态规划
-  - [010-easy-climb-stairs](1-50-easy/010-climb-stairs.js)
-  - [029-easy-fib](1-50-easy/029-fib.js)
 - 贪心
   - [115-easy-place-flowers](101-150-easy/115-place-flowers.js)
   - [117-easy-balance-string-split](101-150-easy/117-balance-string-split.js)
