@@ -14,5 +14,3 @@ var climbStairs = function(n) {
     
     return memo[n]
 };
-
-// https://leetcode-cn.com/problems/climbing-stairs/
