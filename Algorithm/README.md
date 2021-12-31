@@ -101,6 +101,7 @@
   - [070-climb-stairs](easy/070-climb-stairs.js)
   - [029-easy-fib](1-50-easy/029-fib.js)
   - [120-triangle-sum](middle/120-triangle-sum.js)
+  - [064-min-path-sum-in-grid](middle/064-min-path-sum-in-grid.js)
 - 堆相关
   - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-easy-third-max](51-100-easy/091-third-max.js)
