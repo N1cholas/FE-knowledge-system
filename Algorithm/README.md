@@ -100,6 +100,7 @@
 - 动态规划
   - [064-min-path-sum-in-grid](middle/064-min-path-sum-in-grid.js)
   - [070-climb-stairs](easy/070-climb-stairs.js)
+  - [091-decode-way*](middle/091-decode-way.js)
   - [120-triangle-sum](middle/120-triangle-sum.js)
   - [279-perfect-squares](middle/279-perfect-squares.js)
   - [343-integer-break](middle/343-integer-break.js)
