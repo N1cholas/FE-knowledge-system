@@ -98,6 +98,7 @@
   - [249-middle-surrounded-regions](101-250-middle/249-surrounded-regions.js)
   - [013-hard-n-queens](1-50-hard/013-n-queens.js)
 - 动态规划
+  - [062-unique-paths](middle/062-unique-paths.js)
   - [064-min-path-sum-in-grid](middle/064-min-path-sum-in-grid.js)
   - [070-climb-stairs](easy/070-climb-stairs.js)
   - [091-decode-way*](middle/091-decode-way.js)
