@@ -101,6 +101,7 @@
   - [064-min-path-sum-in-grid](middle/064-min-path-sum-in-grid.js)
   - [070-climb-stairs](easy/070-climb-stairs.js)
   - [120-triangle-sum](middle/120-triangle-sum.js)
+  - [279-perfect-squares](middle/279-perfect-squares.js)
   - [343-integer-break](middle/343-integer-break.js)
   - [offer-010-fib](easy/offer-010-fib.js)
 - 堆相关
