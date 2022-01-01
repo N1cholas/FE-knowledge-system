@@ -105,6 +105,7 @@
   - [091-decode-way*](middle/091-decode-way.js)
   - [120-triangle-sum](middle/120-triangle-sum.js)
   - [198-house-robber](middle/198-house-robber.js)
+  - [213-house-robber-II](middle/213-house-robber-II.js)
   - [279-perfect-squares](middle/279-perfect-squares.js)
   - [343-integer-break](middle/343-integer-break.js)
   - [offer-010-fib](easy/offer-010-fib.js)
