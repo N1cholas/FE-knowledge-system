@@ -115,6 +115,7 @@
   - [377-combinations-sum-4](middle/377-combinations-sum-4.js)
   - [416-partition-equal-subset-sum*](middle/416-partition-equal-subset-sum.js)
   - [474-ones-and-zeros](middle/474-ones-and-zeros.js)
+  - [494-target-sum](middle/494-target-sum.js)
   - [offer-010-fib](easy/offer-010-fib.js)
   - [other-knapsack-01](middle/other-knapsack-01.js)
 - 堆相关
