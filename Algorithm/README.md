@@ -97,7 +97,7 @@
   - [011-middle-numbers-of-island](1-50-middle/011-numbers-of-island.js)
   - [249-middle-surrounded-regions](101-250-middle/249-surrounded-regions.js)
   - [013-hard-n-queens](1-50-hard/013-n-queens.js)
-- 动态规划
+- 记忆化搜索和动态规划
   - [062-unique-paths](middle/062-unique-paths.js)
   - [063-unique-paths-II](middle/063-unique-paths-II.js)
   - [064-min-path-sum-in-grid](middle/064-min-path-sum-in-grid.js)
@@ -113,6 +113,7 @@
   - [343-integer-break](middle/343-integer-break.js)
   - [377-combinations-sum-4](middle/377-combinations-sum-4.js)
   - [416-partition-equal-subset-sum*](middle/416-partition-equal-subset-sum.js)
+  - [474-ones-and-zeros](middle/474-ones-and-zeros.js)
   - [offer-010-fib](easy/offer-010-fib.js)
   - [other-knapsack-01](middle/other-knapsack-01.js)
 - 堆相关
