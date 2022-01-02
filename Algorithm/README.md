@@ -111,6 +111,7 @@
   - [309-best-time-to-buy-stock*](middle/309-best-time-to-buy-stock.js)
   - [343-integer-break](middle/343-integer-break.js)
   - [offer-010-fib](easy/offer-010-fib.js)
+  - [other-knapsack-01](middle/other-knapsack-01.js)
 - 堆相关
   - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-easy-third-max](51-100-easy/091-third-max.js)
