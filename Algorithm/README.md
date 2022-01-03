@@ -98,6 +98,7 @@
   - [249-middle-surrounded-regions](101-250-middle/249-surrounded-regions.js)
   - [013-hard-n-queens](1-50-hard/013-n-queens.js)
 - 记忆化搜索和动态规划
+  - [053-max-sub-array](easy/053-max-sub-array.js)
   - [062-unique-paths](middle/062-unique-paths.js)
   - [063-unique-paths-II](middle/063-unique-paths-II.js)
   - [064-min-path-sum-in-grid](middle/064-min-path-sum-in-grid.js)
