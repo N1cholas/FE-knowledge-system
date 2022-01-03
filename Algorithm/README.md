@@ -119,6 +119,7 @@
   - [494-target-sum](middle/494-target-sum.js)
   - [offer-010-fib](easy/offer-010-fib.js)
   - [other-knapsack-01](middle/other-knapsack-01.js)
+  - [other-longest-common-string](middle/other-longest-common-string.js)
 - 堆相关
   - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-easy-third-max](51-100-easy/091-third-max.js)
