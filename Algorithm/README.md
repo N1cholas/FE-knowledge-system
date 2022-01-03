@@ -109,6 +109,7 @@
   - [213-house-robber-II](middle/213-house-robber-II.js)
   - [337-house-robber-III](middle/337-house-robber-III.js)
   - [279-perfect-squares](middle/279-perfect-squares.js)
+  - [300-longest-increasing-subsequence](middle/300-longest-increasing-subsequence.js)
   - [309-best-time-to-buy-stock*](middle/309-best-time-to-buy-stock.js)
   - [322-coin-change](middle/322-coin-change.js)
   - [343-integer-break](middle/343-integer-break.js)
