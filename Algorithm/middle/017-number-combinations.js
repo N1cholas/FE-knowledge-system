@@ -16,25 +16,25 @@ var letterCombinations = function(digits) {
         ['0', ' '],
     ])
     
-    function findCombinations(digits, index, s, res) {
+    function tryCombine(digits, index, current, res) {
         if (index === digits.length) {
-            return res.push(s)
+            return res.push(current.slice().join(''))
         }
         
-        const letter = map.get(digits.charAt(index))
+        const alphabet = map.get(digits[index])
         
-        for (let i = 0; i < letter.length; i++) {
-            findCombinations(digits, index + 1, s + letter.charAt(i), res)
+        for (let i = 0; i < alphabet.length; i++) {
+            current.push(alphabet[i])
+            tryCombine(digits, index + 1, current, res)
+            current.pop()
         }
     }
     
     const res = []
     
-    if (!digits.length) return res
+    if (!digits.length) return []
     
-    findCombinations(digits, 0, '', res)
+    tryCombine(digits, 0, [], res)
     
     return res
 };
-
-// https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/

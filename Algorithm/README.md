@@ -86,8 +86,8 @@
   - [144-easy-find-tilt](101-150-easy/144-find-tilt.js)
   - [147-easy-level-order](101-150-easy/147-level-order.js)
 - 递归回溯相关
+  - [017-number-combinations](middle/017-number-combinations.js)
   - [046-permute](middle/046-permute.js)
-  - [037-middle-number-combinations](1-50-middle/037-number-combinations.js)
   - [118-middle-combinations](101-250-middle/118-combinations.js)
   - [035-middle-combination-sum](1-50-middle/035-combination-sum.js)
   - [086-middle-combinations-sum-2](51-100-middle/086-combinations-sum-2.js)
