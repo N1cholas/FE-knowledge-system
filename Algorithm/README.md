@@ -88,7 +88,7 @@
 - 递归回溯相关
   - [017-number-combinations](middle/017-number-combinations.js)
   - [046-permute](middle/046-permute.js)
-  - [118-middle-combinations](101-250-middle/118-combinations.js)
+  - [077-combinations](middle/077-combinations.js)
   - [035-middle-combination-sum](1-50-middle/035-combination-sum.js)
   - [086-middle-combinations-sum-2](51-100-middle/086-combinations-sum-2.js)
   - [126-middle-combinations-sum-3](101-250-middle/126-combinations-sum-3.js)
