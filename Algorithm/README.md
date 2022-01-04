@@ -88,9 +88,9 @@
 - 递归回溯相关
   - [017-number-combinations](middle/017-number-combinations.js)
   - [039-combination-sum](middle/039-combination-sum.js)
+  - [040-combinations-sum-2](middle/040-combinations-sum-2.js)
   - [046-permute](middle/046-permute.js)
   - [077-combinations](middle/077-combinations.js)
-  - [086-middle-combinations-sum-2](51-100-middle/086-combinations-sum-2.js)
   - [126-middle-combinations-sum-3](101-250-middle/126-combinations-sum-3.js)
   - [087-middle-sub-set](51-100-middle/087-sub-set.js)
   - [012-middle-restore-IP-address*](1-50-middle/012-restore-IP-address.js)
