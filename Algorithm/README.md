@@ -93,9 +93,9 @@
   - [077-combinations](middle/077-combinations.js)
   - [078-sub-set](middle/078-sub-set.js)
   - [093-restore-IP-address](middle/093-restore-IP-address.js)
+  - [130-surrounded-regions](middle/130-surrounded-regions.js)
   - [200-numbers-of-island](middle/200-numbers-of-island.js)
   - [216-combinations-sum-III](middle/216-combinations-sum-3.js)
-  - [249-middle-surrounded-regions](101-250-middle/249-surrounded-regions.js)
   - [013-hard-n-queens](1-50-hard/013-n-queens.js)
 - 记忆化搜索和动态规划
   - [053-max-sub-array](easy/053-max-sub-array.js)
