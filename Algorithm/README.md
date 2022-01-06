@@ -96,7 +96,7 @@
   - [130-surrounded-regions](middle/130-surrounded-regions.js)
   - [200-numbers-of-island](middle/200-numbers-of-island.js)
   - [216-combinations-sum-III](middle/216-combinations-sum-3.js)
-  - [013-hard-n-queens](1-50-hard/013-n-queens.js)
+  - [051-n-queens](hard/051-n-queens.js)
 - 记忆化搜索和动态规划
   - [053-max-sub-array](easy/053-max-sub-array.js)
   - [062-unique-paths](middle/062-unique-paths.js)

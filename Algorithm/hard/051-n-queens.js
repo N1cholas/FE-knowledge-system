@@ -3,6 +3,11 @@
  * @return {string[][]}
  */
 var solveNQueens = function(n) {
+    const ans = []
+    const colVisited = new Array(n).fill(false)
+    const dia1 = new Array(2 * n - 1).fill(false)
+    const dia2 = new Array(2 * n - 1).fill(false)
+    
     function generateBoard(n, result) {
         return result.map(i => {
             const s = new Array(n).fill('.')
@@ -12,7 +17,7 @@ var solveNQueens = function(n) {
     }
     function putQueens(n, rowIndex, result) {
         if (rowIndex === n) {
-            ans.push(generateBoard(n, result))
+            return ans.push(generateBoard(n, result))
         }
         
         for (let j = 0; j < n; j++) {
@@ -30,14 +35,7 @@ var solveNQueens = function(n) {
         }
     }
     
-    const ans = []
-    const colVisited = new Array(n).fill(false)
-    const dia1 = new Array(2 * n - 1).fill(false)
-    const dia2 = new Array(2 * n - 1).fill(false)
-    
     putQueens(n, 0, [])
     
     return ans
 };
-
-// https://leetcode-cn.com/problems/n-queens/
