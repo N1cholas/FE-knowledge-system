@@ -125,6 +125,8 @@
   - [1143-longest-common-string](middle/1143-longest-common-string.js)
   - [offer-010-fib](easy/offer-010-fib.js)
   - [other-knapsack-01](middle/other-knapsack-01.js)
+- 贪心相关
+  - [455-assign-cookies](easy/455-assign-cookies.js)
 - 堆相关
   - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-easy-third-max](51-100-easy/091-third-max.js)
