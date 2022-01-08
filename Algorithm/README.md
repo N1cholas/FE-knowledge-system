@@ -29,7 +29,6 @@
   - [137-easy-missing-number-3](101-150-easy/137-missing-number-3.js)
   - [143-easy-thousand-separator](101-150-easy/143-thousand-separator.js)
 - 二分查找相关
-  - [002-easy-binary-search](1-50-easy/002-binary-search.js)
   - [026-easy-is-bad-version](1-50-easy/026-is-bad-version.js)
   - [039-easy-search-insert](1-50-easy/039-search-insert.js)
   - [085-easy-missing-number](51-100-easy/085-missing-number.js)
@@ -155,6 +154,7 @@
   - [115-easy-place-flowers](101-150-easy/115-place-flowers.js)
   - [117-easy-balance-string-split](101-150-easy/117-balance-string-split.js)
 - 数组相关
+  - [704-binary-search](easy/704-binary-search.js)
   - [013-easy-merge-2-sorted-array](1-50-easy/013-merge-2-sorted-array.js)
   - [018-easy-min-number-in-rotate-array](1-50-easy/018-min-number-in-rotate-array.js)
   - [019-easy-max-continuous-sub-array](1-50-easy/019-max-continuous-sub-array.js)
