@@ -127,6 +127,7 @@
   - [other-knapsack-01](middle/other-knapsack-01.js)
 - 贪心相关
   - [392-is-subsequence](easy/392-is-subsequence.js)
+  - [435-non-overlap-intervals](middle/435-non-overlap-intervals.js)
   - [455-assign-cookies](easy/455-assign-cookies.js)
 - 堆相关
   - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
