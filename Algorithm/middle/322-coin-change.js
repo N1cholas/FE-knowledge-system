@@ -15,7 +15,7 @@ var coinChange = function(coins, amount) {
         
         let res = max
         for (let i = 0; i < coins.length; i++) {
-            if (amount >= coins[i]) {
+            if (amount - coins[i] >= 0) {
                 res = Math.min(res, 1 + tryChange(coins, amount - coins[i]))
             }
         }
@@ -27,11 +27,11 @@ var coinChange = function(coins, amount) {
     
     const memo = new Array(amount + 1).fill(-1)
     
-    const max = amount + 1
+    const max = Infinity
     
-    const res = tryChange(coins, amount)
+    const ans = tryChange(coins, amount, 0)
     
-    return res === max ? -1 : res
+    return ans === max ? -1 : ans
 };
 
 // dynamic program
@@ -42,11 +42,11 @@ var coinChange2 = function(coins, amount) {
     
     for (let i = 1; i <= amount; i++) {
         for (let j = 0; j < coins.length; j++) {
-            if (i >= coins[j]) {
+            if (i - coins[j] >= 0) {
                 dp[i] = Math.min(dp[i], 1 + dp[i - coins[j]])
             }
         }
     }
     
-    return dp[0] === Infinity ? -1 : dp[0]
+    return dp[amount] === Infinity ? -1 : dp[amount]
 };
