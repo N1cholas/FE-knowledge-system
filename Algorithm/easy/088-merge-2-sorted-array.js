@@ -10,24 +10,20 @@ var merge = function(nums1, m, nums2, n) {
     let p2 = 0
     const res = []
     
-    while(p1 < m && p2 < n) {
+    while (p1 < m && p2 < n) {
         if (nums1[p1] <= nums2[p2]) {
-            res.push(nums1[p1])
-            p1++
-        } else if (nums1[p1] > nums2[p2]) {
-            res.push(nums2[p2])
-            p2++
+            res.push(nums1[p1++])
+        } else {
+            res.push(nums2[p2++])
         }
     }
     
-    if (p1 < m) {
-        for(let i = p1; i < m; i++) {
-            res.push(nums1[i])
-        }
-    } else {
-        for(let i = p2; i < n; i++) {
-            res.push(nums2[i])
-        }
+    while (p1 < m) {
+        res.push(nums1[p1++])
+    }
+    
+    while (p2 < n) {
+        res.push(nums2[p2++])
     }
     
     for (let i = 0; i < res.length; i++) {
