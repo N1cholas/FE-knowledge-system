@@ -87,6 +87,7 @@
 - 数组相关
   - [026-remove-duplicates](easy/026-remove-duplicates.js)
   - [027-remove-element](easy/027-remove-element.js)
+  - [075-sort-color](middle/075-sort-color.js)
   - [080-remove-duplicates-II](middle/080-remove-duplicates-II.js)
   - [283-move-zeros](easy/283-move-zeros.js)
   - [704-binary-search](easy/704-binary-search.js)
