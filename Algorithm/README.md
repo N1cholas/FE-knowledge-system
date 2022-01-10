@@ -86,6 +86,7 @@
   - [147-easy-level-order](101-150-easy/147-level-order.js)
 - 数组相关
   - [026-remove-duplicates-from-sorted-array](easy/026-remove-duplicates-from-sorted-array.js)
+  - [027-remove-element](easy/027-remove-element.js)
   - [283-move-zeros](easy/283-move-zeros.js)
   - [704-binary-search](easy/704-binary-search.js)
   - [013-easy-merge-2-sorted-array](1-50-easy/013-merge-2-sorted-array.js)
