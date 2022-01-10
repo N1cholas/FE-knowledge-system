@@ -154,11 +154,11 @@
   - [115-easy-place-flowers](101-150-easy/115-place-flowers.js)
   - [117-easy-balance-string-split](101-150-easy/117-balance-string-split.js)
 - 数组相关
+  - [283-move-zeros](easy/283-move-zeros.js)
   - [704-binary-search](easy/704-binary-search.js)
   - [013-easy-merge-2-sorted-array](1-50-easy/013-merge-2-sorted-array.js)
   - [018-easy-min-number-in-rotate-array](1-50-easy/018-min-number-in-rotate-array.js)
   - [019-easy-max-continuous-sub-array](1-50-easy/019-max-continuous-sub-array.js)
-  - [023-easy-move-zeros](1-50-easy/023-move-zeros.js)
   - [031-easy-remove-duplicate](1-50-easy/031-remove-duplicate.js)
   - [041-easy-intersection](1-50-easy/041-intersection.js)
   - [055-easy-intersection-2](51-100-easy/055-intersection-2.js)
