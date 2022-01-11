@@ -90,6 +90,7 @@
   - [075-sort-color](middle/075-sort-color.js)
   - [080-remove-duplicates-II](middle/080-remove-duplicates-II.js)
   - [088-merge-2-sorted-array](easy/088-merge-2-sorted-array.js)
+  - [125-valid-palindrome](easy/125-valid-palindrome.js)
   - [167-two-sum-II](easy/167-two-sum-II.js)
   - [283-move-zeros](easy/283-move-zeros.js)
   - [704-binary-search](easy/704-binary-search.js)
