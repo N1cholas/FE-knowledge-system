@@ -93,6 +93,7 @@
   - [088-merge-2-sorted-array](easy/088-merge-2-sorted-array.js)
   - [125-valid-palindrome](easy/125-valid-palindrome.js)
   - [167-two-sum-II](easy/167-two-sum-II.js)
+  - [215-find-kth-largest](middle/215-find-kth-largest.js)
   - [283-move-zeros](easy/283-move-zeros.js)
   - [344-reverse-string](easy/344-reverse-string.js)
   - [345-reverse-vowels](easy/345-reverse-vowels.js)
