@@ -99,6 +99,7 @@
   - [283-move-zeros](easy/283-move-zeros.js)
   - [344-reverse-string](easy/344-reverse-string.js)
   - [345-reverse-vowels](easy/345-reverse-vowels.js)
+  - [438-find-anagrams](middle/438-find-anagrams.js)
   - [704-binary-search](easy/704-binary-search.js)
   - [018-easy-min-number-in-rotate-array](1-50-easy/018-min-number-in-rotate-array.js)
   - [019-easy-max-continuous-sub-array](1-50-easy/019-max-continuous-sub-array.js)
