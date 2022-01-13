@@ -115,6 +115,7 @@
   - [128-easy-range-sum](101-150-easy/128-range-sum.js)
 - 查找相关
   - [001-two-sum](easy/001-two-sum.js)
+  - [018-three-sum](middle/018-three-sum.js)
   - [202-happy-number](easy/202-happy-number.js)
   - [205-isomorphic-string](easy/205-isomorphic-string.js)
   - [242-valid-anagram](easy/242-valid-anagram.js)
