@@ -115,6 +115,7 @@
   - [128-easy-range-sum](101-150-easy/128-range-sum.js)
 - 查找相关
   - [202-happy-number](easy/202-happy-number.js)
+  - [205-isomorphic-string](easy/205-isomorphic-string.js)
   - [242-valid-anagram](easy/242-valid-anagram.js)
   - [290-word-patten](easy/290-word-patten.js)
   - [349-intersection-of-two-array](easy/349-intersection-of-two-array.js)
@@ -181,7 +182,6 @@
   - [077-easy-longest-palindrome](51-100-easy/077-longest-palindrome.js)
   - [090-easy-reverse-vowels](51-100-easy/090-reverse-vowels.js)
   - [112-easy-reverse-string](101-150-easy/112-reverse-string.js)
-  - [120-easy-is-isomorphic](101-150-easy/120-is-isomorphic.js)
   - [134-easy-sub-string](101-150-easy/134-sub-string.js)
   - [135-easy-buddy-string](101-150-easy/135-buddy-string.js)
   - [003-middle-longest-substring](1-50-middle/003-longest-substring.js)
