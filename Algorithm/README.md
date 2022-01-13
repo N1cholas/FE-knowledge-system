@@ -115,6 +115,7 @@
   - [128-easy-range-sum](101-150-easy/128-range-sum.js)
 - 查找相关
   - [349-intersection-of-two-array](easy/349-intersection-of-two-array.js)
+  - [350-intersection-of-two-array-II](easy/350-intersection-of-two-array-II.js)
 - 递归回溯相关
   - [017-number-combinations](middle/017-number-combinations.js)
   - [039-combination-sum-I](middle/039-combination-sum.js)
