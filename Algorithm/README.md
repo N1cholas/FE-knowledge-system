@@ -114,6 +114,7 @@
   - [127-easy-find-longest-harmonious-string](101-150-easy/127-find-longest-harmonious-string.js)
   - [128-easy-range-sum](101-150-easy/128-range-sum.js)
 - 查找相关
+  - [001-two-sum](easy/001-two-sum.js)
   - [202-happy-number](easy/202-happy-number.js)
   - [205-isomorphic-string](easy/205-isomorphic-string.js)
   - [242-valid-anagram](easy/242-valid-anagram.js)
