@@ -113,6 +113,8 @@
   - [105-easy-exchange](101-150-easy/105-exchange.js)
   - [127-easy-find-longest-harmonious-string](101-150-easy/127-find-longest-harmonious-string.js)
   - [128-easy-range-sum](101-150-easy/128-range-sum.js)
+- 查找相关
+  - [349-intersection-of-two-array](easy/349-intersection-of-two-array.js)
 - 递归回溯相关
   - [017-number-combinations](middle/017-number-combinations.js)
   - [039-combination-sum-I](middle/039-combination-sum.js)
