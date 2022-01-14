@@ -117,6 +117,7 @@
   - [001-two-sum](easy/001-two-sum.js)
   - [016-three-sum-closest](middle/016-three-sum-closest.js)
   - [018-three-sum](middle/018-three-sum.js)
+  - [049-group-anagrams](middle/049-group-anagrams.js)
   - [202-happy-number](easy/202-happy-number.js)
   - [205-isomorphic-string](easy/205-isomorphic-string.js)
   - [242-valid-anagram](easy/242-valid-anagram.js)
