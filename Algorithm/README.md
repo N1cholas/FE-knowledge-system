@@ -123,6 +123,7 @@
   - [242-valid-anagram](easy/242-valid-anagram.js)
   - [290-word-patten](easy/290-word-patten.js)
   - [349-intersection-of-two-array](easy/349-intersection-of-two-array.js)
+  - [447-number-of-boomerangs](middle/447-number-of-boomerangs.js)
   - [451-sort-string-by-frequency](middle/451-sort-string-by-frequency.js)
   - [454-four-sum-II](middle/454-four-sum-II.js)
   - [350-intersection-of-two-array-II](easy/350-intersection-of-two-array-II.js)
