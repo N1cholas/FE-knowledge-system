@@ -120,6 +120,7 @@
   - [049-group-anagrams](middle/049-group-anagrams.js)
   - [202-happy-number](easy/202-happy-number.js)
   - [205-isomorphic-string](easy/205-isomorphic-string.js)
+  - [219-contains-duplicate-II](easy/219-contains-duplicate-II.js)
   - [242-valid-anagram](easy/242-valid-anagram.js)
   - [290-word-patten](easy/290-word-patten.js)
   - [349-intersection-of-two-array](easy/349-intersection-of-two-array.js)
