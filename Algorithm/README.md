@@ -136,6 +136,7 @@
   - [086-partition-list](middle/086-partition-list.js)
   - [092-reverse-list-II](middle/092-reverse-list-II.js)
   - [206-reverse-list](easy/206-reverse-list.js)
+  - [328-odd-even-list](middle/328-odd-even-list.js)
 - 递归回溯相关
   - [017-number-combinations](middle/017-number-combinations.js)
   - [039-combination-sum-I](middle/039-combination-sum.js)
