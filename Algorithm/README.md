@@ -113,6 +113,8 @@
   - [105-easy-exchange](101-150-easy/105-exchange.js)
   - [127-easy-find-longest-harmonious-string](101-150-easy/127-find-longest-harmonious-string.js)
   - [128-easy-range-sum](101-150-easy/128-range-sum.js)
+  
+
 - 查找相关
   - [001-two-sum](easy/001-two-sum.js)
   - [016-three-sum-closest](middle/016-three-sum-closest.js)
@@ -129,6 +131,8 @@
   - [451-sort-string-by-frequency](middle/451-sort-string-by-frequency.js)
   - [454-four-sum-II](middle/454-four-sum-II.js)
   - [350-intersection-of-two-array-II](easy/350-intersection-of-two-array-II.js)
+- 链表相关
+  - [206-reverse-list](easy/206-reverse-list.js)
 - 递归回溯相关
   - [017-number-combinations](middle/017-number-combinations.js)
   - [039-combination-sum-I](middle/039-combination-sum.js)
@@ -173,6 +177,8 @@
   - [392-is-subsequence](easy/392-is-subsequence.js)
   - [435-non-overlap-intervals](middle/435-non-overlap-intervals.js)
   - [455-assign-cookies](easy/455-assign-cookies.js)
+  
+  
 - 堆相关
   - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-easy-third-max](51-100-easy/091-third-max.js)
