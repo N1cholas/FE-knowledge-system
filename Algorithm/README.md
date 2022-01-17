@@ -132,6 +132,7 @@
   - [454-four-sum-II](middle/454-four-sum-II.js)
   - [350-intersection-of-two-array-II](easy/350-intersection-of-two-array-II.js)
 - 链表相关
+  - [083-remove-duplicates-from-sorted-list](easy/083-remove-duplicates-from-sorted-list.js)
   - [092-reverse-list-II](middle/092-reverse-list-II.js)
   - [206-reverse-list](easy/206-reverse-list.js)
 - 递归回溯相关
