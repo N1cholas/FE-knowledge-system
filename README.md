@@ -8,8 +8,8 @@
 
 [Algorithm](Algorithm/README.md)
 
-Plan
+Algorithm Plan
 
 - [x] 150 easy
-- [ ] 50 middle
-
+- [x] 50 middle
+> Done at 2022-01-18
