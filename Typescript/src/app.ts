@@ -1,3 +1,3 @@
-const a: number = 3
+import Order from './Order'
 
-console.log(a)
+console.log(new Order(111, new Date()))

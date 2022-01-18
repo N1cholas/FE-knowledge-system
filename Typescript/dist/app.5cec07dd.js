@@ -117,12 +117,42 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/app.ts":[function(require,module,exports) {
+})({"src/Order.ts":[function(require,module,exports) {
 "use strict";
 
-var a = 3;
-console.log(a);
-},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var Order =
+/** @class */
+function () {
+  function Order(orderNumber, date) {
+    this.orderNumber = orderNumber;
+    this.date = date;
+  }
+
+  return Order;
+}();
+
+exports.default = Order;
+},{}],"src/app.ts":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var Order_1 = __importDefault(require("./Order"));
+
+console.log(new Order_1.default(111, new Date()));
+},{"./Order":"src/Order.ts"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

@@ -5,6 +5,8 @@ out
 gen
 **/*/node_modules
 
+.cache
+
 *.png
 
 .DS_Store
