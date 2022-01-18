@@ -117,25 +117,70 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/Order.ts":[function(require,module,exports) {
+})({"src/DefineProperty.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var Order =
+var DefineProperty =
 /** @class */
 function () {
-  function Order(orderNumber, date) {
+  function DefineProperty(orderNumber, date) {
     this.orderNumber = orderNumber;
     this.date = date;
   }
 
-  return Order;
+  return DefineProperty;
 }();
 
-exports.default = Order;
+exports.default = DefineProperty;
+},{}],"src/FunctionOverloading.ts":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var messages = [{
+  id: 1,
+  type: 'text',
+  content: 'text - id - 1'
+}, {
+  id: 2,
+  type: 'image',
+  content: 'image - id - 2'
+}, {
+  id: 3,
+  type: 'audio',
+  content: 'audio - id - 3'
+}, {
+  id: 4,
+  type: 'text',
+  content: 'text - id - 4'
+}, {
+  id: 5,
+  type: 'image',
+  content: 'image - id - 5'
+}, {
+  id: 6,
+  type: 'text',
+  content: 'text - id - 6'
+}];
+
+function getMessage(type) {
+  if (typeof type === 'number') {
+    return messages.filter(function (msg) {
+      return msg.id === type;
+    })[0];
+  } else {
+    return messages.filter(function (msg) {
+      return msg.type === type;
+    });
+  }
+}
+
+exports.default = getMessage;
 },{}],"src/app.ts":[function(require,module,exports) {
 "use strict";
 
@@ -149,10 +194,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var Order_1 = __importDefault(require("./Order"));
+var DefineProperty_1 = __importDefault(require("./DefineProperty"));
 
-console.log(new Order_1.default(111, new Date()));
-},{"./Order":"src/Order.ts"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var FunctionOverloading_1 = __importDefault(require("./FunctionOverloading"));
+
+console.log(new DefineProperty_1.default(111, new Date()));
+console.log((0, FunctionOverloading_1.default)(1));
+console.log((0, FunctionOverloading_1.default)('text'));
+},{"./DefineProperty":"src/DefineProperty.ts","./FunctionOverloading":"src/FunctionOverloading.ts"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
