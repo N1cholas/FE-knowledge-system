@@ -133,6 +133,7 @@
   - [454-four-sum-II](middle/454-four-sum-II.js)
 - 链表相关
   - [002-add-two-number](middle/002-add-two-number.js)
+  - [024-swap-pairs](middle/024-swap-pairs.js)
   - [083-remove-duplicates-from-sorted-list](easy/083-remove-duplicates-from-sorted-list.js)
   - [082-remove-duplicates-from-sorted-list-II](middle/082-remove-duplicates-from-sorted-list-II.js)
   - [086-partition-list](middle/086-partition-list.js)
