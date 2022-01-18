@@ -136,6 +136,7 @@
   - [083-remove-duplicates-from-sorted-list](easy/083-remove-duplicates-from-sorted-list.js)
   - [086-partition-list](middle/086-partition-list.js)
   - [092-reverse-list-II](middle/092-reverse-list-II.js)
+  - [203-remove-list-elements](easy/203-remove-list-elements.js)
   - [206-reverse-list](easy/206-reverse-list.js)
   - [328-odd-even-list](middle/328-odd-even-list.js)
   - [445-add-two-numbers-II](middle/445-add-two-numbers-II.js)
