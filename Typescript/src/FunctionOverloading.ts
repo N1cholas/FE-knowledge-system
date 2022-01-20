@@ -39,7 +39,6 @@ const messages: Message[] = [
 
 function getMessage(id: number): Message
 function getMessage(type: string): Message[]
-
 function getMessage(type): Message[] | Message {
     if (typeof type === 'number') {
         return messages.filter(msg => msg.id === type)[0]
