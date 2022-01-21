@@ -3,7 +3,6 @@
 
 > 未整理 --------------------------
 - 数字相关
-  - [001-easy-two-sum](1-50-easy/001-two-sum.js)
   - [003-easy-int-reverse](1-50-easy/003-int-reverse.js)
   - [008-easy-contains-duplicate](1-50-easy/008-contains-duplicate.js)
   - [012-easy-find-repeat-number](1-50-easy/012-find-repeat-number.js)
@@ -136,6 +135,7 @@
 - 数组相关
   - [003-longest-substring-without-repeat](middle/003-longest-substring-without-repeat.js)
   - [011-container-with-most-water](middle/011-container-with-most-water.js)
+  - [014-longest-common-prefix](easy/014-longest-common-prefix.js)
   - [026-remove-duplicates](easy/026-remove-duplicates.js)
   - [027-remove-element](easy/027-remove-element.js)
   - [075-sort-color](middle/075-sort-color.js)
