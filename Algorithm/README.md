@@ -178,6 +178,8 @@
   - [206-reverse-list](easy/206-reverse-list.js)
   - [328-odd-even-list](middle/328-odd-even-list.js)
   - [445-add-two-numbers-II](middle/445-add-two-numbers-II.js)
+- 栈队列优先队列相关
+  - [020-is-valid-brackets](easy/020-is-valid-brackets.js)
 - 递归回溯相关
   - [017-number-combinations](middle/017-number-combinations.js)
   - [039-combination-sum-I](middle/039-combination-sum.js)
