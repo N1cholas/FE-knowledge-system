@@ -1,6 +1,7 @@
 # Algorithm
 > 记录算法的最优解
 
+> 未整理 --------------------------
 - 数字相关
   - [001-easy-two-sum](1-50-easy/001-two-sum.js)
   - [003-easy-int-reverse](1-50-easy/003-int-reverse.js)
@@ -85,6 +86,54 @@
   - [144-easy-find-tilt](101-150-easy/144-find-tilt.js)
   - [147-easy-level-order](101-150-easy/147-level-order.js)
 - 数组相关
+  - [018-easy-min-number-in-rotate-array](1-50-easy/018-min-number-in-rotate-array.js)
+  - [019-easy-max-continuous-sub-array](1-50-easy/019-max-continuous-sub-array.js)
+  - [031-easy-remove-duplicate](1-50-easy/031-remove-duplicate.js)
+  - [041-easy-intersection](1-50-easy/041-intersection.js)
+  - [055-easy-intersection-2](51-100-easy/055-intersection-2.js)
+  - [064-easy-sorted-squares](51-100-easy/064-sorted-squares.js)
+  - [071-easy-reverse-string-array](51-100-easy/071-reverse-string-array.js)
+  - [098-easy-find-continues-sequence](51-100-easy/098-find-continues-sequence.js)
+  - [105-easy-exchange](101-150-easy/105-exchange.js)
+  - [127-easy-find-longest-harmonious-string](101-150-easy/127-find-longest-harmonious-string.js)
+  - [128-easy-range-sum](101-150-easy/128-range-sum.js)
+- 堆相关
+  - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
+  - [091-easy-third-max](51-100-easy/091-third-max.js)
+  - [106-easy-next-greater-element](101-150-easy/106-next-greater-element.js)
+- 字符串相关
+  - [005-easy-longest-common-prefix](1-50-easy/005-longest-common-prefix.js)
+  - [017-easy-sum-2-string](1-50-easy/017-sum-2-string.js)
+  - [021-easy-is-unique](1-50-easy/021-is-unique.js)
+  - [035-easy-replace-space](1-50-easy/035-replace-space.js)
+  - [042-easy-match-sub-string](1-50-easy/042-match-sub-string.js)
+  - [046-easy-reverse-words](1-50-easy/046-reverse-words.js)
+  - [057-easy-count-words](51-100-easy/057-count-words.js)
+  - [061-easy-first-unique](51-100-easy/061-first-unique.js)
+  - [062-easy-compress-string](51-100-easy/062-compress-string.js)
+  - [068-easy-is-palindrome-string](51-100-easy/068-is-palindrome-string.js)
+  - [077-easy-longest-palindrome](51-100-easy/077-longest-palindrome.js)
+  - [090-easy-reverse-vowels](51-100-easy/090-reverse-vowels.js)
+  - [112-easy-reverse-string](101-150-easy/112-reverse-string.js)
+  - [134-easy-sub-string](101-150-easy/134-sub-string.js)
+  - [135-easy-buddy-string](101-150-easy/135-buddy-string.js)
+  - [003-middle-longest-substring](1-50-middle/003-longest-substring.js)
+- 贪心
+  - [115-easy-place-flowers](101-150-easy/115-place-flowers.js)
+  - [117-easy-balance-string-split](101-150-easy/117-balance-string-split.js)
+- 其他
+  - [011-easy-max-profit](1-50-easy/011-max-profit.js)
+  - [027-easy-spiral-order](1-50-easy/027-spiral-order.js)
+  - [066-easy-distribute-candies](51-100-easy/066-distribute-candies.js)
+  - [087-easy-min-moves](51-100-easy/087-min-moves.js)
+  - [097-easy-hash-set](51-100-easy/097-hash-set.js)
+  - [089-easy-convert-to-title](51-100-easy/089-convert-to-title.js)
+  - [110-easy-title-to-number](101-150-easy/110-title-to-number.js)
+  - [123-easy-fizz-buzz](101-150-easy/123-fizz-buzz.js)
+  - [126-easy-matrix-reshape](101-150-easy/126-matrix-reshape.js)
+  
+> 已整理 --------------------------
+- 数组相关
   - [003-longest-substring-without-repeat](middle/003-longest-substring-without-repeat.js)
   - [011-container-with-most-water](middle/011-container-with-most-water.js)
   - [026-remove-duplicates](easy/026-remove-duplicates.js)
@@ -102,19 +151,6 @@
   - [345-reverse-vowels](easy/345-reverse-vowels.js)
   - [438-find-anagrams](middle/438-find-anagrams.js)
   - [704-binary-search](easy/704-binary-search.js)
-  - [018-easy-min-number-in-rotate-array](1-50-easy/018-min-number-in-rotate-array.js)
-  - [019-easy-max-continuous-sub-array](1-50-easy/019-max-continuous-sub-array.js)
-  - [031-easy-remove-duplicate](1-50-easy/031-remove-duplicate.js)
-  - [041-easy-intersection](1-50-easy/041-intersection.js)
-  - [055-easy-intersection-2](51-100-easy/055-intersection-2.js)
-  - [064-easy-sorted-squares](51-100-easy/064-sorted-squares.js)
-  - [071-easy-reverse-string-array](51-100-easy/071-reverse-string-array.js)
-  - [098-easy-find-continues-sequence](51-100-easy/098-find-continues-sequence.js)
-  - [105-easy-exchange](101-150-easy/105-exchange.js)
-  - [127-easy-find-longest-harmonious-string](101-150-easy/127-find-longest-harmonious-string.js)
-  - [128-easy-range-sum](101-150-easy/128-range-sum.js)
-  
-
 - 查找相关
   - [001-two-sum](easy/001-two-sum.js)
   - [016-three-sum-closest](middle/016-three-sum-closest.js)
@@ -186,39 +222,3 @@
   - [392-is-subsequence](easy/392-is-subsequence.js)
   - [435-non-overlap-intervals](middle/435-non-overlap-intervals.js)
   - [455-assign-cookies](easy/455-assign-cookies.js)
-  
-  
-- 堆相关
-  - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
-  - [091-easy-third-max](51-100-easy/091-third-max.js)
-  - [106-easy-next-greater-element](101-150-easy/106-next-greater-element.js)
-- 字符串相关
-  - [005-easy-longest-common-prefix](1-50-easy/005-longest-common-prefix.js)
-  - [017-easy-sum-2-string](1-50-easy/017-sum-2-string.js)
-  - [021-easy-is-unique](1-50-easy/021-is-unique.js)
-  - [035-easy-replace-space](1-50-easy/035-replace-space.js)
-  - [042-easy-match-sub-string](1-50-easy/042-match-sub-string.js)
-  - [046-easy-reverse-words](1-50-easy/046-reverse-words.js)
-  - [057-easy-count-words](51-100-easy/057-count-words.js)
-  - [061-easy-first-unique](51-100-easy/061-first-unique.js)
-  - [062-easy-compress-string](51-100-easy/062-compress-string.js)
-  - [068-easy-is-palindrome-string](51-100-easy/068-is-palindrome-string.js)
-  - [077-easy-longest-palindrome](51-100-easy/077-longest-palindrome.js)
-  - [090-easy-reverse-vowels](51-100-easy/090-reverse-vowels.js)
-  - [112-easy-reverse-string](101-150-easy/112-reverse-string.js)
-  - [134-easy-sub-string](101-150-easy/134-sub-string.js)
-  - [135-easy-buddy-string](101-150-easy/135-buddy-string.js)
-  - [003-middle-longest-substring](1-50-middle/003-longest-substring.js)
-- 贪心
-  - [115-easy-place-flowers](101-150-easy/115-place-flowers.js)
-  - [117-easy-balance-string-split](101-150-easy/117-balance-string-split.js)
-- 其他
-  - [011-easy-max-profit](1-50-easy/011-max-profit.js)
-  - [027-easy-spiral-order](1-50-easy/027-spiral-order.js)
-  - [066-easy-distribute-candies](51-100-easy/066-distribute-candies.js)
-  - [087-easy-min-moves](51-100-easy/087-min-moves.js)
-  - [097-easy-hash-set](51-100-easy/097-hash-set.js)
-  - [089-easy-convert-to-title](51-100-easy/089-convert-to-title.js)
-  - [110-easy-title-to-number](101-150-easy/110-title-to-number.js)
-  - [123-easy-fizz-buzz](101-150-easy/123-fizz-buzz.js)
-  - [126-easy-matrix-reshape](101-150-easy/126-matrix-reshape.js)
