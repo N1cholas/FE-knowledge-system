@@ -132,6 +132,8 @@
   - [126-easy-matrix-reshape](101-150-easy/126-matrix-reshape.js)
   
 > 已整理 --------------------------
+- 模拟场景相关
+  - [121-max-profit](easy/121-max-profit.js)
 - 数组相关
   - [003-longest-substring-without-repeat](middle/003-longest-substring-without-repeat.js)
   - [011-container-with-most-water](middle/011-container-with-most-water.js)
