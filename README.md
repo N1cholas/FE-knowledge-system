@@ -23,7 +23,7 @@ Algorithm Plan
 
 ### ts
 
-概念👇
+概念👇 
 - 重载
 - 类型断言
 - 类型守卫
@@ -91,4 +91,17 @@ npm unlink
 - 创建`package`
   - `lerna create`创建`package`
   - `lerna add`安装依赖
+  - `lerna link`链接依赖
+- 开发与测试
+  - `lerna exec`执行`shell`脚本
+  - `lerna run`执行`npm`脚本
+  - `lerna clean`清空依赖
+  - `lerna bootstrap`重装依赖
+
+- 发布上线
+  - `lerna version` `bump version`
+  - `lerna changed`查看版本更新的内容
+  - `lerna diff`
+  - `lerna publish`
+
 
