@@ -200,13 +200,7 @@ var FunctionOverloading_1 = __importDefault(require("./FunctionOverloading"));
 
 console.log(new DefineProperty_1.default(111, new Date()));
 console.log((0, FunctionOverloading_1.default)(1));
-console.log((0, FunctionOverloading_1.default)('text')); // 重载
-// 类型断言
-// 类型守卫
-// 自定义守卫
-// 继承 多态 抽象类 接口
-// any 可以是所有类型的子类或者父类
-// unknown 只能是所有类型的父类
+console.log((0, FunctionOverloading_1.default)('text'));
 },{"./DefineProperty":"src/DefineProperty.ts","./FunctionOverloading":"src/FunctionOverloading.ts"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
