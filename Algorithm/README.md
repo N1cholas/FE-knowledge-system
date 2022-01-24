@@ -146,6 +146,7 @@
   - [014-longest-common-prefix](easy/014-longest-common-prefix.js)
   - [026-remove-duplicates](easy/026-remove-duplicates.js)
   - [027-remove-element](easy/027-remove-element.js)
+  - [035-search-insert](easy/035-search-insert.js)
   - [075-sort-color](middle/075-sort-color.js)
   - [076-min-window](hard/076-min-window.js)
   - [080-remove-duplicates-II](middle/080-remove-duplicates-II.js)
