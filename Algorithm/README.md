@@ -137,6 +137,7 @@
   - [121-max-profit](easy/121-max-profit.js)
   - [136-single-number](easy/136-single-number.js)
   - [557-reverse-words](easy/557-reverse-words.js)
+  - [offer-005-replace-space](easy/offer-005-replace-space.js)
 - 数字相关
   - [009-is-palindrome-number](easy/009-is-palindrome-number.js)
   - [067-binary-sum](easy/067-binary-sum.js)
