@@ -135,6 +135,7 @@
   - [013-roman-to-int](easy/013-roman-to-int.js)
   - [121-max-profit](easy/121-max-profit.js)
   - [136-single-number](easy/136-single-number.js)
+  - [557-reverse-words](easy/557-reverse-words.js)
 - 数字相关
   - [009-is-palindrome-number](easy/009-is-palindrome-number.js)
   - [415-string-sum](easy/415-string-sum.js)
@@ -145,7 +146,7 @@
   - [026-remove-duplicates](easy/026-remove-duplicates.js)
   - [027-remove-element](easy/027-remove-element.js)
   - [075-sort-color](middle/075-sort-color.js)
-  - [075-sort-color](hard/076-min-window.js)
+  - [076-min-window](hard/076-min-window.js)
   - [080-remove-duplicates-II](middle/080-remove-duplicates-II.js)
   - [088-merge-2-sorted-array](easy/088-merge-2-sorted-array.js)
   - [125-valid-palindrome](easy/125-valid-palindrome.js)
