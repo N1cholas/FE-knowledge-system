@@ -195,6 +195,7 @@
   - [020-is-valid-brackets](easy/020-is-valid-brackets.js)
 - 树相关
   - [226-invert-tree](easy/226-invert-tree.js)
+  - [543-diameter-of-binary-tree](easy/543-diameter-of-binary-tree.js)
 - 递归回溯相关
   - [017-number-combinations](middle/017-number-combinations.js)
   - [039-combination-sum-I](middle/039-combination-sum.js)
