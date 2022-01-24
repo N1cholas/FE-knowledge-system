@@ -138,6 +138,7 @@
   - [136-single-number](easy/136-single-number.js)
   - [434-counts-of-words](easy/434-counts-of-words.js)
   - [557-reverse-words](easy/557-reverse-words.js)
+  - [575-distribute-candies](easy/575-distribute-candies.js)
   - [offer-005-replace-space](easy/offer-005-replace-space.js)
 - 数字相关
   - [009-is-palindrome-number](easy/009-is-palindrome-number.js)
