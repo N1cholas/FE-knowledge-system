@@ -181,6 +181,7 @@
   - [206-reverse-list](easy/206-reverse-list.js)
   - [328-odd-even-list](middle/328-odd-even-list.js)
   - [445-add-two-numbers-II](middle/445-add-two-numbers-II.js)
+  - [offer-022-get-kth-from-end](easy/offer-022-get-kth-from-end.js)
 - 栈队列优先队列相关
   - [020-is-valid-brackets](easy/020-is-valid-brackets.js)
 - 递归回溯相关

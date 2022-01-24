@@ -9,8 +9,8 @@
 ## 算法题
 
 - Leetcode 112 路径总和
-- [算法题](https://www.nowcoder.com/study/live/489/1/1) `fn([['a', 'b'], ['n', 'm'], ['0', '1']]) => ['an0', 'am0', 'an1', 'am1', 'bn0', 'bm0', 'bn1', 'bm0']`
-- [算法题](https://www.nowcoder.com/jump/super-jump/word?word=%E7%AE%97%E6%B3%95%E9%A2%98) `f(['ab', 'c', 'd', 'ab', 'c']) => ['ab1', 'c1', 'd', 'ab2', 'c2']`
+- `fn([['a', 'b'], ['n', 'm'], ['0', '1']]) => ['an0', 'am0', 'an1', 'am1', 'bn0', 'bm0', 'bn1', 'bm0']`
+- `f(['ab', 'c', 'd', 'ab', 'c']) => ['ab1', 'c1', 'd', 'ab2', 'c2']`
 
 ## 场景模拟
 
