@@ -196,6 +196,7 @@
 - 栈队列优先队列相关
   - [020-is-valid-brackets](easy/020-is-valid-brackets.js)
 - 树相关
+  - [101-is-symmetric](easy/101-is-symmetric.js)
   - [226-invert-tree](easy/226-invert-tree.js)
   - [543-diameter-of-binary-tree](easy/543-diameter-of-binary-tree.js)
 - 递归回溯相关
