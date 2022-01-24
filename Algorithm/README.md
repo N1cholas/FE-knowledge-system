@@ -166,6 +166,7 @@
   - [345-reverse-vowels](easy/345-reverse-vowels.js)
   - [438-find-anagrams](middle/438-find-anagrams.js)
   - [704-binary-search](easy/704-binary-search.js)
+  - [997-sorted-squares](easy/997-sorted-squares.js)
   - [offer-011-min-number-in-rotate-array](easy/offer-011-min-number-in-rotate-array.js)
 - 查找相关
   - [001-two-sum](easy/001-two-sum.js)
