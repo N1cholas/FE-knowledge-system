@@ -133,6 +133,7 @@
 > 已整理 --------------------------
 - 模拟场景相关
   - [013-roman-to-int](easy/013-roman-to-int.js)
+  - [069-sqrt](easy/069-sqrt.js)
   - [121-max-profit](easy/121-max-profit.js)
   - [136-single-number](easy/136-single-number.js)
   - [557-reverse-words](easy/557-reverse-words.js)
