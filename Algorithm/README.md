@@ -18,7 +18,6 @@
   - [074-easy-print-numbers](51-100-easy/074-print-numbers.js)
   - [075-easy-happy-number](51-100-easy/075-happy-number.js)
   - [084-easy-find-max-continue-ones](51-100-easy/084-find-max-continue-ones.js)
-  - [088-easy-plus-one](51-100-easy/088-plus-one.js)
   - [101-easy-find-poisoned-duration](101-150-easy/101-find-poisoned-duration.js)
   - [108-easy-to-hex](101-150-easy/108-to-hex.js)
   - [124-easy-get-max](101-150-easy/124-get-max.js)
@@ -172,6 +171,7 @@
   - [454-four-sum-II](middle/454-four-sum-II.js)
 - 链表相关
   - [002-add-two-number](middle/002-add-two-number.js)
+  - [021-merge-two-sorted-list](easy/021-merge-two-sorted-list.js)
   - [024-swap-pairs](middle/024-swap-pairs.js)
   - [083-remove-duplicates-from-sorted-list](easy/083-remove-duplicates-from-sorted-list.js)
   - [082-remove-duplicates-from-sorted-list-II](middle/082-remove-duplicates-from-sorted-list-II.js)
