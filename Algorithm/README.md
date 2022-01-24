@@ -139,6 +139,7 @@
   - [557-reverse-words](easy/557-reverse-words.js)
 - 数字相关
   - [009-is-palindrome-number](easy/009-is-palindrome-number.js)
+  - [067-binary-sum](easy/067-binary-sum.js)
   - [415-string-sum](easy/415-string-sum.js)
 - 数组相关
   - [003-longest-substring-without-repeat](middle/003-longest-substring-without-repeat.js)
