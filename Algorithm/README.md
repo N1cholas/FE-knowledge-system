@@ -149,6 +149,7 @@
   - [167-two-sum-II](easy/167-two-sum-II.js)
   - [209-min-size-sub-array-sum](middle/209-min-size-sub-array-sum.js)
   - [215-find-kth-largest](middle/215-find-kth-largest.js)
+  - [278-is-bad-version](easy/278-is-bad-version.js)
   - [283-move-zeros](easy/283-move-zeros.js)
   - [344-reverse-string](easy/344-reverse-string.js)
   - [345-reverse-vowels](easy/345-reverse-vowels.js)
