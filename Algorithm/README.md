@@ -152,6 +152,7 @@
   - [088-merge-2-sorted-array](easy/088-merge-2-sorted-array.js)
   - [125-valid-palindrome](easy/125-valid-palindrome.js)
   - [167-two-sum-II](easy/167-two-sum-II.js)
+  - [169-major-number](easy/169-major-number.js)
   - [209-min-size-sub-array-sum](middle/209-min-size-sub-array-sum.js)
   - [215-find-kth-largest](middle/215-find-kth-largest.js)
   - [278-is-bad-version](easy/278-is-bad-version.js)
