@@ -208,6 +208,7 @@
 - 树相关
   - [101-is-symmetric](easy/101-is-symmetric.js)
   - [104-depth-in-tree](easy/104-depth-in-tree.js)
+  - [145-post-order-traversal](easy/145-post-order-traversal.js)
   - [226-invert-tree](easy/226-invert-tree.js)
   - [543-diameter-of-binary-tree](easy/543-diameter-of-binary-tree.js)
   - [617-merge-trees](easy/617-merge-trees.js)
