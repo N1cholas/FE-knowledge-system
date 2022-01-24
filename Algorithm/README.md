@@ -154,6 +154,7 @@
   - [076-min-window](hard/076-min-window.js)
   - [080-remove-duplicates-II](middle/080-remove-duplicates-II.js)
   - [088-merge-2-sorted-array](easy/088-merge-2-sorted-array.js)
+  - [118-yanghui-triangle](easy/118-yanghui-triangle.js)
   - [125-valid-palindrome](easy/125-valid-palindrome.js)
   - [167-two-sum-II](easy/167-two-sum-II.js)
   - [169-major-number](easy/169-major-number.js)
