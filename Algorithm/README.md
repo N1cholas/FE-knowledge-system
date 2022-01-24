@@ -171,6 +171,7 @@
   - [451-sort-string-by-frequency](middle/451-sort-string-by-frequency.js)
   - [454-four-sum-II](middle/454-four-sum-II.js)
   - [offer-003-find-repeat-number](easy/offer-003-find-repeat-number.js)
+  - [interview-001-is-unique](easy/interview-001-is-unique.js)
 - 链表相关
   - [002-add-two-number](middle/002-add-two-number.js)
   - [021-merge-two-sorted-list](easy/021-merge-two-sorted-list.js)
