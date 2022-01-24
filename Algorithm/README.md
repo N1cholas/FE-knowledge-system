@@ -178,6 +178,7 @@
   - [290-word-patten](easy/290-word-patten.js)
   - [349-intersection-of-two-array](easy/349-intersection-of-two-array.js)
   - [350-intersection-of-two-array-II](easy/350-intersection-of-two-array-II.js)
+  - [387-get-first-unique-string](easy/387-get-first-unique-string.js)
   - [447-number-of-boomerangs](middle/447-number-of-boomerangs.js)
   - [451-sort-string-by-frequency](middle/451-sort-string-by-frequency.js)
   - [454-four-sum-II](middle/454-four-sum-II.js)
