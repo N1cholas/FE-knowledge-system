@@ -169,6 +169,7 @@
   - [704-binary-search](easy/704-binary-search.js)
   - [997-sorted-squares](easy/997-sorted-squares.js)
   - [offer-011-min-number-in-rotate-array](easy/offer-011-min-number-in-rotate-array.js)
+  - [offer-053-missing-number](easy/offer-053-missing-number.js)
 - 查找相关
   - [001-two-sum](easy/001-two-sum.js)
   - [016-three-sum-closest](middle/016-three-sum-closest.js)
