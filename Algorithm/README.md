@@ -212,6 +212,7 @@
 - 树相关
   - [094-inorder-traversal](easy/094-inorder-traversal.js)
   - [101-is-symmetric](easy/101-is-symmetric.js)
+  - [112-path-sum](easy/112-path-sum.js)
   - [104-depth-in-tree](easy/104-depth-in-tree.js)
   - [145-post-order-traversal](easy/145-post-order-traversal.js)
   - [226-invert-tree](easy/226-invert-tree.js)
