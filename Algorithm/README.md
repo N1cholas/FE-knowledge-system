@@ -137,6 +137,7 @@
   - [058-last-word-length](easy/058-last-word-length.js)
   - [121-max-profit](easy/121-max-profit.js)
   - [136-single-number](easy/136-single-number.js)
+  - [409-longest-palindrome-string](easy/409-longest-palindrome-string.js)
   - [434-counts-of-words](easy/434-counts-of-words.js)
   - [453-min-moves](easy/453-min-moves.js)
   - [557-reverse-words](easy/557-reverse-words.js)
