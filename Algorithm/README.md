@@ -142,6 +142,7 @@
   - [offer-005-replace-space](easy/offer-005-replace-space.js)
 - 数字相关
   - [009-is-palindrome-number](easy/009-is-palindrome-number.js)
+  - [066-plus-one](easy/066-plus-one.js)
   - [067-binary-sum](easy/067-binary-sum.js)
   - [415-string-sum](easy/415-string-sum.js)
 - 数组相关
