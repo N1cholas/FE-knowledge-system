@@ -134,6 +134,7 @@
 - 模拟场景相关
   - [013-roman-to-int](easy/013-roman-to-int.js)
   - [069-sqrt](easy/069-sqrt.js)
+  - [058-last-word-length](easy/058-last-word-length.js)
   - [121-max-profit](easy/121-max-profit.js)
   - [136-single-number](easy/136-single-number.js)
   - [434-counts-of-words](easy/434-counts-of-words.js)
