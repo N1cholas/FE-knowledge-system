@@ -214,6 +214,7 @@
   - [104-depth-in-tree](easy/104-depth-in-tree.js)
   - [145-post-order-traversal](easy/145-post-order-traversal.js)
   - [226-invert-tree](easy/226-invert-tree.js)
+  - [404-left-leaves-sum](easy/404-left-leaves-sum.js)
   - [543-diameter-of-binary-tree](easy/543-diameter-of-binary-tree.js)
   - [617-merge-trees](easy/617-merge-trees.js)
 - 递归回溯相关
