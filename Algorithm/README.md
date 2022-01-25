@@ -207,6 +207,7 @@
 - 栈队列优先队列相关
   - [020-is-valid-brackets](easy/020-is-valid-brackets.js)
 - 树相关
+  - [094-inorder-traversal](easy/094-inorder-traversal.js)
   - [101-is-symmetric](easy/101-is-symmetric.js)
   - [104-depth-in-tree](easy/104-depth-in-tree.js)
   - [145-post-order-traversal](easy/145-post-order-traversal.js)
