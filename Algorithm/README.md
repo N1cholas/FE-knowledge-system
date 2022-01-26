@@ -205,6 +205,7 @@
   - [160-intersection-node](easy/160-intersection-node.js)
   - [203-remove-list-elements](easy/203-remove-list-elements.js)
   - [206-reverse-list](easy/206-reverse-list.js)
+  - [234-palindrome-list](easy/234-palindrome-list.js)
   - [328-odd-even-list](middle/328-odd-even-list.js)
   - [445-add-two-numbers-II](middle/445-add-two-numbers-II.js)
   - [offer-022-get-kth-from-end](easy/offer-022-get-kth-from-end.js)

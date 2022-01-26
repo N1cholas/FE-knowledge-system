@@ -62,7 +62,7 @@ obj1.test2()
 - `react`中`class`组件和`function`组件区别
 - vue和react让你做技术选型你会考虑哪些因素？
 - React Fiber有了解吗？
-  - 讲了为什么要做时间分片、说了react15和react16架构的区别，然后说了Fiber树其实对应了原来的vDom，本质是一个[链表](https://www.nowcoder.com/jump/super-jump/word?word=链表)。
+  - 讲了为什么要做时间分片、说了react15和react16架构的区别，然后说了Fiber树其实对应了原来的vDom，本质是一个链表。
 
 ## 性能优化
 
