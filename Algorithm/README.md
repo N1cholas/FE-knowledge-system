@@ -190,6 +190,7 @@
   - [463-island-perimeter](easy/463-island-perimeter.js)
   - [496-next-biggest-number](easy/496-next-biggest-number.js)
   - [733-flood-fill](easy/733-flood-fill.js)
+  - [1047-remove-duplicates-from-string](easy/1047-remove-duplicates-from-string.js)
 - 树相关
   - [094-inorder-traversal](easy/094-inorder-traversal.js)
   - [101-is-symmetric](easy/101-is-symmetric.js)
