@@ -4,7 +4,6 @@
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
 - 链表相关
-  - [113-easy-delete-node](101-150-easy/113-delete-node.js)
   - [121-easy-middle-node](101-150-easy/121-middle-node.js)
   - [139-easy-delete-node](101-150-easy/139-delete-node.js)
 - 树相关
@@ -172,6 +171,7 @@
   - [237-delete-list-node](easy/237-delete-list-node.js)
   - [328-odd-even-list](middle/328-odd-even-list.js)
   - [445-add-two-numbers-II](middle/445-add-two-numbers-II.js)
+  - [867-delete-middle-list-node](easy/867-delete-middle-list-node.js)
   - [offer-022-get-kth-from-end](easy/offer-022-get-kth-from-end.js)
   - [offer-024-reverse-list](easy/offer-024-reverse-list.js)
 - 栈队列优先队列相关
