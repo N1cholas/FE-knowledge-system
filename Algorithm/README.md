@@ -2,7 +2,6 @@
 
 > 未整理 --------------------------
 - 数字相关
-  - [137-easy-missing-number-3](101-150-easy/137-missing-number-3.js)
   - [143-easy-thousand-separator](101-150-easy/143-thousand-separator.js)
 - 二分查找相关
   - [026-easy-is-bad-version](1-50-easy/026-is-bad-version.js)
@@ -176,6 +175,7 @@
   - [350-intersection-of-two-array-II](easy/350-intersection-of-two-array-II.js)
   - [387-get-first-unique-string](easy/387-get-first-unique-string.js)
   - [447-number-of-boomerangs](middle/447-number-of-boomerangs.js)
+  - [448-find-disappeared-number](easy/448-find-disappeared-number.js)
   - [451-sort-string-by-frequency](middle/451-sort-string-by-frequency.js)
   - [454-four-sum-II](middle/454-four-sum-II.js)
   - [offer-003-find-repeat-number](easy/offer-003-find-repeat-number.js)
