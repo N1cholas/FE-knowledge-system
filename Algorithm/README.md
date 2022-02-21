@@ -2,8 +2,6 @@
 
 > 未整理 --------------------------
 - 数字相关
-  - [108-easy-to-hex](101-150-easy/108-to-hex.js)
-  - [124-easy-get-max](101-150-easy/124-get-max.js)
   - [125-easy-add-digits](101-150-easy/125-add-digits.js)
   - [129-easy-is-power-of-three](101-150-easy/129-is-power-of-three.js)
   - [131-easy-missing-number-2](101-150-easy/131-missing-number-2.js)
@@ -127,6 +125,7 @@
   - [495-teemo-attack](easy/495-teemo-attack.js)
   - [557-reverse-words](easy/557-reverse-words.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
+  - [1646-get-max-from-generated](easy/1646-get-max-from-generated.js)
   - [offer-005-replace-space](easy/offer-005-replace-space.js)
   - [offer-062-last-remaining](easy/offer-062-last-remaining.js)
 - 数字相关
