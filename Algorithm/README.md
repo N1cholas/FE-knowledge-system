@@ -121,6 +121,7 @@
   - [495-teemo-attack](easy/495-teemo-attack.js)
   - [557-reverse-words](easy/557-reverse-words.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
+  - [1556-thousand-separator](easy/1556-thousand-separator.js)
   - [1646-get-max-from-generated](easy/1646-get-max-from-generated.js)
   - [offer-005-replace-space](easy/offer-005-replace-space.js)
   - [offer-062-last-remaining](easy/offer-062-last-remaining.js)
