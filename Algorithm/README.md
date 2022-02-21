@@ -2,7 +2,6 @@
 
 > 未整理 --------------------------
 - 数字相关
-  - [125-easy-add-digits](101-150-easy/125-add-digits.js)
   - [129-easy-is-power-of-three](101-150-easy/129-is-power-of-three.js)
   - [131-easy-missing-number-2](101-150-easy/131-missing-number-2.js)
   - [137-easy-missing-number-3](101-150-easy/137-missing-number-3.js)
@@ -133,6 +132,7 @@
   - [009-is-palindrome-number](easy/009-is-palindrome-number.js)
   - [066-plus-one](easy/066-plus-one.js)
   - [067-binary-sum](easy/067-binary-sum.js)
+  - [258-add-digits](easy/258-add-digits.js)
   - [405-to-hex](easy/405-to-hex.js)
   - [415-string-sum](easy/415-string-sum.js)
 - 数组相关
