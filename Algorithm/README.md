@@ -2,8 +2,6 @@
 
 > 未整理 --------------------------
 - 数字相关
-  - [129-easy-is-power-of-three](101-150-easy/129-is-power-of-three.js)
-  - [131-easy-missing-number-2](101-150-easy/131-missing-number-2.js)
   - [137-easy-missing-number-3](101-150-easy/137-missing-number-3.js)
   - [143-easy-thousand-separator](101-150-easy/143-thousand-separator.js)
 - 二分查找相关
@@ -133,6 +131,7 @@
   - [066-plus-one](easy/066-plus-one.js)
   - [067-binary-sum](easy/067-binary-sum.js)
   - [258-add-digits](easy/258-add-digits.js)
+  - [268-missing-number](easy/268-missing-number.js)
   - [326-is-power-of-three](easy/326-is-power-of-three.js)
   - [405-to-hex](easy/405-to-hex.js)
   - [415-string-sum](easy/415-string-sum.js)
