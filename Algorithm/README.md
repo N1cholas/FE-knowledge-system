@@ -3,19 +3,7 @@
 > 未整理 --------------------------
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
-- 链表相关
-  - [139-easy-delete-node](101-150-easy/139-delete-node.js)
 - 树相关
-  - [030-easy-invert-tree](1-50-easy/030-invert-tree.js)
-  - [037-easy-max-depth](1-50-easy/037-max-depth.js)
-  - [045-easy-post-order-traversal](1-50-easy/045-post-order-traversal.js)
-  - [050-easy-is-symmetric-tree](1-50-easy/050-is-symmetric-tree.js)
-  - [058-easy-diameter-of-binary-tree](51-100-easy/058-diameter-of-binary-tree.js)
-  - [060-easy-has-path-sum](51-100-easy/060-has-path-sum.js)
-  - [065-easy-sum-of-left-leaves](51-100-easy/065-sum-of-left-leaves.js)
-  - [067-easy-in-order-traversal](51-100-easy/067-in-order-traversal.js)
-  - [069-easy-merge-two-trees](51-100-easy/069-merge-two-trees.js)
-  - [082-easy-lowest-common-ancestor](51-100-easy/082-lowest-common-ancestor.js)
   - [093-easy-sub-tree](51-100-easy/093-sub-tree.js)
   - [095-easy-lowest-common-ancestor-2](51-100-easy/095-lowest-common-ancestor-2.js)
   - [099-easy-sorted-array-to-BST](51-100-easy/099-sorted-array-to-BST.js)
@@ -188,6 +176,7 @@
   - [104-depth-in-tree](easy/104-depth-in-tree.js)
   - [145-post-order-traversal](easy/145-post-order-traversal.js)
   - [226-invert-tree](easy/226-invert-tree.js)
+  - [235-lowest-common-ancestor](easy/235-lowest-common-ancestor.js)
   - [404-left-leaves-sum](easy/404-left-leaves-sum.js)
   - [543-diameter-of-binary-tree](easy/543-diameter-of-binary-tree.js)
   - [617-merge-trees](easy/617-merge-trees.js)
