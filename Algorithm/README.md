@@ -125,6 +125,7 @@
   - [434-counts-of-words](easy/434-counts-of-words.js)
   - [453-min-moves](easy/453-min-moves.js)
   - [485-find-max-consecutive-ones](easy/485-find-max-consecutive-ones.js)
+  - [495-teemo-attack](easy/495-teemo-attack.js)
   - [557-reverse-words](easy/557-reverse-words.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
   - [offer-005-replace-space](easy/offer-005-replace-space.js)
