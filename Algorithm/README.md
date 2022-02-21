@@ -1,14 +1,8 @@
 # Algorithm
 
 > 未整理 --------------------------
-- 数字相关
-  - [143-easy-thousand-separator](101-150-easy/143-thousand-separator.js)
 - 二分查找相关
-  - [026-easy-is-bad-version](1-50-easy/026-is-bad-version.js)
-  - [039-easy-search-insert](1-50-easy/039-search-insert.js)
-  - [085-easy-missing-number](51-100-easy/085-missing-number.js)
   - [086-easy-count-number](51-100-easy/086-count-number.js)
-  - [109-easy-arrange-coins](101-150-easy/109-arrange-coins.js)
 - 广度搜索和深度搜索相关
   - [076-easy-flood-fill](51-100-easy/076-flood-fill.js)
   - [122-easy-island-perimeter](101-150-easy/122-island-perimeter.js)
@@ -116,6 +110,7 @@
   - [141-cycle-list](easy/141-cycle-list.js)
   - [409-longest-palindrome-string](easy/409-longest-palindrome-string.js)
   - [434-counts-of-words](easy/434-counts-of-words.js)
+  - [441-arrange-coins](easy/441-arrange-coins.js)
   - [453-min-moves](easy/453-min-moves.js)
   - [485-find-max-consecutive-ones](easy/485-find-max-consecutive-ones.js)
   - [495-teemo-attack](easy/495-teemo-attack.js)
