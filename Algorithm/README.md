@@ -4,7 +4,6 @@
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
 - 广度搜索和深度搜索相关
-  - [076-easy-flood-fill](51-100-easy/076-flood-fill.js)
   - [122-easy-island-perimeter](101-150-easy/122-island-perimeter.js)
 - 哈希表相关
   - [148-easy-common-chars](101-150-easy/148-common-chars.js)
@@ -195,6 +194,7 @@
   - [offer-024-reverse-list](easy/offer-024-reverse-list.js)
 - 栈队列优先队列相关
   - [020-is-valid-brackets](easy/020-is-valid-brackets.js)
+  - [463-island-perimeter](easy/463-island-perimeter.js)
   - [496-next-biggest-number](easy/496-next-biggest-number.js)
   - [733-flood-fill](easy/733-flood-fill.js)
 - 树相关
