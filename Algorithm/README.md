@@ -2,12 +2,6 @@
 
 > 未整理 --------------------------
 - 数字相关
-  - [008-easy-contains-duplicate](1-50-easy/008-contains-duplicate.js)
-  - [012-easy-find-repeat-number](1-50-easy/012-find-repeat-number.js)
-  - [015-easy-roman-2-int](1-50-easy/015-roman-2-int.js)
-  - [022-easy-single-number](1-50-easy/022-single-number.js)
-  - [024-easy-is-palindrome-number](1-50-easy/024-is-palindrome-number.js)
-  - [032-easy-sqrt](1-50-easy/032-sqrt.js)
   - [033-easy-last-remaining](1-50-easy/033-last-remaining.js)
   - [036-easy-yang-hui-triangle](1-50-easy/036-yang-hui-triangle.js)
   - [051-easy-majority-element](51-100-easy/051-majority-element.js)
@@ -21,7 +15,6 @@
   - [124-easy-get-max](101-150-easy/124-get-max.js)
   - [125-easy-add-digits](101-150-easy/125-add-digits.js)
   - [129-easy-is-power-of-three](101-150-easy/129-is-power-of-three.js)
-  - [130-easy-contains-duplicate-2](101-150-easy/130-contains-duplicate-2.js)
   - [131-easy-missing-number-2](101-150-easy/131-missing-number-2.js)
   - [137-easy-missing-number-3](101-150-easy/137-missing-number-3.js)
   - [143-easy-thousand-separator](101-150-easy/143-thousand-separator.js)
@@ -142,6 +135,7 @@
   - [557-reverse-words](easy/557-reverse-words.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
   - [offer-005-replace-space](easy/offer-005-replace-space.js)
+  - [offer-062-last-remaining](easy/offer-062-last-remaining.js)
 - 数字相关
   - [007-reverse-int](easy/007-reverse-int.js)
   - [009-is-palindrome-number](easy/009-is-palindrome-number.js)
