@@ -3,10 +3,7 @@
 > 未整理 --------------------------
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
-- 广度搜索和深度搜索相关
-  - [122-easy-island-perimeter](101-150-easy/122-island-perimeter.js)
 - 哈希表相关
-  - [148-easy-common-chars](101-150-easy/148-common-chars.js)
   - [150-easy-is-anagram](101-150-easy/150-is-anagram.js)
 - 模拟场景相关
   - [149-easy-check-record](101-150-easy/149-check-record.js)
@@ -173,6 +170,7 @@
   - [448-find-disappeared-number](easy/448-find-disappeared-number.js)
   - [451-sort-string-by-frequency](middle/451-sort-string-by-frequency.js)
   - [454-four-sum-II](middle/454-four-sum-II.js)
+  - [1002-common-chars](easy/1002-common-chars.js)
   - [offer-003-find-repeat-number](easy/offer-003-find-repeat-number.js)
   - [interview-001-is-unique](easy/interview-001-is-unique.js)
 - 链表相关
