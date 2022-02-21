@@ -3,9 +3,6 @@
 > 未整理 --------------------------
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
-- 栈相关
-  - [118-easy-remove-duplicate](101-150-easy/118-remove-duplicate.js)
-  - [119-easy-queue](101-150-easy/119-queue.js)
 - 链表相关
   - [004-easy-queue](1-50-easy/004-queue.js)
   - [009-easy-reverse-list](1-50-easy/009-reverse-list.js)
@@ -187,6 +184,7 @@
   - [offer-024-reverse-list](easy/offer-024-reverse-list.js)
 - 栈队列优先队列相关
   - [020-is-valid-brackets](easy/020-is-valid-brackets.js)
+  - [232-queue](easy/232-queue.js)
   - [463-island-perimeter](easy/463-island-perimeter.js)
   - [496-next-biggest-number](easy/496-next-biggest-number.js)
   - [733-flood-fill](easy/733-flood-fill.js)
