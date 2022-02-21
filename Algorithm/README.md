@@ -133,6 +133,7 @@
   - [066-plus-one](easy/066-plus-one.js)
   - [067-binary-sum](easy/067-binary-sum.js)
   - [258-add-digits](easy/258-add-digits.js)
+  - [326-is-power-of-three](easy/326-is-power-of-three.js)
   - [405-to-hex](easy/405-to-hex.js)
   - [415-string-sum](easy/415-string-sum.js)
 - 数组相关
