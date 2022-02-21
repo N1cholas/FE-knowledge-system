@@ -2,7 +2,6 @@
 
 > 未整理 --------------------------
 - 数字相关
-  - [003-easy-int-reverse](1-50-easy/003-int-reverse.js)
   - [008-easy-contains-duplicate](1-50-easy/008-contains-duplicate.js)
   - [012-easy-find-repeat-number](1-50-easy/012-find-repeat-number.js)
   - [015-easy-roman-2-int](1-50-easy/015-roman-2-int.js)
@@ -144,6 +143,7 @@
   - [575-distribute-candies](easy/575-distribute-candies.js)
   - [offer-005-replace-space](easy/offer-005-replace-space.js)
 - 数字相关
+  - [007-reverse-int](easy/007-reverse-int.js)
   - [009-is-palindrome-number](easy/009-is-palindrome-number.js)
   - [066-plus-one](easy/066-plus-one.js)
   - [067-binary-sum](easy/067-binary-sum.js)
