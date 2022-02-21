@@ -4,15 +4,6 @@
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
 - 链表相关
-  - [004-easy-queue](1-50-easy/004-queue.js)
-  - [009-easy-reverse-list](1-50-easy/009-reverse-list.js)
-  - [016-easy-merge-2-sorted-list](1-50-easy/016-merge-2-sorted-list.js)
-  - [020-easy-get-kth-from-end-in-list](1-50-easy/020-get-kth-from-end-in-list.js)
-  - [040-easy-is-palindrome-list](1-50-easy/040-is-palindrome-list.js)
-  - [044-easy-cycle-list](1-50-easy/044-cycle-list.js)
-  - [081-easy-intersection-node](51-100-easy/081-intersection-node.js)
-  - [096-easy-delete-duplicates](51-100-easy/096-delete-duplicates.js)
-  - [102-easy-kth-to-last](101-150-easy/102-kth-to-last.js)
   - [113-easy-delete-node](101-150-easy/113-delete-node.js)
   - [121-easy-middle-node](101-150-easy/121-middle-node.js)
   - [139-easy-delete-node](101-150-easy/139-delete-node.js)
@@ -178,6 +169,7 @@
   - [203-remove-list-elements](easy/203-remove-list-elements.js)
   - [206-reverse-list](easy/206-reverse-list.js)
   - [234-palindrome-list](easy/234-palindrome-list.js)
+  - [237-delete-list-node](easy/237-delete-list-node.js)
   - [328-odd-even-list](middle/328-odd-even-list.js)
   - [445-add-two-numbers-II](middle/445-add-two-numbers-II.js)
   - [offer-022-get-kth-from-end](easy/offer-022-get-kth-from-end.js)
