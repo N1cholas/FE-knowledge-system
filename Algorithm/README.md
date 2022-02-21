@@ -2,7 +2,6 @@
 
 > 未整理 --------------------------
 - 数字相关
-  - [101-easy-find-poisoned-duration](101-150-easy/101-find-poisoned-duration.js)
   - [108-easy-to-hex](101-150-easy/108-to-hex.js)
   - [124-easy-get-max](101-150-easy/124-get-max.js)
   - [125-easy-add-digits](101-150-easy/125-add-digits.js)
@@ -135,6 +134,7 @@
   - [009-is-palindrome-number](easy/009-is-palindrome-number.js)
   - [066-plus-one](easy/066-plus-one.js)
   - [067-binary-sum](easy/067-binary-sum.js)
+  - [405-to-hex](easy/405-to-hex.js)
   - [415-string-sum](easy/415-string-sum.js)
 - 数组相关
   - [003-longest-substring-without-repeat](middle/003-longest-substring-without-repeat.js)
