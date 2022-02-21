@@ -3,11 +3,7 @@
 > 未整理 --------------------------
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
-- 模拟场景相关
-  - [001-middle-two-sum-3](1-50-middle/001-two-sum-3.js)
 - 栈相关
-  - [007-easy-valid-brackets](1-50-easy/007-valid-brackets.js)
-  - [047-easy-min-stack](1-50-easy/047-min-stack.js)
   - [118-easy-remove-duplicate](101-150-easy/118-remove-duplicate.js)
   - [119-easy-queue](101-150-easy/119-queue.js)
 - 链表相关
@@ -101,6 +97,7 @@
   - [121-max-profit](easy/121-max-profit.js)
   - [136-single-number](easy/136-single-number.js)
   - [141-cycle-list](easy/141-cycle-list.js)
+  - [155-min-stack](easy/155-min-stack.js)
   - [409-longest-palindrome-string](easy/409-longest-palindrome-string.js)
   - [434-counts-of-words](easy/434-counts-of-words.js)
   - [441-arrange-coins](easy/441-arrange-coins.js)
