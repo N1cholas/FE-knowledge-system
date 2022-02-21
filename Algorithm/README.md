@@ -3,10 +3,7 @@
 > 未整理 --------------------------
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
-- 哈希表相关
-  - [150-easy-is-anagram](101-150-easy/150-is-anagram.js)
 - 模拟场景相关
-  - [149-easy-check-record](101-150-easy/149-check-record.js)
   - [001-middle-two-sum-3](1-50-middle/001-two-sum-3.js)
 - 栈相关
   - [007-easy-valid-brackets](1-50-easy/007-valid-brackets.js)
@@ -110,6 +107,7 @@
   - [453-min-moves](easy/453-min-moves.js)
   - [485-find-max-consecutive-ones](easy/485-find-max-consecutive-ones.js)
   - [495-teemo-attack](easy/495-teemo-attack.js)
+  - [551-check-record](easy/551-check-record.js)
   - [557-reverse-words](easy/557-reverse-words.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
   - [1556-thousand-separator](easy/1556-thousand-separator.js)
