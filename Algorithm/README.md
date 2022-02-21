@@ -2,14 +2,6 @@
 
 > 未整理 --------------------------
 - 数字相关
-  - [033-easy-last-remaining](1-50-easy/033-last-remaining.js)
-  - [036-easy-yang-hui-triangle](1-50-easy/036-yang-hui-triangle.js)
-  - [051-easy-majority-element](51-100-easy/051-majority-element.js)
-  - [053-easy-two-sum-2](51-100-easy/053-two-sum-2.js)
-  - [072-easy-add-binary](51-100-easy/072-add-binary.js)
-  - [074-easy-print-numbers](51-100-easy/074-print-numbers.js)
-  - [075-easy-happy-number](51-100-easy/075-happy-number.js)
-  - [084-easy-find-max-continue-ones](51-100-easy/084-find-max-continue-ones.js)
   - [101-easy-find-poisoned-duration](101-150-easy/101-find-poisoned-duration.js)
   - [108-easy-to-hex](101-150-easy/108-to-hex.js)
   - [124-easy-get-max](101-150-easy/124-get-max.js)
@@ -132,6 +124,7 @@
   - [409-longest-palindrome-string](easy/409-longest-palindrome-string.js)
   - [434-counts-of-words](easy/434-counts-of-words.js)
   - [453-min-moves](easy/453-min-moves.js)
+  - [485-find-max-consecutive-ones](easy/485-find-max-consecutive-ones.js)
   - [557-reverse-words](easy/557-reverse-words.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
   - [offer-005-replace-space](easy/offer-005-replace-space.js)
