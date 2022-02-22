@@ -6,10 +6,8 @@
 - 树相关
   - [138-easy-mirror-tree](101-150-easy/138-mirror-tree.js)
 - 数组相关
-  - [071-easy-reverse-string-array](51-100-easy/071-reverse-string-array.js)
   - [098-easy-find-continues-sequence](51-100-easy/098-find-continues-sequence.js)
   - [105-easy-exchange](101-150-easy/105-exchange.js)
-  - [127-easy-find-longest-harmonious-string](101-150-easy/127-find-longest-harmonious-string.js)
   - [128-easy-range-sum](101-150-easy/128-range-sum.js)
 - 堆相关
   - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
@@ -123,6 +121,7 @@
   - [448-find-disappeared-number](easy/448-find-disappeared-number.js)
   - [451-sort-string-by-frequency](middle/451-sort-string-by-frequency.js)
   - [454-four-sum-II](middle/454-four-sum-II.js)
+  - [594-find-LHS](easy/594-find-LHS.js)
   - [1002-common-chars](easy/1002-common-chars.js)
   - [offer-003-find-repeat-number](easy/offer-003-find-repeat-number.js)
   - [interview-001-is-unique](easy/interview-001-is-unique.js)
