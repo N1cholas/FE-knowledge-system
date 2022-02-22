@@ -5,7 +5,6 @@
   - [086-easy-count-number](51-100-easy/086-count-number.js)
 - 树相关
   - [138-easy-mirror-tree](101-150-easy/138-mirror-tree.js)
-  - [147-easy-level-order](101-150-easy/147-level-order.js)
 - 数组相关
   - [018-easy-min-number-in-rotate-array](1-50-easy/018-min-number-in-rotate-array.js)
   - [019-easy-max-continuous-sub-array](1-50-easy/019-max-continuous-sub-array.js)
@@ -165,6 +164,7 @@
   - [104-depth-in-tree](easy/104-depth-in-tree.js)
   - [108-generate-BST-from-sorted-array](easy/108-generate-BST-from-sorted-array.js)
   - [100-is-same-tree](easy/100-is-same-tree.js)
+  - [102-level-order-in-binary-tree](middle/102-level-order-in-binary-tree.js)
   - [110-is-balance-tree](easy/110-is-balance-tree.js)
   - [111-min-depth](easy/111-min-depth.js)
   - [112-path-sum](easy/112-path-sum.js)
