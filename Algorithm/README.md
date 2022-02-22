@@ -1,13 +1,9 @@
 # Algorithm
 
 > 未整理 --------------------------
-- 字符串相关
-  - [003-middle-longest-substring](1-50-middle/003-longest-substring.js)
 - 贪心
-  - [115-easy-place-flowers](101-150-easy/115-place-flowers.js)
   - [117-easy-balance-string-split](101-150-easy/117-balance-string-split.js)
 - 其他
-  - [011-easy-max-profit](1-50-easy/011-max-profit.js)
   - [027-easy-spiral-order](1-50-easy/027-spiral-order.js)
   - [066-easy-distribute-candies](51-100-easy/066-distribute-candies.js)
   - [087-easy-min-moves](51-100-easy/087-min-moves.js)
@@ -202,3 +198,4 @@
   - [392-is-subsequence](easy/392-is-subsequence.js)
   - [435-non-overlap-intervals](middle/435-non-overlap-intervals.js)
   - [455-assign-cookies](easy/455-assign-cookies.js)
+  - [605-place-flowers](easy/605-place-flowers.js)
