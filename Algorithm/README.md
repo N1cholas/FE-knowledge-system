@@ -2,7 +2,6 @@
 
 > 未整理 --------------------------
 - 其他
-  - [027-easy-spiral-order](1-50-easy/027-spiral-order.js)
   - [066-easy-distribute-candies](51-100-easy/066-distribute-candies.js)
   - [087-easy-min-moves](51-100-easy/087-min-moves.js)
   - [097-easy-hash-set](51-100-easy/097-hash-set.js)
@@ -15,8 +14,9 @@
 - 模拟场景相关
   - [013-roman-to-int](easy/013-roman-to-int.js)
   - [028-sub-string](easy/028-sub-string.js)
-  - [069-sqrt](easy/069-sqrt.js)
+  - [054-spiral-order](easy/054-spiral-order.js)
   - [058-last-word-length](easy/058-last-word-length.js)
+  - [069-sqrt](easy/069-sqrt.js)
   - [121-max-profit](easy/121-max-profit.js)
   - [136-single-number](easy/136-single-number.js)
   - [141-cycle-list](easy/141-cycle-list.js)
@@ -99,9 +99,9 @@
   - [454-four-sum-II](middle/454-four-sum-II.js)
   - [594-find-LHS](easy/594-find-LHS.js)
   - [1002-common-chars](easy/1002-common-chars.js)
+  - [interview-001-is-unique](easy/interview-001-is-unique.js)
   - [offer-003-find-repeat-number](easy/offer-003-find-repeat-number.js)
   - [offer-053-search-number-in-sorted-array-I](easy/offer-053-search-number-in-sorted-array-I.js)
-  - [interview-001-is-unique](easy/interview-001-is-unique.js)
 - 链表相关
   - [002-add-two-number](middle/002-add-two-number.js)
   - [021-merge-two-sorted-list](easy/021-merge-two-sorted-list.js)
