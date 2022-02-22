@@ -1,8 +1,6 @@
 # Algorithm
 
 > 未整理 --------------------------
-- 二分查找相关
-  - [086-easy-count-number](51-100-easy/086-count-number.js)
 - 数组相关
   - [128-easy-range-sum](101-150-easy/128-range-sum.js)
 - 堆相关
@@ -99,7 +97,7 @@
   - [704-binary-search](easy/704-binary-search.js)
   - [997-sorted-squares](easy/997-sorted-squares.js)
   - [offer-011-min-number-in-rotate-array](easy/offer-011-min-number-in-rotate-array.js)
-  - [offer-053-missing-number](easy/offer-053-missing-number.js)
+  - [offer-053-missing-number-II](easy/offer-053-missing-number-II.js)
   - [offer-057-find-continuous-sequence](easy/offer-057-find-continuous-sequence.js)
 - 查找相关
   - [001-two-sum](easy/001-two-sum.js)
@@ -122,6 +120,7 @@
   - [594-find-LHS](easy/594-find-LHS.js)
   - [1002-common-chars](easy/1002-common-chars.js)
   - [offer-003-find-repeat-number](easy/offer-003-find-repeat-number.js)
+  - [offer-053-search-number-in-sorted-array-I](easy/offer-053-search-number-in-sorted-array-I.js)
   - [interview-001-is-unique](easy/interview-001-is-unique.js)
 - 链表相关
   - [002-add-two-number](middle/002-add-two-number.js)
