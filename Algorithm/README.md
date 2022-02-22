@@ -2,9 +2,6 @@
 
 > 未整理 --------------------------
 - 其他
-  - [066-easy-distribute-candies](51-100-easy/066-distribute-candies.js)
-  - [087-easy-min-moves](51-100-easy/087-min-moves.js)
-  - [097-easy-hash-set](51-100-easy/097-hash-set.js)
   - [089-easy-convert-to-title](51-100-easy/089-convert-to-title.js)
   - [110-easy-title-to-number](101-150-easy/110-title-to-number.js)
   - [123-easy-fizz-buzz](101-150-easy/123-fizz-buzz.js)
@@ -33,6 +30,7 @@
   - [557-reverse-words](easy/557-reverse-words.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
   - [598-range-sum](easy/598-range-sum.js)
+  - [705-hash-set](easy/705-hash-set.js)
   - [859-buddy-string](easy/859-buddy-string.js)
   - [977-sorted-squares](easy/977-sorted-squares.js)
   - [1556-thousand-separator](easy/1556-thousand-separator.js)
