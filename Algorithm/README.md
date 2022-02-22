@@ -2,10 +2,6 @@
 
 > 未整理 --------------------------
 - 字符串相关
-  - [068-easy-is-palindrome-string](51-100-easy/068-is-palindrome-string.js)
-  - [077-easy-longest-palindrome](51-100-easy/077-longest-palindrome.js)
-  - [090-easy-reverse-vowels](51-100-easy/090-reverse-vowels.js)
-  - [112-easy-reverse-string](101-150-easy/112-reverse-string.js)
   - [134-easy-sub-string](101-150-easy/134-sub-string.js)
   - [135-easy-buddy-string](101-150-easy/135-buddy-string.js)
   - [003-middle-longest-substring](1-50-middle/003-longest-substring.js)
@@ -40,6 +36,7 @@
   - [453-min-moves](easy/453-min-moves.js)
   - [485-find-max-consecutive-ones](easy/485-find-max-consecutive-ones.js)
   - [495-teemo-attack](easy/495-teemo-attack.js)
+  - [541-reverse-string](easy/541-reverse-string.js)
   - [551-check-record](easy/551-check-record.js)
   - [557-reverse-words](easy/557-reverse-words.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
