@@ -1,14 +1,7 @@
 # Algorithm
 
 > 未整理 --------------------------
-- 堆相关
-  - [106-easy-next-greater-element](101-150-easy/106-next-greater-element.js)
 - 字符串相关
-  - [005-easy-longest-common-prefix](1-50-easy/005-longest-common-prefix.js)
-  - [017-easy-sum-2-string](1-50-easy/017-sum-2-string.js)
-  - [021-easy-is-unique](1-50-easy/021-is-unique.js)
-  - [035-easy-replace-space](1-50-easy/035-replace-space.js)
-  - [042-easy-match-sub-string](1-50-easy/042-match-sub-string.js)
   - [046-easy-reverse-words](1-50-easy/046-reverse-words.js)
   - [057-easy-count-words](51-100-easy/057-count-words.js)
   - [061-easy-first-unique](51-100-easy/061-first-unique.js)
@@ -37,6 +30,7 @@
 > 已整理 --------------------------
 - 模拟场景相关
   - [013-roman-to-int](easy/013-roman-to-int.js)
+  - [028-sub-string](easy/028-sub-string.js)
   - [069-sqrt](easy/069-sqrt.js)
   - [058-last-word-length](easy/058-last-word-length.js)
   - [121-max-profit](easy/121-max-profit.js)
