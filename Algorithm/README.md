@@ -1,10 +1,5 @@
 # Algorithm
 
-> 未整理 --------------------------
-- 其他
-  - [126-easy-matrix-reshape](101-150-easy/126-matrix-reshape.js)
-  
-> 已整理 --------------------------
 - 模拟场景相关
   - [013-roman-to-int](easy/013-roman-to-int.js)
   - [028-sub-string](easy/028-sub-string.js)
@@ -28,6 +23,7 @@
   - [541-reverse-string](easy/541-reverse-string.js)
   - [551-check-record](easy/551-check-record.js)
   - [557-reverse-words](easy/557-reverse-words.js)
+  - [566-matrix-reshape](easy/566-matrix-reshape.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
   - [598-range-sum](easy/598-range-sum.js)
   - [705-hash-set](easy/705-hash-set.js)
