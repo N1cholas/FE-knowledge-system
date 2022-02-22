@@ -2,8 +2,6 @@
 
 > 未整理 --------------------------
 - 字符串相关
-  - [134-easy-sub-string](101-150-easy/134-sub-string.js)
-  - [135-easy-buddy-string](101-150-easy/135-buddy-string.js)
   - [003-middle-longest-substring](1-50-middle/003-longest-substring.js)
 - 贪心
   - [115-easy-place-flowers](101-150-easy/115-place-flowers.js)
@@ -41,6 +39,7 @@
   - [557-reverse-words](easy/557-reverse-words.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
   - [598-range-sum](easy/598-range-sum.js)
+  - [859-buddy-string](easy/859-buddy-string.js)
   - [977-sorted-squares](easy/977-sorted-squares.js)
   - [1556-thousand-separator](easy/1556-thousand-separator.js)
   - [1646-get-max-from-generated](easy/1646-get-max-from-generated.js)
