@@ -2,7 +2,6 @@
 
 > 未整理 --------------------------
 - 堆相关
-  - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-easy-third-max](51-100-easy/091-third-max.js)
   - [106-easy-next-greater-element](101-150-easy/106-next-greater-element.js)
 - 字符串相关
@@ -60,6 +59,7 @@
   - [1646-get-max-from-generated](easy/1646-get-max-from-generated.js)
   - [offer-005-replace-space](easy/offer-005-replace-space.js)
   - [offer-021-exchange](easy/offer-021-exchange.js)
+  - [offer-040-get-least-numbers](easy/offer-040-get-least-numbers.js)
   - [offer-062-last-remaining](easy/offer-062-last-remaining.js)
 - 数字相关
   - [007-reverse-int](easy/007-reverse-int.js)
