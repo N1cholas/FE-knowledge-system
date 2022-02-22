@@ -168,6 +168,7 @@
   - [108-generate-BST-from-sorted-array](easy/108-generate-BST-from-sorted-array.js)
   - [100-is-same-tree](easy/100-is-same-tree.js)
   - [110-is-balance-tree](easy/110-is-balance-tree.js)
+  - [111-min-depth](easy/111-min-depth.js)
   - [112-path-sum](easy/112-path-sum.js)
   - [145-post-order-traversal](easy/145-post-order-traversal.js)
   - [226-invert-tree](easy/226-invert-tree.js)
