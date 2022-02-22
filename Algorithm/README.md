@@ -2,7 +2,6 @@
 
 > 未整理 --------------------------
 - 其他
-  - [110-easy-title-to-number](101-150-easy/110-title-to-number.js)
   - [123-easy-fizz-buzz](101-150-easy/123-fizz-buzz.js)
   - [126-easy-matrix-reshape](101-150-easy/126-matrix-reshape.js)
   
@@ -18,6 +17,7 @@
   - [141-cycle-list](easy/141-cycle-list.js)
   - [155-min-stack](easy/155-min-stack.js)
   - [168-convert-to-title](easy/168-convert-to-title.js)
+  - [171-title-to-number](easy/171-title-to-number.js)
   - [409-longest-palindrome-string](easy/409-longest-palindrome-string.js)
   - [414-third-max](easy/414-third-max.js)
   - [434-counts-of-words](easy/434-counts-of-words.js)
