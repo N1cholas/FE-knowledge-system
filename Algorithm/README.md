@@ -4,7 +4,6 @@
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
 - 树相关
-  - [133-easy-find-node-BST](101-150-easy/133-find-node-in-BST.js)
   - [136-easy-min-depth](101-150-easy/136-min-depth.js)
   - [138-easy-mirror-tree](101-150-easy/138-mirror-tree.js)
   - [144-easy-find-tilt](101-150-easy/144-find-tilt.js)
@@ -175,6 +174,7 @@
   - [235-lowest-common-ancestor](easy/235-lowest-common-ancestor.js)
   - [257-binary-tree-paths](easy/257-binary-tree-paths.js)
   - [404-left-leaves-sum](easy/404-left-leaves-sum.js)
+  - [501-find-mode-in-BST](easy/501-find-mode-in-BST.js)
   - [543-diameter-of-binary-tree](easy/543-diameter-of-binary-tree.js)
   - [572-sub-tree](easy/572-sub-tree.js)
   - [617-merge-trees](easy/617-merge-trees.js)
