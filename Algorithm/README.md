@@ -2,10 +2,6 @@
 
 > 未整理 --------------------------
 - 字符串相关
-  - [046-easy-reverse-words](1-50-easy/046-reverse-words.js)
-  - [057-easy-count-words](51-100-easy/057-count-words.js)
-  - [061-easy-first-unique](51-100-easy/061-first-unique.js)
-  - [062-easy-compress-string](51-100-easy/062-compress-string.js)
   - [068-easy-is-palindrome-string](51-100-easy/068-is-palindrome-string.js)
   - [077-easy-longest-palindrome](51-100-easy/077-longest-palindrome.js)
   - [090-easy-reverse-vowels](51-100-easy/090-reverse-vowels.js)
@@ -55,6 +51,7 @@
   - [offer-021-exchange](easy/offer-021-exchange.js)
   - [offer-040-get-least-numbers](easy/offer-040-get-least-numbers.js)
   - [offer-062-last-remaining](easy/offer-062-last-remaining.js)
+  - [interview-0106-compress-string](easy/interview-0106-compress-string.js)
 - 数字相关
   - [007-reverse-int](easy/007-reverse-int.js)
   - [009-is-palindrome-number](easy/009-is-palindrome-number.js)
