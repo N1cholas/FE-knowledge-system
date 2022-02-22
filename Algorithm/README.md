@@ -4,7 +4,6 @@
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
 - 树相关
-  - [116-easy-find-second-min-element](101-150-easy/116-find-second-min-element.js)
   - [133-easy-find-node-BST](101-150-easy/133-find-node-in-BST.js)
   - [136-easy-min-depth](101-150-easy/136-min-depth.js)
   - [138-easy-mirror-tree](101-150-easy/138-mirror-tree.js)
@@ -179,6 +178,7 @@
   - [543-diameter-of-binary-tree](easy/543-diameter-of-binary-tree.js)
   - [572-sub-tree](easy/572-sub-tree.js)
   - [617-merge-trees](easy/617-merge-trees.js)
+  - [671-second-min-value-node](easy/671-second-min-value-node.js)
   - [offer-068-lowest-common-ancestor-II](easy/offer-068-lowest-common-ancestor-II.js)
 - 递归回溯相关
   - [017-number-combinations](middle/017-number-combinations.js)
