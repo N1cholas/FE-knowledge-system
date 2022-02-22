@@ -3,8 +3,6 @@
 > 未整理 --------------------------
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
-- 树相关
-  - [138-easy-mirror-tree](101-150-easy/138-mirror-tree.js)
 - 数组相关
   - [098-easy-find-continues-sequence](51-100-easy/098-find-continues-sequence.js)
   - [105-easy-exchange](101-150-easy/105-exchange.js)
@@ -174,6 +172,7 @@
   - [617-merge-trees](easy/617-merge-trees.js)
   - [671-second-min-value-node](easy/671-second-min-value-node.js)
   - [offer-068-lowest-common-ancestor-II](easy/offer-068-lowest-common-ancestor-II.js)
+  - [offer-027-mirror-tree](easy/offer-027-mirror-tree.js)
 - 递归回溯相关
   - [017-number-combinations](middle/017-number-combinations.js)
   - [039-combination-sum-I](middle/039-combination-sum.js)
