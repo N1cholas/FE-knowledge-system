@@ -6,12 +6,6 @@
 - 树相关
   - [138-easy-mirror-tree](101-150-easy/138-mirror-tree.js)
 - 数组相关
-  - [018-easy-min-number-in-rotate-array](1-50-easy/018-min-number-in-rotate-array.js)
-  - [019-easy-max-continuous-sub-array](1-50-easy/019-max-continuous-sub-array.js)
-  - [031-easy-remove-duplicate](1-50-easy/031-remove-duplicate.js)
-  - [041-easy-intersection](1-50-easy/041-intersection.js)
-  - [055-easy-intersection-2](51-100-easy/055-intersection-2.js)
-  - [064-easy-sorted-squares](51-100-easy/064-sorted-squares.js)
   - [071-easy-reverse-string-array](51-100-easy/071-reverse-string-array.js)
   - [098-easy-find-continues-sequence](51-100-easy/098-find-continues-sequence.js)
   - [105-easy-exchange](101-150-easy/105-exchange.js)
@@ -70,6 +64,7 @@
   - [551-check-record](easy/551-check-record.js)
   - [557-reverse-words](easy/557-reverse-words.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
+  - [977-sorted-squares](easy/977-sorted-squares.js)
   - [1556-thousand-separator](easy/1556-thousand-separator.js)
   - [1646-get-max-from-generated](easy/1646-get-max-from-generated.js)
   - [offer-005-replace-space](easy/offer-005-replace-space.js)
