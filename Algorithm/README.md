@@ -1,8 +1,6 @@
 # Algorithm
 
 > 未整理 --------------------------
-- 数组相关
-  - [128-easy-range-sum](101-150-easy/128-range-sum.js)
 - 堆相关
   - [038-easy-get-least-numbers](1-50-easy/038-get-least-numbers.js)
   - [091-easy-third-max](51-100-easy/091-third-max.js)
@@ -56,6 +54,7 @@
   - [551-check-record](easy/551-check-record.js)
   - [557-reverse-words](easy/557-reverse-words.js)
   - [575-distribute-candies](easy/575-distribute-candies.js)
+  - [598-range-sum](easy/598-range-sum.js)
   - [977-sorted-squares](easy/977-sorted-squares.js)
   - [1556-thousand-separator](easy/1556-thousand-separator.js)
   - [1646-get-max-from-generated](easy/1646-get-max-from-generated.js)
