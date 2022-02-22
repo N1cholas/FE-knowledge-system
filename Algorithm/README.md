@@ -2,7 +2,6 @@
 
 > 未整理 --------------------------
 - 堆相关
-  - [091-easy-third-max](51-100-easy/091-third-max.js)
   - [106-easy-next-greater-element](101-150-easy/106-next-greater-element.js)
 - 字符串相关
   - [005-easy-longest-common-prefix](1-50-easy/005-longest-common-prefix.js)
@@ -45,6 +44,7 @@
   - [141-cycle-list](easy/141-cycle-list.js)
   - [155-min-stack](easy/155-min-stack.js)
   - [409-longest-palindrome-string](easy/409-longest-palindrome-string.js)
+  - [414-third-max](easy/414-third-max.js)
   - [434-counts-of-words](easy/434-counts-of-words.js)
   - [441-arrange-coins](easy/441-arrange-coins.js)
   - [453-min-moves](easy/453-min-moves.js)
