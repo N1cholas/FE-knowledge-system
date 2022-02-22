@@ -1,8 +1,6 @@
 # Algorithm
 
 > 未整理 --------------------------
-- 贪心
-  - [117-easy-balance-string-split](101-150-easy/117-balance-string-split.js)
 - 其他
   - [027-easy-spiral-order](1-50-easy/027-spiral-order.js)
   - [066-easy-distribute-candies](51-100-easy/066-distribute-candies.js)
@@ -199,3 +197,4 @@
   - [435-non-overlap-intervals](middle/435-non-overlap-intervals.js)
   - [455-assign-cookies](easy/455-assign-cookies.js)
   - [605-place-flowers](easy/605-place-flowers.js)
+  - [1221-split-balance-string](easy/1221-split-balance-string.js)
