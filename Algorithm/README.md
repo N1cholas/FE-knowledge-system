@@ -4,7 +4,6 @@
 - 二分查找相关
   - [086-easy-count-number](51-100-easy/086-count-number.js)
 - 数组相关
-  - [098-easy-find-continues-sequence](51-100-easy/098-find-continues-sequence.js)
   - [105-easy-exchange](101-150-easy/105-exchange.js)
   - [128-easy-range-sum](101-150-easy/128-range-sum.js)
 - 堆相关
@@ -101,6 +100,7 @@
   - [997-sorted-squares](easy/997-sorted-squares.js)
   - [offer-011-min-number-in-rotate-array](easy/offer-011-min-number-in-rotate-array.js)
   - [offer-053-missing-number](easy/offer-053-missing-number.js)
+  - [offer-057-find-continuous-sequence](easy/offer-057-find-continuous-sequence.js)
 - 查找相关
   - [001-two-sum](easy/001-two-sum.js)
   - [016-three-sum-closest](middle/016-three-sum-closest.js)
