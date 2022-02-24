@@ -1,5 +1,8 @@
 # Algorithm
 
+> 2022-02-22 整理完毕150道easy和50道middle题
+> 2022-02-24 重新过一次200道题
+
 - 模拟场景相关
   - [013-roman-to-int](easy/013-roman-to-int.js)
   - [028-sub-string](easy/028-sub-string.js)

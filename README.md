@@ -8,12 +8,6 @@
 
 [Algorithm](Algorithm/README.md)
 
-Algorithm Plan
-
-- [x] 150 easy
-- [x] 50 middle
-> Done at 2022-01-18
-
 ## notes
  ### 架构思维
 
