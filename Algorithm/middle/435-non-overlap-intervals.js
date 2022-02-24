@@ -12,6 +12,7 @@ var eraseOverlapIntervals = function(intervals) {
         return a[1] - b[1]
     })
     
+    // dp[i]表示从[0, i]中最长不重叠区间序列
     const dp = new Array(intervals.length).fill(1)
     
     for (let i = 1; i < intervals.length; i++) {
@@ -26,6 +27,7 @@ var eraseOverlapIntervals = function(intervals) {
 };
 
 // greedy
+// 贪心的思想：结尾的值越小，就能组成更多的不重叠区间序列
 var eraseOverlapIntervals2 = function(intervals) {
     intervals.sort((a, b) => {
         if (a[1] !== b[1]) {
