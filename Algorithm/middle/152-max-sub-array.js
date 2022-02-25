@@ -2,6 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
+
 var maxProduct = function(nums) {
     let ans = -Infinity
     let max = 1
@@ -9,13 +10,13 @@ var maxProduct = function(nums) {
     
     for (let i = 0; i < nums.length; i++) {
         if (nums[i] < 0) {
-            [min, max] = [max, min]
+            [max, min] = [min, max]
         }
         
         max = Math.max(nums[i], nums[i] * max)
         min = Math.min(nums[i], nums[i] * min)
         
-        ans = Math.max(max, ans)
+        ans = Math.max(ans, max)
     }
     
     return ans
