@@ -28,14 +28,15 @@ var rob = function(nums) {
 };
 
 // dynamic program
+// f(i)=max{nums[i] + f(i - 2), f(i - 1)}
 var rob2 = function(nums) {
     const n = nums.length
-    const dp = new Array(n).fill(-1)
+    const dp = new Array(nums.length).fill(0)
     
     dp[0] = nums[0]
-    dp[1] = Math.max(nums[1], dp[0])
+    dp[1] = Math.max(dp[0], nums[1])
     
-    for (let i = 2; i < n; i++) {
+    for(let i = 2; i < n; i++) {
         dp[i] = Math.max(nums[i] + dp[i - 2], dp[i - 1])
     }
     
