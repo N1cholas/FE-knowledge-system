@@ -2,6 +2,8 @@
  * @param {number[]} nums
  * @return {number}
  */
+
+// 算两次
 var rob = function(nums) {
     if (nums.length === 1) return nums[0]
     
