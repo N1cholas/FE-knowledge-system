@@ -170,7 +170,7 @@
   - [063-unique-paths-II](middle/063-unique-paths-II.js)
   - [064-min-path-sum-in-grid](middle/064-min-path-sum-in-grid.js)
   - [070-climb-stairs](easy/070-climb-stairs.js)
-  - [091-decode-way*](middle/091-decode-way.js)
+  - [091-decode-way](middle/091-decode-way.js)
   - [120-triangle-sum](middle/120-triangle-sum.js)
   - [139-word-break](middle/139-word-break.js)
   - [152-max-sub-array*](middle/152-max-sub-array.js)
