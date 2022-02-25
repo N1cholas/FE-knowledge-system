@@ -11,16 +11,20 @@
  * @return {number}
  */
 var rob = function(root) {
-    function tryRobber(node, include) {
-        if (!node) return 0
-        
-        let res = tryRobber(node.left, true) + tryRobber(node.right, true)
-        if (include) {
-            res = Math.max(res, node.val + tryRobber(node.left, false) + tryRobber(node.right, false))
+    // 返回二元组，第一项代表当前节点偷的值另一个为不偷的值
+    function postOrder(node) {
+        if (!node) {
+            return [0, 0]
         }
         
-        return res
+        const left = postOrder(node.left)
+        const right = postOrder(node.right)
+        
+        const rob = node.val + left[1] + right[1]
+        const noRob = Math.max(left[0], left[1]) + Math.max(right[0], right[1])
+        
+        return [rob, noRob]
     }
     
-    return tryRobber(root, true)
+    return Math.max(...postOrder(root))
 };
