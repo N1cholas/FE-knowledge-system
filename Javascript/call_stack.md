@@ -2,7 +2,9 @@
 
 ### Definition
 
-[Call Stack](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)是解释器的机制，用于记录解释器在脚本中调用多个函数的位置
+[Call Stack](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)是解释器追踪函数执行流的机制
+
+> 一个记录当前程序所在位置的数据结构
 
 - 了解解释器运行机制
 - debug
@@ -15,6 +17,7 @@
 - [x] 🎥 [The Call Stack — Kevin Drumm](https://www.youtube.com/watch?v=Q2sFmqvpBe0) 👏🏻
 - [x] 🎥 [Understanding JavaScript Execution — Codesmith](https://www.youtube.com/watch?v=exrc_rLj5iw&list=PLWrQZnG8l0E4kd1T_nyuVoxQUaYEWFgcD&index=4) 👏🏻
 - [x] 🎥 [The Ultimate Guide to Execution Contexts, Hoisting, Scopes, and Closures in JavaScript — Tyler McGinnis](https://www.youtube.com/watch?v=Nt-qa_LlUH0) 👏🏻
+- [x] 🎥 [What the heck is the event loop anyway? — Philip Roberts](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
 Reference：https://github.com/leonardomso/33-js-concepts#table-of-contents
 
