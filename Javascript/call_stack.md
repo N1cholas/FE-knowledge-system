@@ -12,7 +12,8 @@
 - [x] 🎥 [Javascript: the Call Stack explained — Coding Blocks India](https://www.youtube.com/watch?v=w6QGEiQceOM)
 - [x] 🎥 [The JS Call Stack Explained In 9 Minutes — Colt Steele](https://www.youtube.com/watch?v=W8AeMrVtFLY)
 - [x] 🎥 [What is the Call Stack? — Eric Traub](https://www.youtube.com/watch?v=w7QWQlkLY_s)
-- [x] 🎥 [The Call Stack — Kevin Drumm](https://www.youtube.com/watch?v=Q2sFmqvpBe0) **Important**
+- [x] 🎥 [The Call Stack — Kevin Drumm](https://www.youtube.com/watch?v=Q2sFmqvpBe0) 👏🏻
+- [x] 🎥 [Understanding JavaScript Execution — Codesmith](https://www.youtube.com/watch?v=exrc_rLj5iw&list=PLWrQZnG8l0E4kd1T_nyuVoxQUaYEWFgcD&index=4) 👏🏻
 
 Reference：https://github.com/leonardomso/33-js-concepts#table-of-contents
 
