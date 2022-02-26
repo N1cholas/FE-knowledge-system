@@ -9,7 +9,7 @@
 - 了解解释器运行机制
 - debug
 
-### Watch List
+### Watching List
 
 - [x] 🎥 [Javascript: the Call Stack explained — Coding Blocks India](https://www.youtube.com/watch?v=w6QGEiQceOM)
 - [x] 🎥 [The JS Call Stack Explained In 9 Minutes — Colt Steele](https://www.youtube.com/watch?v=W8AeMrVtFLY)
@@ -20,9 +20,11 @@
 - [x] 🎥 [What the heck is the event loop anyway? — Philip Roberts](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 - [x] 🎥 [How JavaScript Code is executed? ❤️& Call Stack — Akshay Saini](https://www.youtube.com/watch?v=iLWTnMzWtj4&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP) 👏🏻
 
-Reference：https://github.com/leonardomso/33-js-concepts#table-of-contents
+### Reading List
+
+- [x] 📜 [Understanding Javascript Call Stack, Event Loops — Gaurav Pandvia](https://medium.com/@gaurav.pandvia/understanding-javascript-function-executions-tasks-event-loop-call-stack-more-part-1-5683dea1f5ec)
 
 ### Reference
 
-- [33-js-concepts](https://github.com/leonardomso/33-js-concepts#table-of-contents)
+- You should know [33-js-concepts](https://github.com/leonardomso/33-js-concepts#table-of-contents)
 
