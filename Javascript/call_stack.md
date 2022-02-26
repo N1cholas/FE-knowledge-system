@@ -14,6 +14,7 @@
 - [x] 🎥 [What is the Call Stack? — Eric Traub](https://www.youtube.com/watch?v=w7QWQlkLY_s)
 - [x] 🎥 [The Call Stack — Kevin Drumm](https://www.youtube.com/watch?v=Q2sFmqvpBe0) 👏🏻
 - [x] 🎥 [Understanding JavaScript Execution — Codesmith](https://www.youtube.com/watch?v=exrc_rLj5iw&list=PLWrQZnG8l0E4kd1T_nyuVoxQUaYEWFgcD&index=4) 👏🏻
+- [x] 🎥 [The Ultimate Guide to Execution Contexts, Hoisting, Scopes, and Closures in JavaScript — Tyler McGinnis](https://www.youtube.com/watch?v=Nt-qa_LlUH0) 👏🏻
 
 Reference：https://github.com/leonardomso/33-js-concepts#table-of-contents
 
