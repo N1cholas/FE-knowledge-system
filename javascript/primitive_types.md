@@ -19,7 +19,8 @@
 - [x] 📜 [How numbers are encoded in JavaScript — Dr. Axel Rauschmayer](http://2ality.com/2012/04/number-encoding.html)
 - [ ] 📜 [What You Need to Know About JavaScript Number Type — Max Wizard K](https://indepth.dev/posts/1139/here-is-what-you-need-to-know-about-javascripts-number-type)
 - [ ] 📜 [What Every JavaScript Developer Should Know About Floating Point Numbers — Chewxy](https://blog.chewxy.com/2014/02/24/what-every-javascript-developer-should-know-about-floating-point-numbers/)
-- [ ] 📜 [The Secret Life of JavaScript Primitives — Angus Croll](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)
+- [x] 📜 [The Secret Life of JavaScript Primitives — Angus Croll](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/) 👏🏻
+- [x] 📜 [JavaScript and valueOf](https://javascriptweblog.wordpress.com/2010/05/03/the-value-of-valueof/) 👏🏻
 - [ ] 📜 [Primitive Types — Flow](https://flow.org/en/docs/types/primitives/)
 - [ ] 📜 [(Not) Everything in JavaScript is an Object — Daniel Li](https://dev.to/d4nyll/not-everything-in-javascript-is-an-object)
 - [ ] 📜 [JavaScript data types and data structures — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values)
@@ -85,6 +86,8 @@ person === fourthPerson // false
 `Object.assign`只复制`property`，而不管`property`是原始类型还是引用类型
 
 变量的值都存入`stack`，包括原始类型变量的值和引用类型变量的指针
+
+劫持属性`coerced property`
 
 神奇的`Number`
 
