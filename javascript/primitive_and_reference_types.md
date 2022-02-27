@@ -30,11 +30,10 @@
 - [ ] 📜 [The differences between Object.freeze() vs Const in JavaScript — Bolaji Ayodeji](https://medium.com/@bolajiayodeji/the-differences-between-object-freeze-vs-const-in-javascript-4eacea534d7c)
 - [x] 📜 [Value Types, Reference Types and Scope in JavaScript — Ben Aston](https://medium.com/@benastontweet/lesson-1b-javascript-fundamentals-380f601ba851)
 - [x] 📜 [Back to roots: JavaScript Value vs Reference — Miro Koczka](https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18)
-- [ ] 📜 [Grasp “By Value” and “By Reference” in JavaScript — Léna Faure](https://hackernoon.com/grasp-by-value-and-by-reference-in-javascript-7ed75efa1293)
-- [ ] 📜 [JavaScript Reference and Copy Variables — Vítor Capretz](https://hackernoon.com/javascript-reference-and-copy-variables-b0103074fdf0)
-- [ ] 📜 [JavaScript Primitive vs Reference Values](http://www.javascripttutorial.net/javascript-primitive-vs-reference-values/)
-- [ ] 📜 [JavaScript by Reference vs. by Value — nrabinowitz](https://stackoverflow.com/questions/6605640/javascript-by-reference-vs-by-value)
-- [ ] 📜 [JavaScript Interview Prep: Primitive vs. Reference Types — Mike Cronin](https://dev.to/mostlyfocusedmike/javascript-interview-prep-primitive-vs-reference-types-3o4f)
+- [x] 📜 [Grasp “By Value” and “By Reference” in JavaScript — Léna Faure](https://hackernoon.com/grasp-by-value-and-by-reference-in-javascript-7ed75efa1293)
+- [x] 📜 [JavaScript Reference and Copy Variables — Vítor Capretz](https://hackernoon.com/javascript-reference-and-copy-variables-b0103074fdf0)
+- [x] 📜 [JavaScript Primitive vs Reference Values](http://www.javascripttutorial.net/javascript-primitive-vs-reference-values/)
+- [x] 📜 [JavaScript by Reference vs. by Value — nrabinowitz
 
 ## Notes
 
@@ -45,8 +44,8 @@
 `Number`、`String`、`Boolean`、`Undefined`、`Null`、`Symbol`
 
 - 存储于`stack`内存中
-- 按值传递，所以按值比较
-- 该值不可变
+- 按值传递，这个`value`就是存入`memory`的值
+- 在内存中，`Primitive Type`的值不可变
 
 ```js
 var name = 'Max'
@@ -69,8 +68,8 @@ name === thirdName // true
 `Object`、`Function`、`Array`
 
 - 存储于`heap`内存中
-- 按内存地址传递，所以比较按内存地址
-- 该值可变
+- 按值传递，这个`value`不是存入`memory`的值，而是`pointer`或者说是内存地址
+- 在内存中，`Reference Types`的值可变
 
 ```js
 var person = {
