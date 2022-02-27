@@ -5,15 +5,17 @@
 
 // memory search
 var lengthOfLIS = function(nums) {
-    function getMax(nums, endIndex) {
-        if (endIndex >= nums.length) return 0
+    function tryGetLIS(endIndex) {
+        if (endIndex >= n) {
+            return 0
+        }
         
         if (memo[endIndex] !== -1) return memo[endIndex]
         
         let res = 1
         for (let i = 0; i < endIndex; i++) {
             if (nums[i] < nums[endIndex]) {
-                res = Math.max(res, 1 + getMax(nums, i))
+                res = Math.max(res, 1 + tryGetLIS(i))
             }
         }
         
@@ -22,22 +24,27 @@ var lengthOfLIS = function(nums) {
         return res
     }
     
-    const memo = new Array(nums.length).fill(-1)
+    const n = nums.length
     
-    let ans = 1
-    for (let i = 0; i < nums.length; i++) {
-        ans = Math.max(ans, getMax(nums, i))
+    const memo = new Array(n + 1).fill(-1)
+    
+    let ans = -1
+    
+    for (let i = 1; i < n; i++) {
+        ans = Math.max(ans, tryGetLIS(i))
     }
     
     return ans
 };
 
 // dynamic program
+// f(i)=max{f(i), 1 + f(j)} j < i && j >= 0 && nums[j] < nums[i]
 var lengthOfLIS2 = function(nums) {
-    const dp = new Array(nums.length).fill(1)
+    const n = nums.length
+    const dp = new Array(n + 1).fill(1)
     
-    for (let i = 1; i < nums.length; i++) {
-        for (let j = i - 1; j >= 0; j--) {
+    for(let i = 1; i < n; i++) {
+        for(let j = i - 1; j >= 0; j--) {
             if (nums[j] < nums[i]) {
                 dp[i] = Math.max(dp[i], 1 + dp[j])
             }
