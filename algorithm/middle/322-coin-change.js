@@ -35,15 +35,16 @@ var coinChange = function(coins, amount) {
 };
 
 // dynamic program
+// f(i)=min{f(i), 1 + f(i - coins[j])} j => [0...coins.length)
 var coinChange2 = function(coins, amount) {
     const dp = new Array(amount + 1).fill(Infinity)
     
     dp[0] = 0
     
-    for (let i = 1; i <= amount; i++) {
-        for (let j = 0; j < coins.length; j++) {
+    for(let i = 1; i <= amount; i++) {
+        for(let j = 0; j < coins.length; j++) {
             if (i - coins[j] >= 0) {
-                dp[i] = Math.min(dp[i], 1 + dp[i - coins[j]])
+                dp[i] = Math.min(1 + dp[i - coins[j]], dp[i])
             }
         }
     }
