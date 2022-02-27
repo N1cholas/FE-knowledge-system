@@ -2,11 +2,12 @@
 
 ### Reference
 
-- You should know [33-js-concepts](https://github.com/leonardomso/33-js-concepts#table-of-contents)
+- 📜 You should know [33-js-concepts](https://github.com/leonardomso/33-js-concepts#table-of-contents)
+- 📜 [Call Stack](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)
 
 ### Useful links
 
-- [Javascript Visualizer](https://ui.dev/javascript-visualizer)
+- 🔗 [Javascript Visualizer](https://ui.dev/javascript-visualizer)
 
 ### Watching List
 
