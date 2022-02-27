@@ -5,16 +5,17 @@
 
 // memory search
 var numSquares = function(n) {
-    function squareSum(n) {
-        if (n === 0) {
+    function trySquares(n) {
+        if (n <= 0) {
             return 0
         }
         
-        if (memo[n] !== -1) return memo[n]
+        if (memo[n] !== Infinity) return memo[n]
         
-        let res = -1
+        let res = Infinity
+        
         for (let i = 1; n - i * i >= 0; i++) {
-            res = Math.min(res, 1 + squareSum(n - i * i))
+            res = Math.min(res, 1 + trySquares(n - i * i))
         }
         
         memo[n] = res
@@ -22,12 +23,14 @@ var numSquares = function(n) {
         return res
     }
     
-    const memo = new Array(n + 1).fill(-1)
+    const memo = new Array(n + 1).fill(Infinity)
     
-    return squareSum(n)
+    return trySquares(n)
 };
 
 // dynamic program
+// f(i)=min{f(i), 1 + f(i - j * j)} j => [1, 4, 9, 16...j * j]
+// f(i)表示当前n的最少的完全平方数
 var numSquares2 = function(n) {
     const dp = new Array(n + 1).fill(Infinity)
     
