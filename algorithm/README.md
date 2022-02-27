@@ -199,7 +199,7 @@
 - [300-longest-increasing-subsequence*](middle/300-longest-increasing-subsequence.js)
 - [309-best-time-to-buy-stock*](middle/309-best-time-to-buy-stock.js)
 - [322-coin-change](middle/322-coin-change.js)
-- [343-integer-break](middle/343-integer-break.js)
+- [343-integer-break*](middle/343-integer-break.js)
 - [377-combinations-sum-4](middle/377-combinations-sum-4.js)
 - [416-partition-equal-subset-sum*](middle/416-partition-equal-subset-sum.js)
 - [474-ones-and-zeros](middle/474-ones-and-zeros.js)
