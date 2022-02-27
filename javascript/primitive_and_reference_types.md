@@ -1,4 +1,4 @@
-## Primitive Types
+## Primitive and Reference Types
 
 ### Reference
 
@@ -18,6 +18,7 @@
 
 ### Reading List
 
+- [x] 📜 [Explaining Value vs. Reference in Javascript — Arnav Aggarwal](https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0) 👏🏻
 - [ ] 📜 [How numbers are encoded in JavaScript — Dr. Axel Rauschmayer](http://2ality.com/2012/04/number-encoding.html)
 - [ ] 📜 [What You Need to Know About JavaScript Number Type — Max Wizard K](https://indepth.dev/posts/1139/here-is-what-you-need-to-know-about-javascripts-number-type)
 - [ ] 📜 [What Every JavaScript Developer Should Know About Floating Point Numbers — Chewxy](https://blog.chewxy.com/2014/02/24/what-every-javascript-developer-should-know-about-floating-point-numbers/)
@@ -27,12 +28,21 @@
 - [x] 📜 [(Not) Everything in JavaScript is an Object — Daniel Li](https://dev.to/d4nyll/not-everything-in-javascript-is-an-object) 👏🏻
 - [ ] 📜 [Diving Deeper in JavaScripts Objects — Arfat Salman](https://blog.bitsrc.io/diving-deeper-in-javascripts-objects-318b1e13dc12) move to next concept, reference types
 - [ ] 📜 [The differences between Object.freeze() vs Const in JavaScript — Bolaji Ayodeji](https://medium.com/@bolajiayodeji/the-differences-between-object-freeze-vs-const-in-javascript-4eacea534d7c)
+- [x] 📜 [Value Types, Reference Types and Scope in JavaScript — Ben Aston](https://medium.com/@benastontweet/lesson-1b-javascript-fundamentals-380f601ba851)
+- [ ] 📜 [Back to roots: JavaScript Value vs Reference — Miro Koczka](https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18)
+- [ ] 📜 [Grasp “By Value” and “By Reference” in JavaScript — Léna Faure](https://hackernoon.com/grasp-by-value-and-by-reference-in-javascript-7ed75efa1293)
+- [ ] 📜 [JavaScript Reference and Copy Variables — Vítor Capretz](https://hackernoon.com/javascript-reference-and-copy-variables-b0103074fdf0)
+- [ ] 📜 [JavaScript Primitive vs Reference Values](http://www.javascripttutorial.net/javascript-primitive-vs-reference-values/)
+- [ ] 📜 [JavaScript by Reference vs. by Value — nrabinowitz](https://stackoverflow.com/questions/6605640/javascript-by-reference-vs-by-value)
+- [ ] 📜 [JavaScript Interview Prep: Primitive vs. Reference Types — Mike Cronin](https://dev.to/mostlyfocusedmike/javascript-interview-prep-primitive-vs-reference-types-3o4f)
 
 ## Notes
 
 `Javascript`是一门类型松散的弱类型编程语言
 
 ### Primitive Types
+
+`Number`、`String`、`Boolean`、`Undefined`、`Null`、`Symbol`
 
 - 存储于`stack`内存中
 - 按值传递，所以按值比较
@@ -55,6 +65,8 @@ name === thirdName // true
 ```
 
 ### Reference Types
+
+`Object`、`Function`、`Array`
 
 - 存储于`heap`内存中
 - 按内存地址传递，所以比较按内存地址
@@ -96,6 +108,10 @@ var name = 'Max'
 name.age = 28 // 28
 name.age // undefined
 ```
+
+函数的参数传递：
+
+Remember that assignment through function parameters is essentially the same as assignment with `=`
 
 ### Number
 
