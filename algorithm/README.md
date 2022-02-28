@@ -183,6 +183,8 @@
 > 使用动态规划需要解决两个问题
 > 1. 找到重复的子问题
 > 2. 存储子问题的答案
+> 3. 确定状态方程（推出状态转移方程）
+> 4. 确定边界
 - [053-max-sub-array](easy/053-max-sub-array.js)
 - [062-unique-paths](middle/062-unique-paths.js)
 - [063-unique-paths-II](middle/063-unique-paths-II.js)
