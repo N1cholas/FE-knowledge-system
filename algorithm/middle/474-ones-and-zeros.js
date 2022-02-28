@@ -6,7 +6,7 @@
  */
 
 // memory search
-var findMaxForm = function(strs, m, n) {
+var findMaxForm = function (strs, m, n) {
     const formatStrs = strs.map(str => {
         let ones = 0
         let zeros = 0
@@ -17,7 +17,7 @@ var findMaxForm = function(strs, m, n) {
                 ones++
             }
         }
-        return [ones, zeros]
+        return [ ones, zeros ]
     })
     
     function tryFind(strs, index, m, n) {
@@ -40,4 +40,43 @@ var findMaxForm = function(strs, m, n) {
     const memo = new Map()
     
     return tryFind(formatStrs, formatStrs.length - 1, m, n)
+};
+
+// dynamic program
+var findMaxForm2 = function (strs, m, n) {
+    const formatStrs = strs.map(str => {
+        let ones = 0
+        let zeros = 0
+        for (let i = 0; i < str.length; i++) {
+            if (str.charAt(i) === '1') {
+                zeros++
+            } else {
+                ones++
+            }
+        }
+        return [ ones, zeros ]
+    })
+    
+    const len = strs.length
+    
+    const dp = new Array(len + 1).fill(0).map(
+        () => new Array(m + 1).fill(0).map(
+            () => new Array(n + 1).fill(0)
+        )
+    )
+    
+    for (let i = 1; i <= len; i++) {
+        const [ones, zeros] = formatStrs[i - 1]
+        
+        for (let j = 0; j <= m; j++) {
+            for (let k = 0; k <= n; k++) {
+                dp[i][j][k] = dp[i - 1][j][k]
+                if (j >= ones && k >= zeros) {
+                    dp[i][j][k] = Math.max(dp[i][j][k], 1 + dp[i - 1][j - ones][k - zeros])
+                }
+            }
+        }
+    }
+    
+    return dp[len][m][n]
 };
