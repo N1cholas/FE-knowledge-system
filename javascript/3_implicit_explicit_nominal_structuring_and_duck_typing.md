@@ -4,6 +4,7 @@
 
 - 📜 You should know [33-js-concepts](https://github.com/leonardomso/33-js-concepts#table-of-contents)
 - 📜 [You Don't Know JS, 1st Edition: Types & Grammar — Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
+- 📜 [JavaScript-Equality-Table](https://dorey.github.io/JavaScript-Equality-Table/)
 
 ### Watching List
 
@@ -15,6 +16,7 @@
 ### Reading List
 
 - [x] 📜 [What you need to know about Javascript's Implicit Coercion — Promise Tochi](https://dev.to/promhize/what-you-need-to-know-about-javascripts-implicit-coercion-e23) 👏🏻
+- [x] 📜 [JavaScript Type Coercion Explained — Alexey Samoshkin](https://medium.freecodecamp.org/js-type-coercion-explained-27ba3d9a2839) 👏🏻
 
 ### Notes
 
@@ -27,3 +29,18 @@ Array => toString
 运算符优先考虑转数字，但是遇到字符串就优先转字符串
 
 valueOf优先级比toString高
+
+toString
+
+toNumber
+
+toBoolean
+
+
+
+
+
+
+
+
+
