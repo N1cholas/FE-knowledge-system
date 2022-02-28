@@ -36,6 +36,8 @@ toNumber
 
 toBoolean
 
+Typeof
+
 
 
 

@@ -15,6 +15,7 @@
 - [x] 🎥 [Everything you never wanted to know about JavaScript numbers — Bartek Szopka](https://www.youtube.com/watch?v=MqHDDtVYJRI) 👏🏻
 - [x] 🎥 [Javascript Pass by Value vs Pass by Reference — techsith](https://www.youtube.com/watch?v=E-dAnFdq8k8)
 - [x] 🎥 [JavaScript Value vs Reference Types — Programming with Mosh](https://www.youtube.com/watch?v=fD0t_DKREbE)
+- [x] 🎥 [JavaScript - The typeof operator — Java Brains](https://www.youtube.com/watch?v=ol_su88I3kw)
 
 ### Reading List
 
@@ -38,6 +39,10 @@
 ## Notes
 
 `Javascript`是一门类型松散的弱类型编程语言
+
+### Typeof
+
+Todo later
 
 ### Primitive Types
 

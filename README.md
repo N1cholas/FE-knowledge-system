@@ -3,3 +3,9 @@
 [Algorithm](algorithm/README.md)
 
 [Javascript](javascript/README.md)
+
+todo:
+
+- type coercion
+- typeof
+- == & ===
