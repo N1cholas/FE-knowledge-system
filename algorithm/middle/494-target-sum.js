@@ -26,3 +26,25 @@ var findTargetSumWays = function(nums, target) {
     
     return trySum(nums, 0, target)
 };
+
+// dynamic program
+var findTargetSumWays2 = function (nums, target) {
+    const n = nums.length
+    
+    const dp = new Array(n).fill(0).map(_ => new Array(2001).fill(0))
+    
+    dp[0][1000 - nums[0]] += 1;
+    dp[0][1000 + nums[0]] += 1;
+    
+    for(let i = 1; i < n; i ++) {
+        for(let j = 0; j < 2001; j ++){
+            if(j - nums[i] >= 0 && j - nums[i] < 2001)
+                dp[i][j] += dp[i - 1][j - nums[i]];
+            if(j + nums[i] >= 0 && j + nums[i] < 2001)
+                dp[i][j] += dp[i - 1][j + nums[i]];
+        }
+    }
+    
+    
+    return dp[n - 1][target + 1000]
+}
