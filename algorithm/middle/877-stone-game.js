@@ -32,18 +32,20 @@ var stoneGame = function(piles) {
 };
 
 // dynamic program
+// dp[i][j]表示在[i, j]中两个人之间的差值，所以当i <= j时，区间才有意义
 var stoneGame2 = function(piles) {
-    const dp = new Array(piles.length).fill(0).map(() => new Array(piles.length).fill(0))
+    const n = piles.length
+    const dp = new Array(n).fill(0).map(_ => new Array(n).fill(0))
     
-    for (let i = 0; i < piles.length; i++) {
+    for(let i = 0; i < n; i++) {
         dp[i][i] = piles[i]
     }
     
-    for (let i = piles.length - 2; i >= 0; i--) {
-        for (let j = i + 1; j < piles.length; j++) {
-            dp[i][j] = Math.max(piles[i] - dp[i - 1][j], piles[j] - dp[i][j - 1])
+    for(let i = 0; i < n; i++) {
+        for(let j = i + 1; j < n; j++) {
+            dp[i][j] = Math.max(piles[i] - dp[i + 1][j], piles[j] - dp[i][j - 1])
         }
     }
     
-    return dp[0][piles.length - 1]
+    return dp[0][n - 1]
 };
