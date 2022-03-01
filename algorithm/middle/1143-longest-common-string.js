@@ -35,13 +35,16 @@ var longestCommonSubsequence = function(text1, text2) {
 };
 
 // dynamic program
+// dp[i][j]代表text1[0, i]和text2[0, j]范围内的最大LCS，所以i === 0 && j === 0是无意义的也是边界
 var longestCommonSubsequence2 = function(text1, text2) {
-    const dp = new Array(text1.length + 1).fill(0)
-        .map(_ => new Array(text2.length + 1).fill(0))
+    const n1 = text1.length
+    const n2 = text2.length
+    const dp = new Array(n1 + 1).fill(0)
+        .map(_ => new Array(n2 + 1).fill(0))
     
-    for (let i = 1; i <= text1.length; i++) {
-        for (let j = 1; j <= text2.length; j++) {
-            if (text1[i - 1] === text2[j - 1]) {
+    for(let i = 1; i <= n1; i++) {
+        for(let j = 1; j <= n2; j++) {
+            if (text1.charAt(i - 1) === text2.charAt(j - 1)) {
                 dp[i][j] = 1 + dp[i - 1][j - 1]
             } else {
                 dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1])
@@ -49,5 +52,5 @@ var longestCommonSubsequence2 = function(text1, text2) {
         }
     }
     
-    return dp[text1.length][text2.length]
+    return dp[n1][n2]
 };
