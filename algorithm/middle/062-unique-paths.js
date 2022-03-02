@@ -37,22 +37,14 @@ var uniquePaths = function(m, n) {
 // f(m,n) = f(m - 1, n) + f(m, n - 1)
 // f(m,n)表示当前格[m,n]的路径和
 var uniquePaths2 = function(m, n) {
-    const dp = []
-    
-    for(let i = 0; i < m; i++) {
-        const row = []
-        for(let j = 0; j < n; j++) {
-            row.push(-1)
-        }
-        dp.push(row)
-    }
+    const dp = new Array(m).fill(0).map(_ => new Array(n).fill(0))
     
     for(let i = 0; i < m; i++) {
         dp[i][0] = 1
     }
     
-    for(let i = 0; i < n; i++) {
-        dp[0][i] = 1
+    for(let j = 0; j < n; j++) {
+        dp[0][j] = 1
     }
     
     for(let i = 1; i < m; i++) {
