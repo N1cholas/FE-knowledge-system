@@ -6,6 +6,7 @@
 - [Scope](./4_scope.md)
 - [Expression and Statement](./5_expression_and_statement.md)
 - [Module](./6_module.md)
+- [Event Loop](./7_event_loop.md)
 
 todo:
 
