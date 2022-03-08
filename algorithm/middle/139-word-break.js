@@ -36,21 +36,26 @@ var wordBreak = function(s, wordDict) {
 // dynamic program
 // 子问题：子串能否被分割
 // dp[i]代表s[0, i - 1]的字符串可以被wordDict分割
-var wordBreak2 = function(s, wordDict) {
-    const wordSet = new Set(wordDict);
-    const len = s.length;
-    const dp = new Array(len + 1).fill(false);
-    dp[0] = true;
+// 状态转移
+// 以j进行分割，[0, j - 1] [j, i - 1] 均能被wordDict分割
+// 其中[0, j - 1]存储在dp[j]中
+var wordBreak = function(s, wordDict) {
+    const n = s.length
     
-    for (let i = 1; i <= s.length; i++) {
-        for (let j = i - 1; j >= 0; j--) { // 使用 j 进行分割
-            const suffix = s.slice(j, i)    // 获取s[j, i) 字符
-            if (dp[j] && wordSet.has(suffix)) { // s[0, j - 1] 并且 s[j, i)都能被分割
+    const wordSet = new Set(wordDict)
+    
+    const dp = new Array(n + 1).fill(false)
+    
+    dp[0] = true
+    
+    for(let i = 1; i <= n; i++) {
+        for(let j = 0; j < i; j++) {
+            if (dp[j] && wordSet.has(s.substr(j, i - j))) {
                 dp[i] = true
                 break
             }
         }
     }
     
-    return dp[len]
-}
+    return dp[n]
+};

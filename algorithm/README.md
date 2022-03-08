@@ -192,7 +192,7 @@
 - [070-climb-stairs](easy/070-climb-stairs.js)
 - [091-decode-way](middle/091-decode-way.js)
 - [120-triangle-sum](middle/120-triangle-sum.js)
-- [139-word-break*](middle/139-word-break.js)
+- [139-word-break](middle/139-word-break.js)
 - [152-max-sub-array*](middle/152-max-sub-array.js)
 - [198-house-robber](middle/198-house-robber.js)
 - [213-house-robber-II](middle/213-house-robber-II.js)
