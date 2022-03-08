@@ -50,16 +50,18 @@ var minimumTotal = function(triangle) {
 // dynamic program
 // f(i, j)= f(i, j) + min{ f(i - 1, j), f(i - 1, j - 1 ) }
 var minimumTotal2 = function(triangle) {
-    const n = triangle.length
+    const m = triangle.length
     
-    for (let i = 1; i < n; i++) {
+    for(let i = 1; i < m; i++) {
         triangle[i][0] += triangle[i - 1][0]
         triangle[i][i] += triangle[i - 1][i - 1]
-        
-        for (let j = 1; j < i; j++) {
-            triangle[i][j] += Math.min(triangle[i - 1][j - 1], triangle[i - 1][j])
+    }
+    
+    for(let i = 2; i < m; i++) {
+        for(let j = 1; j < i; j++) {
+            triangle[i][j] += Math.min(triangle[i - 1][j], triangle[i - 1][j - 1])
         }
     }
     
-    return Math.min(...triangle[triangle.length - 1])
+    return Math.min(...triangle[m - 1])
 };
