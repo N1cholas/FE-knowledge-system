@@ -20,10 +20,10 @@ var rob = function(root) {
         const left = postOrder(node.left)
         const right = postOrder(node.right)
         
-        const rob = node.val + left[1] + right[1]
-        const noRob = Math.max(left[0], left[1]) + Math.max(right[0], right[1])
-        
-        return [rob, noRob]
+        return [
+            node.val + left[1] + right[1],
+            Math.max(...left) + Math.max(...right)
+        ]
     }
     
     return Math.max(...postOrder(root))
