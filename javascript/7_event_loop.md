@@ -28,6 +28,7 @@
 - [x] 📜 [Visualising the JavaScript Event Loop with a Pizza Restaurant analogy — Priyansh Jain](https://dev.to/presto412/visualising-the-javascript-event-loop-with-a-pizza-restaurant-analogy-47a8)
 - [ ] 📜 [JavaScript Visualized: Event Loop — Lydia Hallie](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
 - [x] 📜 [setTimeout and setInterval — JavaScript.Info](https://javascript.info/settimeout-setinterval)
+- [x] 📜 [setTimeout VS setInterval — Develoger](https://develoger.com/settimeout-vs-setinterval-cff85142555b)
 
 ### Notes
 
