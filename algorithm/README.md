@@ -213,7 +213,7 @@
 - [offer-010-fib](easy/offer-010-fib.js)
 - [other-knapsack-01](middle/other-knapsack-01.js)
 
-## 贪心相关
+## 贪心相关 
 
 - [392-is-subsequence](easy/392-is-subsequence.js)
 - [435-non-overlap-intervals](middle/435-non-overlap-intervals.js)
