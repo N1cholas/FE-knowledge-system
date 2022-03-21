@@ -38,18 +38,20 @@ var lengthOfLIS = function(nums) {
 };
 
 // dynamic program
-// f(i)=max{f(i), 1 + f(j)} j < i && j >= 0 && nums[j] < nums[i]
+// 重复的子问题: 寻找长度为i的LIS可以转换为寻找长度为i - 1的LIS的长度 + 1
+// 定义dp: dp[i] 表示 [0, i] 区间内的最长LIS
+// 确定状态方程: f(i) = Math.max(f(i), 1 + f(j)) && 0 <= j < i && nums[i] > nums[j]
+// 确定边界: f(0) = 1 只有一个元素的区间的LIS是1
 var lengthOfLIS2 = function(nums) {
-    const n = nums.length
-    const dp = new Array(n + 1).fill(1)
-    
-    for(let i = 1; i < n; i++) {
-        for(let j = i - 1; j >= 0; j--) {
-            if (nums[j] < nums[i]) {
-                dp[i] = Math.max(dp[i], 1 + dp[j])
+        const n = nums.length
+        
+        const dp = new Array(n).fill(1)
+        
+        for(let i = 1; i < n; i++) {
+            for(let j = 0; j < i; j++) {
+                if (nums[i] > nums[j]) dp[i] = Math.max(dp[i], 1 + dp[j])
             }
         }
-    }
-    
-    return Math.max(...dp)
-};
+        
+        return Math.max(...dp)
+    };
