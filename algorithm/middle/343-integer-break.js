@@ -25,9 +25,11 @@ var integerBreak = function(n) {
 };
 
 // dynamic program
-// f(i)=max{f(i), j * (i - j), j * f(i - j)} j => [1, i)
+// 定义dp: dp[i] 表示组成数字i的最大乘积
+// 确定状态方程: f(i) = max{ f(i), j * (i - j), j * f(i - j) } && 1 <= j < i
+// 确定边界: f(0) = 0, f(1) = 1
 var integerBreak2 = function(n) {
-    const dp = new Array(n + 1).fill(-1)
+    const dp = new Array(n + 1).fill(0)
     
     dp[1] = 1
     
