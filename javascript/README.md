@@ -8,6 +8,7 @@
 - [Module](./6_module.md)
 - [Event Loop](./7_event_loop.md)
 - [JS Engines](./8_engines)
+- [Bitwise Operator](./9_bitwise_operator.md)
 
 todo:
 
