@@ -10,21 +10,19 @@
  * @param {TreeNode} root
  * @return {number}
  */
+// 每一个节点定义它偷和不偷的二元组
 var rob = function(root) {
-    // 返回二元组，第一项代表当前节点偷的值另一个为不偷的值
-    function postOrder(node) {
-        if (!node) {
-            return [0, 0]
-        }
+    function tryRob (node) {
+        if (!node) return [0, 0]
         
-        const left = postOrder(node.left)
-        const right = postOrder(node.right)
+        const left = tryRob(node.left)
+        const right = tryRob(node.right)
         
-        return [
-            node.val + left[1] + right[1],
-            Math.max(...left) + Math.max(...right)
-        ]
+        const rob = node.val + left[1] + right[1]
+        const noRob = Math.max(...left) + Math.max(...right)
+        
+        return [rob, noRob]
     }
     
-    return Math.max(...postOrder(root))
+    return Math.max(...tryRob(root))
 };
