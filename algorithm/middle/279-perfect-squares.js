@@ -31,13 +31,14 @@ var numSquares = function(n) {
 // dynamic program
 // f(i)=min{f(i), 1 + f(i - j * j)} j => [1, 4, 9, 16...j * j]
 // f(i)表示当前n的最少的完全平方数
+// 0其实是完全平方数，但是这道题0不作为完全平方数
 var numSquares2 = function(n) {
     const dp = new Array(n + 1).fill(Infinity)
     
     dp[0] = 0
     
-    for (let i = 1; i <= n; i++) {
-        for (let j = 1; i - j * j >= 0; j++) {
+    for(let i = 1; i <= n; i++) {
+        for(let j = 1; i - j * j >= 0; j++) {
             dp[i] = Math.min(dp[i], 1 + dp[i - j * j])
         }
     }
