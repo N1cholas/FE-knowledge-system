@@ -31,15 +31,17 @@ var combinationSum4 = function(nums, target) {
 };
 
 // dynamic program
-// f(x)=f(x)+f(x - nums[i]) & nums[i] <= x
+// dp[i] 表示组合数字i最大数目
+// 确定状态方程: f(i) = f(i) + f(i - num[i]) && i >= num[i]
+// 确定边界: f(0) = 1
 var combinationSum4_2 = function(nums, target) {
     const dp = new Array(target + 1).fill(0)
     
     dp[0] = 1
     
-    for (let i = 1; i <= target; i++) {
-        for (const num of nums) {
-            if (num <= i) {
+    for(let i = 1; i <= target; i++) {
+        for(const num of nums) {
+            if (i >= num) {
                 dp[i] += dp[i - num]
             }
         }
