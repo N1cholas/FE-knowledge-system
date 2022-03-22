@@ -1,4 +1,4 @@
-## Dom And Layout Trees
+## Dom and Layout Trees
 
 ### Reference
 
