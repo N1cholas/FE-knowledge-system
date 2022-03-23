@@ -32,9 +32,12 @@ var stoneGame = function(piles) {
 };
 
 // dynamic program
-// dp[i][j]表示在[i, j]中两个人之间的差值，所以当i <= j时，区间才有意义
+// 定义dp: dp[i][j]表示在[i, j]中两个人之间的差值，所以当i <= j时，区间才有意义
+// 状态转移: f(i, j) = max{ piles[i] - f(i + 1, j), piles[j] - f(i, j - 1) }
+// 边界: i === j & dp[i][j] = piles[i]
 var stoneGame2 = function(piles) {
     const n = piles.length
+    
     const dp = new Array(n).fill(0).map(_ => new Array(n).fill(0))
     
     for(let i = 0; i < n; i++) {
@@ -47,5 +50,5 @@ var stoneGame2 = function(piles) {
         }
     }
     
-    return dp[0][n - 1]
+    return dp[0][n - 1] > 0
 };
