@@ -31,16 +31,18 @@ var change = function(amount, coins) {
 };
 
 // dynamic program
+// 定义dp: dp[i] 表示组成金额i的方案数
+// 状态转移:
+// f(i) = f(i) + f(i - coins[i - 1])
+// 边界: dp[0] = 1
 var change2 = function(amount, coins) {
-    const n = coins.length
-    
     const dp = new Array(amount + 1).fill(0)
     
     dp[0] = 1
     
-    for(const coin of coins ) {
-        for(let i = coin; i <= amount; i++) {
-            dp[i] += dp[i - coin]
+    for(const coin of coins) {
+        for(let i = 1; i <= amount; i++) {
+            i >= coin && (dp[i] += dp[i - coin])
         }
     }
     
