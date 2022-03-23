@@ -36,13 +36,19 @@ var maxUncrossedLines = function(nums1, nums2) {
 };
 
 // dynamic program
+// 定义dp: dp[i][j] 表示前i个nums1和前j个nums2的最长公共子序列
+// 状态转移:
+// f(i, j) = 1 + f(i - 1, j - 1) & nums[i - 1] === nums[j - 1]
+// f(i, j) = max{ f(i - 1, j), f(i, j - 1) } & nums[i - 1] !== nums[j - 1]
+// 边界: dp[0][0] = 0
 var maxUncrossedLines2 = function(nums1, nums2) {
-    const m = nums1.length
-    const n = nums2.length
-    const dp = new Array(m + 1).fill(0).map(_ => new Array(n + 1).fill(0))
+    const n = nums1.length
+    const m = nums2.length
     
-    for (let i = 1; i <= m; i++) {
-        for (let j = 1; j <= n; j++) {
+    const dp = new Array(n + 1).fill(0).map(_ => new Array(m + 1).fill(0))
+    
+    for(let i = 1; i <= n; i++) {
+        for(let j = 1; j <= m; j++) {
             if (nums1[i - 1] === nums2[j - 1]) {
                 dp[i][j] = 1 + dp[i - 1][j - 1]
             } else {
@@ -51,5 +57,5 @@ var maxUncrossedLines2 = function(nums1, nums2) {
         }
     }
     
-    return dp[m][n]
+    return dp[n][m]
 };
