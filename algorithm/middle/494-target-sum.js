@@ -28,23 +28,39 @@ var findTargetSumWays = function(nums, target) {
 };
 
 // dynamic program
-var findTargetSumWays2 = function (nums, target) {
+// https://leetcode-cn.com/problems/target-sum/solution/mu-biao-he-by-leetcode-solution-o0cp/
+// 定义dp: dp[i][j] 表示取前i个数组成j的总和
+// 状态转移:
+// (sum - neg) - neg = target => neg = (sum - target) / 2
+// f(i, j) = f(i - 1, j) & j < nums[i - 1]
+// f(i, j) = f(i, j) + f(i - 1,  j - nums[i - 1]) & j >= nums[i - 1]
+// 边界: dp[0][0] = 1
+var findTargetSumWays2 = function(nums, target) {
+    const sum = nums.reduce((p, c) => p + c)
+    
+    const diff = sum - target
+    
+    if (diff < 0 || diff % 2 !== 0) {
+        return 0
+    }
+    
+    const neg = diff / 2
+    
     const n = nums.length
     
-    const dp = new Array(n).fill(0).map(_ => new Array(2001).fill(0))
+    const dp = new Array(n + 1).fill(0).map(_ => new Array(neg + 1).fill(0))
     
-    dp[0][1000 - nums[0]] += 1;
-    dp[0][1000 + nums[0]] += 1;
+    dp[0][0] = 1
     
-    for(let i = 1; i < n; i ++) {
-        for(let j = 0; j < 2001; j ++){
-            if(j - nums[i] >= 0 && j - nums[i] < 2001)
-                dp[i][j] += dp[i - 1][j - nums[i]];
-            if(j + nums[i] >= 0 && j + nums[i] < 2001)
-                dp[i][j] += dp[i - 1][j + nums[i]];
+    for(let i = 1; i <= n; i++) {
+        const num = nums[i - 1]
+        for(let j = 0; j <= neg; j++) {
+            dp[i][j] = dp[i - 1][j]
+            if (j >= num) {
+                dp[i][j] += dp[i - 1][j - num]
+            }
         }
     }
     
-    
-    return dp[n - 1][target + 1000]
-}
+    return dp[n][neg]
+};

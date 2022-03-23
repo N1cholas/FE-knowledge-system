@@ -205,7 +205,7 @@
 - [377-combinations-sum-4](middle/377-combinations-sum-4.js)
 - [416-partition-equal-subset-sum*](middle/416-partition-equal-subset-sum.js)
 - [474-ones-and-zeros*](middle/474-ones-and-zeros.js)
-- [494-target-sum](middle/494-target-sum.js)
+- [494-target-sum*](middle/494-target-sum.js)
 - [518-coin-change-II](middle/518-coin-change-II.js)
 - [877-stone-game](middle/877-stone-game.js)
 - [1035-max-uncross-line](middle/1035-max-uncross-line.js)
