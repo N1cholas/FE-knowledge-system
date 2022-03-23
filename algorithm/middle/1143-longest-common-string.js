@@ -35,16 +35,20 @@ var longestCommonSubsequence = function(text1, text2) {
 };
 
 // dynamic program
-// dp[i][j]代表text1[0, i]和text2[0, j]范围内的最大LCS，所以i === 0 && j === 0是无意义的也是边界
+// 定义dp: dp[i][j] 表示前i个text1和前j个text2最长公共子序列
+// 状态转移:
+// f(i, j) = 1 + f(i - 1, j - 1) & text1[i - 1] === text2[j - 1]
+// f(i, j) = max{ f(i - 1, j), f(i, j - 1) } & text1[i - 1] !== text2[j - 1]
+// 边界: dp[0][0] = 0
 var longestCommonSubsequence2 = function(text1, text2) {
-    const n1 = text1.length
-    const n2 = text2.length
-    const dp = new Array(n1 + 1).fill(0)
-        .map(_ => new Array(n2 + 1).fill(0))
+    const n = text1.length
+    const m = text2.length
     
-    for(let i = 1; i <= n1; i++) {
-        for(let j = 1; j <= n2; j++) {
-            if (text1.charAt(i - 1) === text2.charAt(j - 1)) {
+    const dp = new Array(n + 1).fill(0).map(_ => new Array(m + 1).fill(0))
+    
+    for(let i = 1; i <= n; i++) {
+        for(let j = 1; j <= m; j++) {
+            if (text1[i - 1] === text2[j - 1]) {
                 dp[i][j] = 1 + dp[i - 1][j - 1]
             } else {
                 dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1])
@@ -52,5 +56,5 @@ var longestCommonSubsequence2 = function(text1, text2) {
         }
     }
     
-    return dp[n1][n2]
+    return dp[n][m]
 };
