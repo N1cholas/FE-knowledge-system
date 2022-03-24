@@ -3,30 +3,32 @@
  * @return {number}
  */
 
+// source https://leetcode-cn.com/problems/minimum-path-sum/
+
 // dynamic program
-// f(m,n) = grid[m][n] + min{f(m-1, n), f(m,n-1)}
-// f(m,n)代表当前[m,n]的最小路径和
+// 定义dp: dp[i][j] 表示到达(i, j)这个格子最小路径和
+// 状态转移: f(i, j) = f(i, j) + min{ f(i - 1, j), f(i, j - 1) }
+// 初始化: 直接使用grid
+// 边界:
+//   dp[i][0] += dp[i - 1][0]
+//   dp[0][j] += dp[0][j - 1]
 var minPathSum = function(grid) {
     const m = grid.length
     const n = grid[0].length
     
-    const dp = new Array(m).fill(0).map(_ => new Array(n).fill(0))
-    
-    dp[0][0] = grid[0][0]
-    
     for(let i = 1; i < m; i++) {
-        dp[i][0] = grid[i][0] + dp[i - 1][0]
+        grid[i][0] += grid[i - 1][0]
     }
     
-    for(let i = 1; i < n; i++) {
-        dp[0][i] = grid[0][i] + dp[0][i - 1]
+    for(let j = 1; j < n; j++) {
+        grid[0][j] += grid[0][j - 1]
     }
     
     for(let i = 1; i < m; i++) {
         for(let j = 1; j < n; j++) {
-            dp[i][j] = grid[i][j] + Math.min(dp[i - 1][j], dp[i][j - 1])
+            grid[i][j] += Math.min(grid[i - 1][j], grid[i][j - 1])
         }
     }
     
-    return dp[m - 1][n - 1]
+    return grid[m - 1][n - 1]
 };
