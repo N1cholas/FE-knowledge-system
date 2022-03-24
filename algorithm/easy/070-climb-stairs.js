@@ -3,8 +3,29 @@
  * @return {number}
  */
 
-// memory search
+// source https://leetcode-cn.com/problems/climbing-stairs/
+
+// dynamic program
+// 定义dp: dp[i] 表示到达i阶的方案数
+// 状态转移: f(i) = f(i - 1) + f(i - 2)
+// 初始化: dp[i] = 0
+// 边界: dp[0] = 1 & dp[1] = 1
 var climbStairs = function(n) {
+    const dp = new Array(n + 1).fill(0)
+    
+    dp[0] = 1
+    
+    dp[1] = 1
+    
+    for(let i = 2; i <= n; i++) {
+        dp[i] = dp[i - 1] + dp[i - 2]
+    }
+    
+    return dp[n]
+};
+
+// memory search
+var climbStairs2 = function(n) {
     function tryClimb(n) {
         if (n === 1 || n === 0) return 1
         
@@ -20,21 +41,4 @@ var climbStairs = function(n) {
     const memo = new Array(n + 1).fill(-1)
     
     return tryClimb(n)
-};
-
-// dynamic program
-// f(n) = f(n - 1) + f(n - 2)
-// f(1) = 1
-// f(0) = 1
-var climbStairs2 = function(n) {
-    const dp = new Array(n + 1).fill(0)
-    
-    dp[0] = 1
-    dp[1] = 1
-    
-    for(let i = 2; i <= n; i++) {
-        dp[i] = dp[i - 1] + dp[i - 2]
-    }
-    
-    return dp[n]
 };
