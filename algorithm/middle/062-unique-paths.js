@@ -4,10 +4,35 @@
  * @return {number}
  */
 
-// 子问题：当前的所有路径等于上一格路径和加上左一格路径和
+// source https://leetcode-cn.com/problems/unique-paths/
+
+// dynamic program
+// 定义dp: dp[i][j] 表示到达(i, j)格子的路径总数
+// 状态转移: f(i, j) = f(i - 1, j) + f(i, j - 1)
+// 初始化: dp[i][j] = 0
+// 边界: dp[i][0] = 1 & dp[0][j] = 1
+var uniquePaths = function(m, n) {
+    const dp = new Array(m).fill(0).map(_ => new Array(n).fill(0))
+    
+    for(let i = 0; i < m; i++) {
+        dp[i][0] = 1
+    }
+    
+    for(let j = 0; j < n; j++) {
+        dp[0][j] = 1
+    }
+    
+    for(let i = 1; i < m; i++) {
+        for(let j = 1; j < n; j++) {
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+        }
+    }
+    
+    return dp[m - 1][n - 1]
+};
 
 // memory search
-var uniquePaths = function(m, n) {
+var uniquePaths2 = function(m, n) {
     const memo = []
     
     for(let i = 0; i < m; i++) {
@@ -31,27 +56,4 @@ var uniquePaths = function(m, n) {
     }
     
     return dfs(m - 1, n - 1, memo)
-};
-
-// dynamic program
-// f(m,n) = f(m - 1, n) + f(m, n - 1)
-// f(m,n)表示当前格[m,n]的路径和
-var uniquePaths2 = function(m, n) {
-    const dp = new Array(m).fill(0).map(_ => new Array(n).fill(0))
-    
-    for(let i = 0; i < m; i++) {
-        dp[i][0] = 1
-    }
-    
-    for(let j = 0; j < n; j++) {
-        dp[0][j] = 1
-    }
-    
-    for(let i = 1; i < m; i++) {
-        for(let j = 1; j < n; j++) {
-            dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
-        }
-    }
-    
-    return dp[m - 1][n - 1]
 };

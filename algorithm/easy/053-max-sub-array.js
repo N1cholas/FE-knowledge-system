@@ -3,13 +3,14 @@
  * @return {number}
  */
 
-// source https://leetcode-cn.com/problems/maximum-subarray
+// source https://leetcode-cn.com/problems/maximum-subarray/
 
 // dynamic program
 // 定义dp: dp[i] 表示[0, i]区间的最大连续子数组和
 // 状态转移: f(i) = max{ nums[i], nums[i] + f(i - 1) }
+// 初始化: dp[i] = -Infinity
 // 边界: dp[0] = nums[0]
-var maxSubArray2 = function(nums) {
+var maxSubArray = function(nums) {
     const n = nums.length
     
     const dp = new Array(n).fill(-Infinity)
@@ -24,7 +25,7 @@ var maxSubArray2 = function(nums) {
 };
 
 // memory search
-var maxSubArray = function(nums) {
+var maxSubArray2 = function(nums) {
     function trySum(nums, index) {
         if (index < 0) {
             return 0
