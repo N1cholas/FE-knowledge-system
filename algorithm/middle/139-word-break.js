@@ -4,8 +4,37 @@
  * @return {boolean}
  */
 
-// DFS + memory search
+// source https://leetcode-cn.com/problems/word-break/
+
+// dynamic program
+// 定义dp: dp[i] 表示前i个字符是否能被字典中单词拼接
+// 状态转移:
+//   f(i) = f(j) && s.substr(j, i - j) in wordDict
+// 初始化: dp[i] = false
+// 边界: dp[0] = true
 var wordBreak = function(s, wordDict) {
+    const n = s.length
+    
+    const wordDictSet = new Set(wordDict)
+    
+    const dp = new Array(n + 1).fill(false)
+    
+    dp[0] = true
+    
+    for(let i = 1; i <= n; i++) {
+        for(let j = 0; j < i; j++) {
+            if (dp[j] && wordDictSet.has(s.substr(j, i - j))) {
+                dp[i] = true
+                break
+            }
+        }
+    }
+    
+    return dp[n]
+};
+
+// DFS + memory search
+var wordBreak2 = function(s, wordDict) {
     const set = new Set(wordDict)
     const memo = new Array(s.length).fill(-1)
     
@@ -31,31 +60,4 @@ var wordBreak = function(s, wordDict) {
     }
     
     return tryBreak(s, 0)
-};
-
-// dynamic program
-// 子问题：子串能否被分割
-// dp[i]代表s[0, i - 1]的字符串可以被wordDict分割
-// 状态转移
-// 以j进行分割，[0, j - 1] [j, i - 1] 均能被wordDict分割
-// 其中[0, j - 1]存储在dp[j]中
-var wordBreak = function(s, wordDict) {
-    const n = s.length
-    
-    const wordSet = new Set(wordDict)
-    
-    const dp = new Array(n + 1).fill(false)
-    
-    dp[0] = true
-    
-    for(let i = 1; i <= n; i++) {
-        for(let j = 0; j < i; j++) {
-            if (dp[j] && wordSet.has(s.substr(j, i - j))) {
-                dp[i] = true
-                break
-            }
-        }
-    }
-    
-    return dp[n]
 };
