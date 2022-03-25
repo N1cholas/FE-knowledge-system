@@ -3,8 +3,34 @@
  * @return {number}
  */
 
-// memory search
+// source https://leetcode-cn.com/problems/triangle/
+
+// dynamic program
+// 定义dp: dp[i][j] 表示第i - 1行的第j - 1个大最小路径和
+// 状态转移: dp[i][j] = dp[i][j] + min{ dp[i - 1][j], dp[i - 1][j - 1] }
+// 初始化: dp[i][j] = 0
+// 边界:
+//   dp[i][0] = dp[i][0] + dp[i - 1][0]
+//   dp[i][i] = dp[i][i] + dp[i - 1][i - 1]
 var minimumTotal = function(triangle) {
+    const n = triangle.length
+    
+    for(let i = 1; i < n; i++) {
+        triangle[i][0] += triangle[i - 1][0]
+        triangle[i][i] += triangle[i - 1][i - 1]
+    }
+    
+    for(let i = 2; i < n; i++) {
+        for(let j = 1; j < i; j++) {
+            triangle[i][j] += Math.min(triangle[i - 1][j], triangle[i - 1][j - 1])
+        }
+    }
+    
+    return Math.min(...triangle[n - 1])
+};
+
+// memory search
+var minimumTotal2 = function(triangle) {
     const dp = []
     
     for (let i = 0; i < triangle.length; i++) {
@@ -40,28 +66,4 @@ var minimumTotal = function(triangle) {
     }
 
     return Math.min(...dp[dp.length - 1])
-};
-
-/**
- * @param {number[][]} triangle
- * @return {number}
- */
-
-// dynamic program
-// f(i, j)= f(i, j) + min{ f(i - 1, j), f(i - 1, j - 1 ) }
-var minimumTotal2 = function(triangle) {
-    const m = triangle.length
-    
-    for(let i = 1; i < m; i++) {
-        triangle[i][0] += triangle[i - 1][0]
-        triangle[i][i] += triangle[i - 1][i - 1]
-    }
-    
-    for(let i = 2; i < m; i++) {
-        for(let j = 1; j < i; j++) {
-            triangle[i][j] += Math.min(triangle[i - 1][j], triangle[i - 1][j - 1])
-        }
-    }
-    
-    return Math.min(...triangle[m - 1])
 };
