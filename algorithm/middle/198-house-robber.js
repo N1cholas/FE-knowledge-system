@@ -3,6 +3,8 @@
  * @return {number}
  */
 
+// source https://leetcode-cn.com/problems/house-robber/
+
 // dynamic program
 // 定义dp: dp[i] 表示偷前i间房子的最高金额
 // 状态转移: f(i) = max{ nums[i - 1] + f(i - 2), f(i - 1) }
