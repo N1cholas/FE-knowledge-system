@@ -2,27 +2,31 @@
  * @param {number[]} prices
  * @return {number}
  */
-// dynamic program
-// 重复的子问题: 今天股票最大收益可以从前一天转移过来
-// 定义dp: 每一天维护三个状态，持有股票，不持有股票切处于冷冻期，不持有股票且不处于冷冻期
-// 确定状态方程:
-//  dp[i][0] = max{ dp[i - 1][0], -prices[i] + dp[i - 1][2] }
-//  dp[i][1] = prices[i] + dp[i - 1][0]
-//  dp[i][2] = max{ dp[i - 1][1], d[i - 1][2] }
-// 确定边界:
-//  dp[0][0] = -prices[0]
-//  dp[0][1] = 0
-//  dp[0][2] = 0
 
-// 只能买入一次!!!不允许多次买入!!!
+// source https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
+
+// dynamic program
+// 定义dp:
+//   dp[i][0] 表示第i天 持有股票 的收益
+//   dp[i][1] 表示第i天 不持有股票且处于冷冻期 的收益
+//   dp[i][2] 表示第i天 不持有股票且不处于冷冻期 的收益
+// 状态转移:
+//   dp[i][0] = max{ -prices[i] + dp[i - 1][2], dp[i - 1][0] }
+//   dp[i][1] = prices[i] + dp[i - 1][0]
+//   dp[i][2] = max{ dp[i - 1][1], dp[i - 1][2] }
+// 初始化 & 边界:
+//   dp[0][0] = -prices[0]
+//   dp[0][1] = 0
+//   dp[0][2] = 0
+
 var maxProfit = function(prices) {
     const n = prices.length
     
-    const dp = new Array(n).fill(0).map(() => new Array(3).fill(-Infinity))
+    const dp = new Array(n).fill(0).map(_ => new Array(3).fill(0))
     
-    dp[0][0] = -prices[0] // 持有股票
-    dp[0][1] = 0          // 不持有股票且处于冷冻期
-    dp[0][2] = 0          // 不持有股票且不处于冷冻期
+    dp[0][0] = -prices[0]
+    dp[0][1] = 0
+    dp[0][2] = 0
     
     for(let i = 1; i < n; i++) {
         dp[i][0] = Math.max(-prices[i] + dp[i - 1][2], dp[i - 1][0])
