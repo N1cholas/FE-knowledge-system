@@ -3,8 +3,31 @@
  * @return {number}
  */
 
-// memory search
+// source https://leetcode-cn.com/problems/integer-break/
+
+// dynamic program
+// 定义dp: dp[i] 表示整数i的最大乘积
+// 状态转移:
+//   f(i) = max{ f(i), j * (i - j), j * f(i - j) }
+//   & 0 < j < i
+// 初始化: dp[i] = 0
+// 边界: dp[2] = 1
 var integerBreak = function(n) {
+    const dp = new Array(n + 1).fill(0)
+    
+    dp[2] = 1
+    
+    for(let i = 3; i <= n; i++) {
+        for(let j = 1; j < i; j++) {
+            dp[i] = Math.max(dp[i], j * (i - j), j * dp[i - j])
+        }
+    }
+    
+    return dp[n]
+};
+
+// memory search
+var integerBreak2 = function(n) {
     function breakInt(n) {
         if (n === 1) return 1;
         
@@ -22,22 +45,4 @@ var integerBreak = function(n) {
     const memo = new Array(n + 1).fill(-1)
     
     return breakInt(n)
-};
-
-// dynamic program
-// 定义dp: dp[i] 表示组成数字i的最大乘积
-// 确定状态方程: f(i) = max{ f(i), j * (i - j), j * f(i - j) } && 1 <= j < i
-// 确定边界: f(0) = 0, f(1) = 1
-var integerBreak2 = function(n) {
-    const dp = new Array(n + 1).fill(0)
-    
-    dp[1] = 1
-    
-    for(let i = 2; i <= n; i++) {
-        for(let j = 1; j < i; j++) {
-            dp[i] = Math.max(dp[i], j * (i - j), j * dp[i - j])
-        }
-    }
-    
-    return dp[n]
 };
