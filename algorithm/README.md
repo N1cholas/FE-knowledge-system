@@ -183,10 +183,10 @@
 ## 记忆化搜索和动态规划
 
 > 动态规划解题思路
-> 1. 定义dp
+> 1. 定义状态
 > 2. 推出状态转移方程
-> 3. 初始化dp
-> 4. 确定dp边界
+> 3. 初始化状态
+> 4. 确定状态边界
 
 - [053-max-sub-array](easy/053-max-sub-array.js)
 - [062-unique-paths](middle/062-unique-paths.js)
