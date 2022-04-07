@@ -3,30 +3,34 @@
  * @param {number} target
  * @return {number[][]}
  */
+
+// source: https://leetcode-cn.com/problems/combination-sum-ii/
+
 var combinationSum2 = function(candidates, target) {
-    function tryCombine(candidates, target, index, current, res) {
-        if (target === 0) {
-            return res.push(current.slice())
-        }
-        
-        for (let i = index; i < candidates.length; i++) {
-            if (i > index && candidates[i] === candidates[i - 1]) {
-                continue
-            }
-            
-            if (target >= candidates[i]) {
-                current.push(candidates[i])
-                tryCombine(candidates, target - candidates[i], i + 1, current, res)
-                current.pop()
-            }
-        }
-    }
-    
     candidates.sort((a, b) => a - b)
     
     const res = []
     
-    tryCombine(candidates, target, 0, [], res)
+    tryCombine(candidates, 0, [], res, target)
     
     return res
 };
+
+const tryCombine = (candidates, index, current, res, target) => {
+    if (target === 0) {
+        return res.push(current.slice())
+    }
+    
+    for(let i = index, len = candidates.length; i < len; i++) {
+        if (i > index & candidates[i] === candidates[i - 1]) {
+            continue
+        }
+        
+        const candidate = candidates[i]
+        if (target >= candidate) {
+            current.push(candidate)
+            tryCombine(candidates, i + 1, current, res, target - candidate)
+            current.pop()
+        }
+    }
+}

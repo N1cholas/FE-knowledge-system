@@ -2,6 +2,9 @@
  * @param {string} digits
  * @return {string[]}
  */
+
+// source: https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
+
 var letterCombinations = function(digits) {
     if (!digits.length) return []
     
@@ -25,9 +28,6 @@ const map = new Map([
     ['0', ' '],
 ])
 
-// 定义参数
-// 确定边界
-// 实现回溯
 const tryCombine = (digits, index, current, res) => {
     if (digits.length === index) {
         return res.push(current.slice().join(''))

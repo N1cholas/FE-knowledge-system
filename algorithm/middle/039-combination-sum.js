@@ -4,6 +4,8 @@
  * @return {number[][]}
  */
 
+// source: https://leetcode-cn.com/problems/combination-sum/
+
 // 定义入参:
 //   candidates  组合对象
 //   index       [index, candidates.length)
