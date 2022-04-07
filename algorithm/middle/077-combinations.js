@@ -4,6 +4,8 @@
  * @return {number[][]}
  */
 
+// source: https://leetcode-cn.com/problems/combinations/
+
 var combine = function(n, k) {
     const res = []
     

@@ -174,7 +174,7 @@
 - [046-permute](middle/046-permute.js)
 - [077-combinations](middle/077-combinations.js)
 - [078-sub-set](middle/078-sub-set.js)
-- [093-restore-IP-address](middle/093-restore-IP-address.js)
+- [093-restore-IP-address*](middle/093-restore-IP-address.js)
 - [130-surrounded-regions](middle/130-surrounded-regions.js)
 - [200-numbers-of-island](middle/200-numbers-of-island.js)
 - [216-combinations-sum-III](middle/216-combinations-sum-3.js)

@@ -3,6 +3,8 @@
  * @return {number[][]}
  */
 
+// source: https://leetcode-cn.com/problems/permutations/
+
 var permute = function(nums) {
     const res = []
     
