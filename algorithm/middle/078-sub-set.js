@@ -2,24 +2,27 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
+
+// source: https://leetcode-cn.com/problems/subsets/
+
 var subsets = function(nums) {
-    function trySubset(nums, index, size, current, res) {
-        if (size === current.length) {
-            return res.push(current.slice())
-        }
-        
-        for (let i = index; i < nums.length; i++) {
-            current.push(nums[i])
-            trySubset(nums, i + 1, size, current, res)
-            current.pop()
-        }
-    }
-    
     const res = []
     
-    for (let size = 0; size <= nums.length; size++) {
-        trySubset(nums, 0, size, [], res)
+    for(let size = 0; size <= nums.length; size++) {
+        tryGenerateSubsets(nums, 0, [], res, size)
     }
     
     return res
 };
+
+const tryGenerateSubsets = (nums, index, current, res, size) => {
+    if (size === current.length) {
+        return res.push(current.slice())
+    }
+    
+    for(let i = index; i < nums.length; i++) {
+        current.push(nums[i])
+        tryGenerateSubsets(nums, i + 1, current, res, size)
+        current.pop()
+    }
+}
