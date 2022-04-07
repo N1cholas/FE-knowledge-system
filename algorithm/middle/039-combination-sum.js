@@ -3,24 +3,34 @@
  * @param {number} target
  * @return {number[][]}
  */
+
+// 定义入参:
+//   candidates  组合对象
+//   index       [index, candidates.length)
+//   current     当前缓存值
+//   res         结果
+//   target      目标值
+// 确定边界: target === 0
 var combinationSum = function(candidates, target) {
-    function tryCombine(candidates, target, index, current, res) {
-        if (target === 0) {
-            return res.push(current.slice())
-        }
-        
-        for (let i = index; i < candidates.length; i++) {
-            if (target >= candidates[i]) {
-                current.push(candidates[i])
-                tryCombine(candidates, target - candidates[i], i, current, res)
-                current.pop()
-            }
-        }
-    }
-    
     const res = []
     
-    tryCombine(candidates, target, 0, [], res)
+    tryCombine(candidates, 0, [], res, target)
     
     return res
 };
+
+const tryCombine = (candidates, index, current, res, target) => {
+    if (target === 0) {
+        return res.push(current.slice())
+    }
+    
+    for(let i = index, len = candidates.length; i < len; i++) {
+        const candidate = candidates[i]
+        
+        if (target >= candidate) {
+            current.push(candidate)
+            tryCombine(candidates, i, current, res, target - candidate)
+            current.pop(candidate)
+        }
+    }
+}
