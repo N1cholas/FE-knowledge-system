@@ -22,7 +22,7 @@ const tryPermute = (nums, used, current, res) => {
         if (!used[i]) {
             used[i] = true
             current.push(nums[i])
-            tryPermete(nums, used, current, res)
+            tryPermute(nums, used, current, res)
             used[i] = false
             current.pop()
         }
