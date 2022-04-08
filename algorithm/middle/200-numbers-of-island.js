@@ -1,41 +1,43 @@
 /**
- * @param {string[][]} grid
+ * @param {character[][]} grid
  * @return {number}
  */
+
+// source: https://leetcode-cn.com/problems/number-of-islands/
+
 var numIslands = function(grid) {
-    const m = grid.length
-    const n = grid[0].length
-    const dir = [[-1, 0], [0, 1], [1, 0], [0, -1]]
-    const visited = []
-    let count = 0
+    const n = grid.length
+    const m = grid[0].length
     
-    for (let i = 0; i < m; i++) {
-        visited.push(new Array(n + 1).fill(false))
-    }
+    const dirs = [[0, 1], [0, -1], [1, 0], [-1, 0]]
     
-    function inArea(x, y) {
-        return x >= 0 && x < m && y >= 0 && y < n
-    }
+    const visited = new Array(n).fill(0).map(_ => new Array(m).fill(false))
     
-    function dfs(grid, x, y) {
+    const inArea = (x, y) => x >= 0 && x < n && y >= 0 && y < m
+    
+    let isLand = 0
+    
+    const dfs = (x, y) => {
         visited[x][y] = true
-        for (let i = 0; i < 4; i++) {
-            const newX = x + dir[i][0]
-            const newY = y + dir[i][1]
+        
+        for (const dir of dirs) {
+            const newX = x + dir[0]
+            const newY = y + dir[1]
+            
             if (inArea(newX, newY) && grid[newX][newY] === '1' && !visited[newX][newY]) {
-                dfs(grid, newX, newY)
+                dfs(newX, newY)
             }
         }
     }
     
-    for (let i = 0; i < m; i++) {
-        for (let j = 0; j < n; j++) {
+    for(let i = 0; i < n; i++) {
+        for(let j = 0; j < m; j++) {
             if (grid[i][j] === '1' && !visited[i][j]) {
-                dfs(grid, i, j)
-                count++
+                isLand++
+                dfs(i, j)
             }
         }
     }
     
-    return count
+    return isLand
 };
