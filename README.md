@@ -1,5 +1,5 @@
 ## build my own frontend knowledge system
 
-[Algorithm](algorithm/README.md)
+[Algorithm](Algorithm/README.md)
 
-[Javascript](javascript/README.md)
+[Javascript](JS/README.md)
