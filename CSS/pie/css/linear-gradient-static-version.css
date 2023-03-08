@@ -1,0 +1,37 @@
+.pie3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    width: var(--pie-size);
+    height: var(--pie-size);
+    border-radius: 50%;
+}
+
+.pie3::after {
+    content: '';
+    width: var(--pie-size);
+    height: var(--pie-size);
+    position: absolute;
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+    background: linear-gradient(-90deg, #3377cc 50%, #33cc77 50%);
+}
+
+.pie3.one {
+    background: linear-gradient(-20deg, #33cc77 50%, transparent 50%);
+}
+
+.pie3.two {
+    background: linear-gradient(30deg, #33cc77 50%, transparent 50%);
+}
+
+.pie3.three {
+    background: linear-gradient(151deg, transparent 50%, #3377cc 50%);
+}
+
+.pie3.four {
+    background: linear-gradient(198deg, transparent 50%, #3377cc 50%);
+}

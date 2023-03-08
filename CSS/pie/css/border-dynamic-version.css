@@ -1,0 +1,40 @@
+.pie2 {
+    width: 0;
+    border: 100px solid;
+    border-color: #3377cc #3377cc #33cc77 #33cc77;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.pie2 span {
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    color: #fff;
+    font-size: 20px;
+}
+
+.pie2::after {
+    content: '';
+    border: 100px solid;
+    border-color: #33cc77 #33cc77 transparent transparent;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: spine 10s linear infinite,
+    convex 10s step-end infinite;
+    animation-play-state: paused;
+    animation-delay: inherit;
+}
+
+@keyframes convex {
+    50% {
+        border-color: transparent transparent #3377cc #3377cc;
+    }
+}
+
+@keyframes spine {
+    to {
+        transform: translate(-50%, -50%) rotate(1turn);
+    }
+}

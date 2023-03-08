@@ -1,0 +1,39 @@
+.pie4 {
+    width: var(--pie-size);
+    height: var(--pie-size);
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(to right, #33cc77 50%, transparent 50%);
+    animation: xxxx 10s step-end infinite;
+    animation-play-state: paused;
+}
+
+.pie4::after {
+    content: '';
+    width: var(--pie-size);
+    height: var(--pie-size);
+    background: #000;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to right, #3377cc 50%, #33cc77 50%);
+    z-index: -1;
+    animation: yyyy 10s linear infinite;
+    animation-play-state: paused;
+    animation-delay: inherit;
+}
+
+@keyframes yyyy {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes xxxx {
+    50% {
+        background: linear-gradient(to right, transparent 50%, #3377cc 50%);
+    }
+}
